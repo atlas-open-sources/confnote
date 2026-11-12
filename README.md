@@ -25,6 +25,19 @@ the provider you pick.
   AI gateway, which confnote calls over HTTP (`ROUTER_URL`, default `https://api.mochirouter.com`). The Router is a
   separate hosted service and is not part of this repository; confnote never sees a card number, a vault token or a
   price it could tamper with.
+- **How PayPal is used (sandbox):**
+  - **Orders v2:** creates and captures the order for each credit pack; the gateway owns price and order.
+  - **JS SDK v6 buttons:** one-click checkout when the Concierge runs out of credit (HTTP 402).
+  - **Card Fields:** saves a card in the page with no PayPal login, vaulted on the first purchase (`store_in_vault: ON_SUCCESS`).
+  - **Vault payment tokens:** automatic, merchant-initiated top-up when a step needs more credit, within the user's monthly cap.
+  - **Webhooks:** `PAYMENT.CAPTURE.COMPLETED` is deduplicated and reconciled into the wallet ledger.
+- **How AI is used:** the Concierge is Claude (Anthropic). The Mac app runs it on the Claude Agent SDK; the web app runs
+  Claude in a Vercel AI SDK tool loop through Mochi Router, with an Agent SDK engine behind a flag. Both share the same
+  27 tools (`packages/contracts/tools.json`, with a parity test): import a conference from a link, read and write notes,
+  research speakers, pick sessions, draw a mind map. Every step is metered per step: reserve before, settle on real usage.
+- **Sponsor and other tools:** AG Grid Community and AG Charts Community (events catalogue, actions, Ledger and balance
+  chart), Bryntum Calendar/Scheduler (the day room by room, picks and clashes), tldraw (mind map), WorkOS (sign-in),
+  Vercel (hosting), Neon Postgres, Vercel Blob.
 - **Run it yourself:** see [Run it](#run-it) below and `docs/release/README.md`. Without a Router, the web app runs
   with your own AI key (bring your own key) and the paid features are off.
 
