@@ -1,0 +1,4 @@
+node_modules
+dist
+.acr-build.log
+.local-host.log

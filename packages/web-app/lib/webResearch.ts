@@ -22,7 +22,12 @@ export interface FetchedPage {
 /** Page text and search results reach the model labelled as data, never instructions (as on the Mac). */
 export const UNTRUSTED = "untrusted_data";
 
-const MAX_FETCH_BYTES = 160_000;
+// Conference sites can carry hundreds of KB of inline CSS before any text (gitnation.com: 670 KB, text from 294 KB);
+// stripping is linear, so reading 1 MB is cheap.
+// Only for the linear stripHtml path (fetchUrlText): the raw body (fetchUrlRaw) feeds findAgendaAt's regexes, which
+// can go quadratic on a hostile page, so it keeps the old 160 KB cap.
+export const MAX_FETCH_BYTES = 1_000_000;
+export const MAX_RAW_FETCH_BYTES = 160_000;
 const MAX_TEXT_CHARS = 18_000;
 const MAX_REDIRECTS = 3;
 const USER_AGENT = "confnote-web-concierge/0.1";
@@ -103,8 +108,11 @@ export function guardedLookup(
 // of times. Lazy regexes like <script[\s\S]*?<\/script> or <[^>]+> rescan to the end of the page for every unclosed
 // opener, which is quadratic: a 160 KB page of "<" took about 17 s. Same rules as the Mac app's web_fetch.py.
 
-/** Replace each <tag>…</tag> block with a space; an unclosed block is left as it is. */
-function dropBlocks(html: string, tag: string): string {
+/**
+ * Replace each <tag>…</tag> block with a space. An unclosed block is left as it is, unless the body was cut at
+ * MAX_FETCH_BYTES (`cut`): then the cap fell inside the block, and the rest is script or CSS, not page text.
+ */
+function dropBlocks(html: string, tag: string, cut: boolean): string {
   const lower = html.toLowerCase();
   const opener = `<${tag}`;
   const closer = `</${tag}>`;
@@ -113,7 +121,7 @@ function dropBlocks(html: string, tag: string): string {
   for (;;) {
     const start = lower.indexOf(opener, pos);
     const end = start === -1 ? -1 : lower.indexOf(closer, start + opener.length);
-    if (end === -1) return out + html.slice(pos);
+    if (end === -1) return cut && start !== -1 ? `${out}${html.slice(pos, start)} ` : out + html.slice(pos);
     out += `${html.slice(pos, start)} `;
     pos = end + closer.length;
   }
@@ -144,9 +152,10 @@ function pageTitle(html: string): string | undefined {
     .trim();
 }
 
-export function stripHtml(html: string): { title?: string; text: string } {
+export function stripHtml(html: string, options: { cut?: boolean } = {}): { title?: string; text: string } {
   const title = pageTitle(html);
-  const text = dropTags(dropBlocks(dropBlocks(html, "script"), "style"))
+  const cut = Boolean(options.cut);
+  const text = dropTags(dropBlocks(dropBlocks(html, "script", cut), "style", cut))
     .replace(/&nbsp;/gi, " ")
     .replace(/&amp;/gi, "&")
     .replace(/&lt;/gi, "<")
@@ -171,10 +180,12 @@ interface PublicResponse {
   contentType: string;
   location?: string;
   body: Buffer;
+  /** The body stopped at the cap. */
+  cut: boolean;
 }
 
-/** One GET through guardedLookup, keeping at most MAX_FETCH_BYTES of the body. */
-function requestPublicUrl(url: URL): Promise<PublicResponse> {
+/** One GET through guardedLookup, keeping at most maxBytes of the body. */
+function requestPublicUrl(url: URL, maxBytes: number): Promise<PublicResponse> {
   const client = url.protocol === "https:" ? https : http;
   return new Promise((resolve, reject) => {
     const request = client.request(
@@ -200,14 +211,15 @@ function requestPublicUrl(url: URL): Promise<PublicResponse> {
             url: url.toString(),
             contentType: String(response.headers["content-type"] || ""),
             location: response.headers.location,
-            body: Buffer.concat(chunks).subarray(0, MAX_FETCH_BYTES),
+            body: Buffer.concat(chunks).subarray(0, maxBytes),
+            cut: length >= maxBytes,
           });
           request.destroy();
         };
         response.on("data", (chunk: Buffer) => {
           chunks.push(chunk);
           length += chunk.length;
-          if (length >= MAX_FETCH_BYTES) finish();
+          if (length >= maxBytes) finish();
         });
         response.on("end", finish);
         response.on("error", (error) => { if (!settled) reject(error); });
@@ -225,13 +237,13 @@ function requestPublicUrl(url: URL): Promise<PublicResponse> {
   });
 }
 
-async function fetchPublicUrl(url: URL, redirects = 0): Promise<PublicResponse> {
-  const response = await requestPublicUrl(url);
+async function fetchPublicUrl(url: URL, maxBytes: number, redirects = 0): Promise<PublicResponse> {
+  const response = await requestPublicUrl(url, maxBytes);
   if ([301, 302, 303, 307, 308].includes(response.status)) {
     if (redirects >= MAX_REDIRECTS) throw new Error("Too many redirects.");
     if (!response.location) throw new Error(`Fetch redirect missing Location header.`);
     const next = await assertPublicHttpUrl(new URL(response.location, url).toString());
-    return fetchPublicUrl(next, redirects + 1);
+    return fetchPublicUrl(next, maxBytes, redirects + 1);
   }
   return response;
 }
@@ -304,7 +316,7 @@ export async function webSearch(query: string, maxResults?: number): Promise<{ p
   };
 }
 
-async function fetchPublicBody(rawUrl: string): Promise<{ url: string; contentType: string; raw: string } | { error: string }> {
+async function fetchPublicBody(rawUrl: string, maxBytes: number): Promise<{ url: string; contentType: string; raw: string; cut: boolean } | { error: string }> {
   let url: URL;
   try {
     url = await assertPublicHttpUrl(rawUrl);
@@ -313,26 +325,26 @@ async function fetchPublicBody(rawUrl: string): Promise<{ url: string; contentTy
   }
   let response: PublicResponse;
   try {
-    response = await fetchPublicUrl(url);
+    response = await fetchPublicUrl(url, maxBytes);
   } catch (error) {
     return { error: error instanceof Error ? error.message : String(error) };
   }
   if (response.status < 200 || response.status > 299) return { error: `Fetch returned HTTP ${response.status}.` };
-  return { url: response.url, contentType: response.contentType, raw: response.body.toString("utf8") };
+  return { url: response.url, contentType: response.contentType, raw: response.body.toString("utf8"), cut: response.cut };
 }
 
-// The body as published (up to MAX_FETCH_BYTES), for structured data such as an agenda JSON manifest.
+// The body as published (up to MAX_RAW_FETCH_BYTES), for structured data such as an agenda JSON manifest.
 export async function fetchUrlRaw(rawUrl: string): Promise<{ url: string; text: string } | { error: string }> {
-  const body = await fetchPublicBody(rawUrl);
+  const body = await fetchPublicBody(rawUrl, MAX_RAW_FETCH_BYTES);
   if ("error" in body) return body;
   return { url: body.url, text: body.raw };
 }
 
 export async function fetchUrlText(rawUrl: string): Promise<FetchedPage | { error: string }> {
-  const body = await fetchPublicBody(rawUrl);
+  const body = await fetchPublicBody(rawUrl, MAX_FETCH_BYTES);
   if ("error" in body) return body;
-  const { url, contentType, raw } = body;
-  const parsed = /html|xml/i.test(contentType) ? stripHtml(raw) : { text: raw.replace(/\s+/g, " ").trim() };
+  const { url, contentType, raw, cut } = body;
+  const parsed = /html|xml/i.test(contentType) ? stripHtml(raw, { cut }) : { text: raw.replace(/\s+/g, " ").trim() };
   return {
     url,
     title: parsed.title,

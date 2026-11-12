@@ -20,7 +20,11 @@ import socket
 import ssl
 from urllib.parse import urljoin, urlsplit
 
-MAX_FETCH_BYTES = 160_000
+# Conference sites can carry hundreds of KB of inline CSS before any text (gitnation.com: 670 KB, text from 294 KB);
+# stripping is linear, so reading 1 MB is cheap. Same cap as webResearch.ts.
+MAX_FETCH_BYTES = 1_000_000
+# The raw body (fetch_public's default, for agenda JSON) keeps the old cap, as fetchUrlRaw does in webResearch.ts.
+MAX_RAW_FETCH_BYTES = 160_000
 MAX_TEXT_CHARS = 18_000
 MAX_REDIRECTS = 3
 TIMEOUT_S = 12
@@ -116,7 +120,7 @@ class _PinnedHTTPSConnection(http.client.HTTPSConnection):
         self.sock = self._context.wrap_socket(raw, server_hostname=self.host)
 
 
-def _get(url: str) -> tuple[int, str, str, bytes]:
+def _get(url: str, max_bytes: int) -> tuple[int, str, str, bytes]:
     parts, address = _public_address(url)
     cls = _PinnedHTTPSConnection if parts.scheme == "https" else _PinnedHTTPConnection
     conn = cls(parts.hostname, address, port=parts.port, timeout=TIMEOUT_S)
@@ -133,7 +137,7 @@ def _get(url: str) -> tuple[int, str, str, bytes]:
             },
         )
         resp = conn.getresponse()
-        body = resp.read(MAX_FETCH_BYTES)
+        body = resp.read(max_bytes)
         return resp.status, resp.getheader("Content-Type", ""), resp.getheader("Location", ""), body
     except (OSError, http.client.HTTPException) as e:
         raise FetchError(f"Fetch failed: {type(e).__name__}") from None
@@ -141,12 +145,12 @@ def _get(url: str) -> tuple[int, str, str, bytes]:
         conn.close()
 
 
-def fetch_public(url: str) -> dict:
+def fetch_public(url: str, max_bytes: int = MAX_RAW_FETCH_BYTES) -> dict:
     """{url, content_type, raw} of a public page, following up to
     MAX_REDIRECTS checked redirects. Raises FetchError."""
     current = url
     for _hop in range(MAX_REDIRECTS + 1):
-        status, ctype, location, body = _get(current)
+        status, ctype, location, body = _get(current, max_bytes)
         if status in REDIRECT_CODES:
             if not location:
                 raise FetchError("Fetch redirect missing Location header.")
@@ -154,7 +158,12 @@ def fetch_public(url: str) -> dict:
             continue
         if not 200 <= status <= 299:
             raise FetchError(f"Fetch returned HTTP {status}.")
-        return {"url": current, "content_type": ctype, "raw": body.decode("utf-8", "replace")}
+        return {
+            "url": current,
+            "content_type": ctype,
+            "raw": body.decode("utf-8", "replace"),
+            "cut": len(body) >= max_bytes,
+        }
     raise FetchError("Too many redirects.")
 
 
@@ -166,8 +175,9 @@ _SPACE_RE = re.compile(r"\s+")
 # opener, which is quadratic: a 160 KB page of "<script" took about 12 s.
 
 
-def _drop_blocks(raw: str) -> str:
-    """Replace each <script>…</script> and <style>…</style> block with a space; an unclosed block is left as it is."""
+def _drop_blocks(raw: str, cut: bool = False) -> str:
+    """Replace each <script>…</script> and <style>…</style> block with a space. An unclosed block is left as it is,
+    unless the body was cut at MAX_FETCH_BYTES (`cut`): then the cap fell inside the block and the rest is not text."""
     lower = raw.lower()
     out: list[str] = []
     pos = 0
@@ -179,7 +189,7 @@ def _drop_blocks(raw: str) -> str:
         closer = "</" + opener.group(1).lower() + ">"
         end = lower.find(closer, opener.end())
         if end == -1:
-            out.append(raw[pos:])
+            out.append(raw[pos : opener.start()] + " " if cut else raw[pos:])
             return "".join(out)
         out.append(raw[pos : opener.start()])
         out.append(" ")
@@ -211,21 +221,21 @@ def _title(raw: str) -> str:
     return _SPACE_RE.sub(" ", html.unescape(raw[open_end + 1 : close])).strip()
 
 
-def page_text(raw: str, content_type: str) -> tuple[str, str]:
+def page_text(raw: str, content_type: str, cut: bool = False) -> tuple[str, str]:
     """(title, readable text) the way webResearch.ts stripHtml reads a page."""
     if not re.search(r"html|xml", content_type or "", re.I):
         return "", _SPACE_RE.sub(" ", raw).strip()
-    text = _drop_tags(_drop_blocks(raw))
+    text = _drop_tags(_drop_blocks(raw, cut))
     return _title(raw), _SPACE_RE.sub(" ", html.unescape(text)).strip()
 
 
 def fetch_url_text(url: str) -> dict:
     """The fetch_url tool result: {url, title, text, truncated, trust} or {error}."""
     try:
-        page = fetch_public(url)
+        page = fetch_public(url, MAX_FETCH_BYTES)
     except FetchError as e:
         return {"error": str(e)}
-    title, text = page_text(page["raw"], page["content_type"])
+    title, text = page_text(page["raw"], page["content_type"], page.get("cut", False))
     return {
         "url": page["url"],
         "title": title,

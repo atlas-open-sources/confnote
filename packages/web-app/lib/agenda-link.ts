@@ -279,7 +279,9 @@ function ldSession(thing: LdThing): LooseSession {
 }
 
 export function agendaFromJsonLd(html: string, sourceUrl: string): AgendaData | null {
-  const blocks = [...html.matchAll(/<script[^>]+type=["']application\/ld\+json["'][^>]*>([\s\S]*?)<\/script>/gi)];
+  // Attribute runs are bounded ({1,1000}) so a hostile page of unclosed "<script " stays linear; the lazy body scan
+  // is still quadratic on unclosed ld+json blocks, which is why the raw fetch keeps MAX_RAW_FETCH_BYTES (160 KB).
+  const blocks = [...html.matchAll(/<script[^>]{1,1000}?type=["']application\/ld\+json["'][^>]{0,1000}>([\s\S]*?)<\/script>/gi)];
   for (const block of blocks) {
     const parsed = parseJson(block[1].trim());
     const things = asArray(parsed as LdThing | LdThing[]).flatMap((thing) => [thing, ...asArray(thing?.["@graph"])]);
@@ -301,7 +303,7 @@ export function agendaFromJsonLd(html: string, sourceUrl: string): AgendaData | 
 // ---- the page and what it links to -----------------------------------------------------------------------
 
 function pageTitle(html: string): string {
-  const og = /<meta[^>]+property=["']og:title["'][^>]+content=["']([^"']+)["']/i.exec(html)?.[1];
+  const og = /<meta[^>]{1,1000}?property=["']og:title["'][^>]{1,1000}?content=["']([^"']{1,1000})["']/i.exec(html)?.[1];
   const title = /<title[^>]*>([\s\S]*?)<\/title>/i.exec(html)?.[1];
   return (og || title || "").replace(/\s+/g, " ").trim();
 }

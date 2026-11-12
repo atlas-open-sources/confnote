@@ -342,36 +342,6 @@ async function placeImage(img, scene, tau, pool) {
   if (img.id === 'img-front') placeSpot(scene, tau, r, s);
 }
 
-// Opt-in (STORY.partCrossfade, seconds): dissolve across a cut inside one footage scene, where the next part jumps in
-// source time or the zoom snaps at the part boundary (v8, musa 2026-11-13: "some cuts later in the video are
-// choppy"). Off when unset, so earlier stories render as before.
-const PART_XFADE = STORY.partCrossfade || 0;
-const PART_XFADE_FROM = STORY.partCrossfadeFrom || 0; // the first chapter it applies to
-const PART_XFADE_LEAD_S = 0.06; // starts just before the boundary, where a zoom snap's two keys sit
-const PART_BACK_S = 0.12; // the outgoing frame: before the snap's first key
-const SOURCE_JUMP_S = 0.05;
-const ZOOM_SNAP_PX = 2;
-const ZOOM_SNAP_Z = 0.01;
-
-function partCut(scene, t) {
-  if (!PART_XFADE || !scene.parts || (scene.chapter || 0) < PART_XFADE_FROM) return null;
-  let b = 0;
-  for (let i = 0; i < scene.parts.length - 1; i++) {
-    const [from, to, speed] = scene.parts[i];
-    b += (to - from) / speed;
-    const start = b - PART_XFADE_LEAD_S;
-    if (t < start || t >= start + PART_XFADE) continue;
-    const jumps = Math.abs(scene.parts[i + 1][0] - to) > SOURCE_JUMP_S;
-    const before = zoomAt(scene, b - PART_BACK_S);
-    const after = zoomAt(scene, b + 0.01);
-    const snaps =
-      Math.abs(before.x - after.x) + Math.abs(before.y - after.y) > ZOOM_SNAP_PX ||
-      Math.abs(before.z - after.z) > ZOOM_SNAP_Z;
-    if (jumps || snaps) return { back: b - PART_BACK_S, k: (t - start) / PART_XFADE };
-  }
-  return null;
-}
-
 async function updateFootage(t, dur, scene) {
   const prev = SCENES[scene.index - 1];
   const next = SCENES[scene.index + 1];
@@ -387,12 +357,6 @@ async function updateFootage(t, dur, scene) {
     await placeImage(back, prev, prev.dur - 1 / FPS, backMasks);
     back.style.opacity = 1;
     front.style.opacity = easeInOut(t / CROSSFADE);
-  } else if (partCut(scene, t)) {
-    const cut = partCut(scene, t);
-    await placeImage(front, scene, t, frontMasks);
-    await placeImage(back, scene, cut.back, backMasks);
-    back.style.opacity = 1;
-    front.style.opacity = easeInOut(cut.k);
   } else {
     await placeImage(front, scene, t, frontMasks);
     placeMasks(backMasks, {}, 0, ALL, 1);

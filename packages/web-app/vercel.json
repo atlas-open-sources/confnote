@@ -5,7 +5,7 @@
   "functions": {
     "api/*.ts": {
       "maxDuration": 120,
-      "includeFiles": "demo-data/public-demo/**"
+      "includeFiles": "{demo-data/public-demo/**,node_modules/@anthropic-ai/claude-agent-sdk/cli.js}"
     }
   },
   "redirects": [
