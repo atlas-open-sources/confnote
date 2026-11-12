@@ -1,0 +1,41 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>confnote · demo video</title>
+  <link rel="stylesheet" href="vendor/maplibre/maplibre-gl.css">
+  <link rel="stylesheet" href="style.css">
+  <script type="importmap">
+    { "imports": { "three": "./vendor/three/three.module.js", "three/addons/": "./vendor/three/addons/" } }
+  </script>
+</head>
+<body>
+  <div id="stage"></div>
+  <!-- render.py passes ?storyboard=<URL> (sets window.STORY) and, optionally, &ending=<URL> (sets window.ENDING)
+       before the renderer runs. It serves this page over localhost: module workers do not load from file://. -->
+  <script>
+    const query = new URLSearchParams(location.search);
+    for (const name of ['storyboard', 'ending']) {
+      if (query.get(name)) document.write(`<script src="${query.get(name)}"><\/script>`);
+    }
+  </script>
+  <script src="timeline.js"></script>
+  <script src="scenes.js"></script>
+  <script src="depth.js"></script>
+  <script src="vendor/gsap/gsap.min.js"></script>
+  <script src="vendor/gsap/SplitText.min.js"></script>
+  <script src="kinetic.js"></script>
+  <!-- Module scripts run in order after the classic ones; each registers its scene kind and its preloads. -->
+  <script type="module" src="map.js"></script>
+  <script type="module" src="pencil.js"></script>
+  <script type="module" src="three-scene.js"></script>
+  <script type="module">
+    try {
+      await Promise.all(KIT_PRELOADS);
+      window.KIT_READY = true;
+    } catch (error) {
+      window.KIT_ERROR = String((error && error.stack) || error);
+    }
+  </script>
+</body>
+</html>

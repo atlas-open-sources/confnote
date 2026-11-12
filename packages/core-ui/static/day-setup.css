@@ -1,0 +1,55 @@
+.day-setup .modal-box {
+  max-width: 560px;
+  padding: 24px;
+  max-height: 90vh;
+  overflow-y: auto;
+}
+.day-setup h2 {
+  margin: 0 0 12px;
+  font-size: 22px;
+  line-height: 1.25;
+}
+.day-setup-intro {
+  color: var(--muted);
+  line-height: 1.5;
+}
+.day-setup label {
+  display: grid;
+  gap: 8px;
+  margin: 18px 0;
+  font-size: 14px;
+}
+.day-setup textarea {
+  width: 100%;
+  height: 82px;
+  min-height: 82px;
+  flex: none;
+  box-sizing: border-box;
+  resize: vertical;
+  padding: 10px;
+  background: var(--bg);
+  color: var(--ink);
+  border: 1px solid var(--line);
+  border-radius: 6px;
+  font: inherit;
+  line-height: 1.5;
+}
+.day-setup-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  justify-content: flex-end;
+}
+.day-setup-actions button {
+  padding: 9px 12px;
+}
+.day-setup-error {
+  color: var(--danger);
+  font-size: 13px;
+}
+@media (max-width: 600px) {
+  .day-setup .modal-box {
+    margin: 12px;
+    padding: 18px;
+  }
+}

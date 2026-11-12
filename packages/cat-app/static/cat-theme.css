@@ -1,0 +1,42 @@
+/* ConfNote in the Cat's colours. The Cat serves this after its own `--cat-light-*` /
+   `--cat-dark-*` tokens only when ConfNote's settings say "Cat theme"; with "Original" it is
+   never loaded. The selectors mirror style.css's theme blocks one for one, so at equal
+   specificity these (loaded later) win, and ConfNote's light / dark / auto pin keeps working. */
+:root,
+:root[data-theme="light"] {
+  --bg: var(--cat-light-background);
+  --panel: var(--cat-light-card);
+  --ink: var(--cat-light-text);
+  --muted: var(--cat-light-secondary-text);
+  --faint: color-mix(in srgb, var(--cat-light-secondary-text) 70%, var(--cat-light-background));
+  --line: var(--cat-light-border);
+  --accent: var(--cat-light-accent);
+  --accent-soft: var(--cat-light-secondary-background);
+  --link: var(--cat-light-accent);
+}
+
+:root[data-theme="dark"] {
+  --bg: var(--cat-dark-background);
+  --panel: var(--cat-dark-card);
+  --ink: var(--cat-dark-text);
+  --muted: var(--cat-dark-secondary-text);
+  --faint: color-mix(in srgb, var(--cat-dark-secondary-text) 70%, var(--cat-dark-background));
+  --line: var(--cat-dark-border);
+  --accent: var(--cat-dark-accent);
+  --accent-soft: var(--cat-dark-secondary-background);
+  --link: var(--cat-dark-accent);
+}
+
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]):not([data-theme="dark"]) {
+    --bg: var(--cat-dark-background);
+    --panel: var(--cat-dark-card);
+    --ink: var(--cat-dark-text);
+    --muted: var(--cat-dark-secondary-text);
+    --faint: color-mix(in srgb, var(--cat-dark-secondary-text) 70%, var(--cat-dark-background));
+    --line: var(--cat-dark-border);
+    --accent: var(--cat-dark-accent);
+    --accent-soft: var(--cat-dark-secondary-background);
+    --link: var(--cat-dark-accent);
+  }
+}

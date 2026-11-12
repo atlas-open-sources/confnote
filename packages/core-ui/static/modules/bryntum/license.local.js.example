@@ -1,0 +1,4 @@
+// Copy to license.local.js (gitignored) and put the Bryntum licence key in it,
+// or run `node build/write-license.mjs`, which writes it from the env or keychain.
+// Without the file Bryntum runs in trial mode (watermark).
+(globalThis.bryntum ??= {}).licenseKey = "YOUR-BRYNTUM-LICENSE-KEY";

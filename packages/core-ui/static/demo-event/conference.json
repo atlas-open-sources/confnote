@@ -1,0 +1,415 @@
+{
+ "conference": {
+  "name": "Beyond The Prompt",
+  "tagline": "A one-day conference on building applications that hold up in production",
+  "organiser": "AG Grid & Bryntum",
+  "date": "2026-05-19",
+  "timezone": "Europe/London",
+  "venue": {
+   "name": "IET London",
+   "address": "2 Savoy Place, London WC2R 0BL",
+   "city": "",
+   "country": ""
+  },
+  "social": {
+   "twitter": "@ag_grid",
+   "bluesky": "@ag-grid.bsky.social",
+   "linkedin": "@ag-grid"
+  },
+  "rooms": {
+   "talks": "Auditorium",
+   "breaks": "Hasslett"
+  },
+  "id": "beyond-the-prompt-2026",
+  "url": "",
+  "description": "A one-day conference on building applications that hold up in production"
+ },
+ "rooms": [
+  {
+   "id": "Hasslett",
+   "name": "Hasslett"
+  },
+  {
+   "id": "Auditorium",
+   "name": "Auditorium"
+  }
+ ],
+ "tracks": [],
+ "sources": [],
+ "events": [
+  {
+   "id": "registration",
+   "type": "logistics",
+   "title": "Registration and Coffee",
+   "start": "2026-05-19T08:30:00+01:00",
+   "end": "2026-05-19T09:30:00+01:00",
+   "room": "Hasslett",
+   "track": "",
+   "description": "",
+   "tags": [],
+   "speakers": [],
+   "note": "0830-registration.md",
+   "has_notes": true,
+   "attending": false
+  },
+  {
+   "id": "welcome",
+   "type": "talk",
+   "title": "Welcome",
+   "start": "2026-05-19T09:30:00+01:00",
+   "end": "2026-05-19T09:40:00+01:00",
+   "room": "Auditorium",
+   "track": "",
+   "description": "Opening remarks to set the theme for the day: building with tools you can trust.",
+   "tags": [
+    "opening",
+    "welcome"
+   ],
+   "speakers": [
+    "Phil Hawksworth (Event MC)"
+   ],
+   "note": "0930-welcome.md",
+   "has_notes": true,
+   "attending": false
+  },
+  {
+   "id": "opening-keynote",
+   "type": "keynote",
+   "title": "Opening Keynote",
+   "start": "2026-05-19T09:40:00+01:00",
+   "end": "2026-05-19T10:10:00+01:00",
+   "room": "Auditorium",
+   "track": "",
+   "description": "",
+   "tags": [
+    "keynote",
+    "production engineering",
+    "AG Grid",
+    "Bryntum"
+   ],
+   "speakers": [
+    "John Masterson (CEO, AG Grid)",
+    "Mats Bryntse (Founder & CEO, Bryntum)"
+   ],
+   "note": "0940-opening-keynote.md",
+   "has_notes": true,
+   "attending": false
+  },
+  {
+   "id": "goodbye-slop",
+   "type": "talk",
+   "title": "Goodbye slop; welcome determinism",
+   "start": "2026-05-19T10:10:00+01:00",
+   "end": "2026-05-19T10:40:00+01:00",
+   "room": "Auditorium",
+   "track": "",
+   "description": "Vibe coding feels productive until you have to maintain it. Behind the agent \"thinking...\" you ignore and the code you never opened lies a growing pile of wasted tokens, nondeterministic behavior, and compounding errors hiding in plain sight. This talk pushes back on the status quo: elaborate agent architectures, \"prompting astrology\", overnight automation loops burning through context windows and credit cards. Come for the critique, leave with a framework for using AI to build software you actually understand.",
+   "tags": [
+    "determinism",
+    "agentic AI",
+    "vibe coding",
+    "state machines",
+    "software quality"
+   ],
+   "speakers": [
+    "David Khourshid (Founder, Stately.ai)"
+   ],
+   "note": "1010-goodbye-slop.md",
+   "has_notes": true,
+   "attending": false
+  },
+  {
+   "id": "coffee-break-1",
+   "type": "break",
+   "title": "Coffee Break",
+   "start": "2026-05-19T10:40:00+01:00",
+   "end": "2026-05-19T11:10:00+01:00",
+   "room": "Hasslett",
+   "track": "",
+   "description": "",
+   "tags": [],
+   "speakers": [],
+   "note": "1040-coffee-break-1.md",
+   "has_notes": true,
+   "attending": false
+  },
+  {
+   "id": "codebase-design",
+   "type": "talk",
+   "title": "Codebase design for the agent era",
+   "start": "2026-05-19T11:10:00+01:00",
+   "end": "2026-05-19T11:35:00+01:00",
+   "room": "Auditorium",
+   "track": "",
+   "description": "As AI agents become part of the development workflow, codebase structure and well-designed system prompts matter more than ever. This session will show you how we're approaching this in the AG Grid and AG Charts codebases.",
+   "tags": [
+    "codebase design",
+    "agentic AI",
+    "system prompts",
+    "developer workflow",
+    "AG Grid"
+   ],
+   "speakers": [
+    "Stephen Cooper (Team Lead, AG Grid)"
+   ],
+   "note": "1110-codebase-design.md",
+   "has_notes": true,
+   "attending": false
+  },
+  {
+   "id": "ai-in-ag-studio",
+   "type": "talk",
+   "title": "AI in AG Studio",
+   "start": "2026-05-19T11:35:00+01:00",
+   "end": "2026-05-19T12:00:00+01:00",
+   "room": "Auditorium",
+   "track": "",
+   "description": "How do you build a dashboard you can't see? A behind-the-scenes look at AG Studio's multi-agent architecture and the client-side tools that let any LLM build reports it otherwise couldn't.",
+   "tags": [
+    "multi-agent",
+    "dashboards",
+    "LLM tooling",
+    "AG Studio",
+    "AG Grid"
+   ],
+   "speakers": [
+    "Josh Hobson (Developer, AG Grid)"
+   ],
+   "note": "1135-ai-in-ag-studio.md",
+   "has_notes": true,
+   "attending": false
+  },
+  {
+   "id": "bringing-ai-to-canvas",
+   "type": "talk",
+   "title": "Bringing AI to the Canvas",
+   "start": "2026-05-19T12:00:00+01:00",
+   "end": "2026-05-19T12:25:00+01:00",
+   "room": "Auditorium",
+   "track": "",
+   "description": "At tldraw, we've been bringing agents to our infinite canvas. In December 2025, we ran a one-month experiment named Fairydraw where users could work with three fairies — virtual collaborators who work with you, with your human collaborators, and coordinate together on large tasks.",
+   "tags": [
+    "canvas",
+    "collaborative AI",
+    "agentic AI",
+    "creative tools",
+    "tldraw"
+   ],
+   "speakers": [
+    "Steve Ruiz (CEO, tldraw)"
+   ],
+   "note": "1200-bringing-ai-to-canvas.md",
+   "has_notes": true,
+   "attending": false
+  },
+  {
+   "id": "lunch",
+   "type": "logistics",
+   "title": "Lunch and Product Demos",
+   "start": "2026-05-19T12:25:00+01:00",
+   "end": "2026-05-19T13:35:00+01:00",
+   "room": "Hasslett",
+   "track": "",
+   "description": "",
+   "tags": [],
+   "speakers": [],
+   "note": "1225-lunch.md",
+   "has_notes": true,
+   "attending": false
+  },
+  {
+   "id": "debugging-css",
+   "type": "talk",
+   "title": "Debugging CSS performance with AI",
+   "start": "2026-05-19T13:35:00+01:00",
+   "end": "2026-05-19T14:05:00+01:00",
+   "room": "Auditorium",
+   "track": "",
+   "description": "CSS performance issues can be subtle and time-consuming. This talk will show you how you can guide AI to uncover bugs without needing to learn the intricacies of CSS rendering internals.",
+   "tags": [
+    "CSS",
+    "performance",
+    "debugging",
+    "AI tooling",
+    "frontend"
+   ],
+   "speakers": [
+    "Bernie Sumption (Engineer, AG Grid)"
+   ],
+   "note": "1335-debugging-css.md",
+   "has_notes": true,
+   "attending": false
+  },
+  {
+   "id": "software-moves-fleets",
+   "type": "talk",
+   "title": "Software that moves fleets: Lessons from AG Grid, Bryntum, and Beyond",
+   "start": "2026-05-19T14:05:00+01:00",
+   "end": "2026-05-19T14:20:00+01:00",
+   "room": "Auditorium",
+   "track": "",
+   "description": "In aviation, the software has to be rock solid. Patrick pulls back the curtain on the components powering Fleetplan's UI, including AG Grid, Bryntum's Scheduler Pro, and the modules behind audit tracking and safety reporting that keep operations airtight.",
+   "tags": [
+    "production engineering",
+    "aviation",
+    "AG Grid",
+    "Bryntum",
+    "enterprise software"
+   ],
+   "speakers": [
+    "Patrick Rau (Senior Developer, TCS)"
+   ],
+   "note": "1405-software-moves-fleets.md",
+   "has_notes": true,
+   "attending": false
+  },
+  {
+   "id": "product-roadmap",
+   "type": "talk",
+   "title": "Product Roadmap",
+   "start": "2026-05-19T14:20:00+01:00",
+   "end": "2026-05-19T14:50:00+01:00",
+   "room": "Auditorium",
+   "track": "",
+   "description": "AG Grid and Bryntum share what's coming next across their product lines.",
+   "tags": [
+    "product roadmap",
+    "AG Grid",
+    "Bryntum",
+    "AG Studio"
+   ],
+   "speakers": [
+    "Johan Isaksson (Head of Engineering, Bryntum)",
+    "Adam Wang (AG Studio Product Lead, AG Grid)"
+   ],
+   "note": "1420-product-roadmap.md",
+   "has_notes": true,
+   "attending": false
+  },
+  {
+   "id": "coffee-break-2",
+   "type": "break",
+   "title": "Coffee Break",
+   "start": "2026-05-19T14:50:00+01:00",
+   "end": "2026-05-19T15:20:00+01:00",
+   "room": "Hasslett",
+   "track": "",
+   "description": "",
+   "tags": [],
+   "speakers": [],
+   "note": "1450-coffee-break-2.md",
+   "has_notes": true,
+   "attending": false
+  },
+  {
+   "id": "one-click-agentic-sdlc",
+   "type": "talk",
+   "title": "One-click agentic SDLC",
+   "start": "2026-05-19T15:20:00+01:00",
+   "end": "2026-05-19T15:45:00+01:00",
+   "room": "Auditorium",
+   "track": "",
+   "description": "A demo of a headless Claude workflow, built by Bryntum CEO Mats, that turns GitHub issues into mergeable PRs, with agents doing the work, and a custom Kanban UI keeping things in check.",
+   "tags": [
+    "agentic AI",
+    "SDLC",
+    "automation",
+    "GitHub",
+    "CI/CD",
+    "demo"
+   ],
+   "speakers": [
+    "Mats Bryntse (Founder & CEO, Bryntum)"
+   ],
+   "note": "1520-one-click-agentic-sdlc.md",
+   "has_notes": true,
+   "attending": false
+  },
+  {
+   "id": "agentic-ai-panel",
+   "type": "panel",
+   "title": "How agentic AI is reshaping software engineering",
+   "start": "2026-05-19T15:45:00+01:00",
+   "end": "2026-05-19T16:30:00+01:00",
+   "room": "Auditorium",
+   "track": "",
+   "description": "As AI reshapes how software gets built, what actually changes for engineers, teams, and developer tools? This panel explores the real-world impact of agentic workflows on software engineering — from code review and system design to cognitive skills, ownership, and developer experience. Expect practical insights, rapid-fire hot takes, and honest discussion from engineers building beyond the prompt.",
+   "tags": [
+    "agentic AI",
+    "software engineering",
+    "developer experience",
+    "panel",
+    "future of work"
+   ],
+   "speakers": [
+    "Maggie Appleton (Staff Research Engineer, GitHub)",
+    "Matt Pocock (Senior Developer Educator, AI Hero)",
+    "Sophie Koonin (Web Discipline Lead, Monzo)",
+    "Phil Hawksworth (Event MC)"
+   ],
+   "note": "1545-agentic-ai-panel.md",
+   "has_notes": true,
+   "attending": false
+  },
+  {
+   "id": "vibe-coding-maker",
+   "type": "talk",
+   "title": "Vibe Coding as a Maker",
+   "start": "2026-05-19T16:30:00+01:00",
+   "end": "2026-05-19T17:00:00+01:00",
+   "room": "Auditorium",
+   "track": "",
+   "description": "Matt will show his vibe coding experiments, from his AI clock to an app that points to the centre of the galaxy, and share some learnings from building hardware at his startup, Inanimate. Then we ask: what are the limits of vibing and agentic coding? And how might we create libraries that agents love?",
+   "tags": [
+    "vibe coding",
+    "hardware",
+    "agentic AI",
+    "maker",
+    "creative coding"
+   ],
+   "speakers": [
+    "Matt Webb (Co-Founder, Inanimate)"
+   ],
+   "note": "1630-vibe-coding-maker.md",
+   "has_notes": true,
+   "attending": false
+  },
+  {
+   "id": "closing-remarks",
+   "type": "talk",
+   "title": "Closing Remarks",
+   "start": "2026-05-19T17:00:00+01:00",
+   "end": "2026-05-19T17:10:00+01:00",
+   "room": "Auditorium",
+   "track": "",
+   "description": "Closing thoughts to wrap up the day and set the stage for the networking reception.",
+   "tags": [
+    "closing"
+   ],
+   "speakers": [
+    "Phil Hawksworth (Event MC)"
+   ],
+   "note": "1700-closing-remarks.md",
+   "has_notes": true,
+   "attending": false
+  },
+  {
+   "id": "networking",
+   "type": "networking",
+   "title": "Networking Reception",
+   "start": "2026-05-19T17:10:00+01:00",
+   "end": "2026-05-19T20:00:00+01:00",
+   "room": "",
+   "track": "",
+   "description": "",
+   "tags": [],
+   "speakers": [],
+   "note": "1710-networking.md",
+   "has_notes": false,
+   "attending": false
+  }
+ ],
+ "chat": true,
+ "schedule_offset_minutes": 0,
+ "schedule_revision": 0
+}

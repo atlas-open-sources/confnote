@@ -1,0 +1,12 @@
+# Exact direct versions; requirements.lock also pins transitive dependencies.
+pytest==9.0.2
+pytest-playwright==0.7.2
+ruff==0.15.13
+pre-commit==4.7.0
+detect-secrets==1.5.0
+jsonschema==4.26.0
+PyJWT[crypto]==2.10.1
+claude-agent-sdk==0.2.176
+pyinstaller==6.16.0
+pywebview==6.1
+pip==25.3

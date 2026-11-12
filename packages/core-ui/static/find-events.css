@@ -1,0 +1,410 @@
+/* Find events (find-events.js): the open catalogue view, in the app and on the public /catalogue/ page.
+   Tokens, pills, tags and .primary come from style.css; every rule here is scoped to .catalogue. */
+.catalogue [hidden] {
+  display: none !important;
+}
+.catalogue .eyebrow {
+  font: 12px var(--mono);
+  color: var(--muted);
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+  margin: 0 0 8px;
+}
+#sample-notice {
+  font: 12px var(--mono);
+  color: var(--muted);
+  margin: 0 0 12px;
+}
+
+.find-bar {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  flex-wrap: wrap;
+}
+.find-bar .pill {
+  padding: 6px 12px;
+  font-size: 13px;
+}
+#saved-count {
+  margin-left: 6px;
+  font-variant-numeric: tabular-nums;
+  opacity: 0.7;
+}
+.find-updated {
+  margin: 0 0 0 auto;
+  font: 11px var(--mono);
+  color: var(--faint);
+}
+.catalogue-refresh {
+  border: 1px solid var(--line);
+  border-radius: var(--r1);
+  background: var(--bg);
+  color: var(--ink);
+  padding: 5px 10px;
+  font-size: 12px;
+  cursor: pointer;
+}
+.catalogue-refresh:hover {
+  border-color: var(--ink);
+  background: var(--accent-soft);
+}
+
+.catalogue label {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  font: 11px var(--mono);
+  color: var(--muted);
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+}
+.catalogue input,
+.catalogue select {
+  width: 100%;
+  min-width: 0;
+  min-height: 36px;
+  border: 1px solid var(--line);
+  border-radius: var(--r1);
+  background: var(--bg);
+  color: var(--ink);
+  padding: 6px 10px;
+  font: 14px var(--sans);
+  text-transform: none;
+  letter-spacing: 0;
+}
+.catalogue input:hover,
+.catalogue select:hover {
+  border-color: var(--faint);
+}
+
+.catalogue .filters {
+  display: grid;
+  grid-template-columns: 2fr repeat(3, 1fr);
+  gap: 14px 16px;
+  padding: 20px 0;
+  border-bottom: 1px solid var(--line);
+}
+.catalogue .reset {
+  align-self: end;
+  justify-self: start;
+  min-height: 36px;
+  border: 0;
+  background: none;
+  color: var(--muted);
+  font-size: 13px;
+  cursor: pointer;
+  text-decoration: underline;
+  text-underline-offset: 3px;
+}
+.catalogue .reset:hover {
+  color: var(--ink);
+}
+
+.catalogue .results-heading {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin: 18px 0 6px;
+}
+#result-count {
+  margin: 0;
+  font: 12px var(--mono);
+  color: var(--muted);
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+}
+.catalogue .when {
+  display: flex;
+  gap: 6px;
+  margin-left: auto;
+}
+.catalogue .when .pill {
+  padding: 5px 10px;
+  font-size: 12px;
+}
+/* List / Grid: a quiet switch beside the feed link, smaller than the Upcoming / Past pills. */
+.catalogue .layout {
+  display: flex;
+  gap: 2px;
+  padding: 2px;
+  border: 1px solid var(--line);
+  border-radius: var(--r1);
+}
+.catalogue .layout .pill {
+  border: 0;
+  padding: 2px 8px;
+  font-size: 11px;
+  font-weight: 500;
+}
+#calendar {
+  font-size: 13px;
+  color: var(--link);
+  white-space: nowrap;
+}
+.catalogue .events-grid {
+  height: max(480px, 70vh);
+  margin-top: 8px;
+}
+.catalogue .events-grid a {
+  color: var(--ink);
+  font-weight: 600;
+}
+.catalogue .events-grid a:hover {
+  text-decoration: underline;
+  text-underline-offset: 3px;
+}
+
+/* While the first page of results loads, hold what follows below the fold so it doesn't jump. */
+.catalogue .event-list:empty {
+  min-height: 100vh;
+}
+.event-card {
+  display: grid;
+  grid-template-columns: 64px minmax(0, 1fr) 176px;
+  gap: 20px;
+  align-items: center;
+  padding: 18px 0;
+  border-bottom: 1px solid var(--line);
+}
+.date-block {
+  font: 600 24px / 1 var(--sans);
+  font-variant-numeric: tabular-nums;
+}
+.date-block small {
+  display: block;
+  margin-top: 6px;
+  font: 11px var(--mono);
+  color: var(--muted);
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+}
+.event-meta {
+  font: 11px var(--mono);
+  color: var(--muted);
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+}
+.event-info h2 {
+  font-size: 16px;
+  line-height: 1.35;
+  margin: 4px 0 8px;
+}
+.event-info h2 a:hover {
+  text-decoration: underline;
+  text-underline-offset: 3px;
+}
+.catalogue .tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+}
+.event-action select {
+  font-size: 13px;
+}
+.event-action small {
+  display: block;
+  margin-top: 6px;
+  font-size: 12px;
+  color: var(--faint);
+}
+.catalogue .empty {
+  padding: 48px 0;
+  color: var(--muted);
+  font-size: 16px;
+  text-align: left;
+}
+.catalogue #message {
+  color: var(--muted);
+  padding: 8px 0;
+  font-size: 13px;
+}
+.catalogue #message:empty {
+  padding: 0;
+}
+.catalogue #message a {
+  color: var(--link);
+}
+
+#trip-panel {
+  display: grid;
+  gap: 14px;
+  padding: 20px 0;
+  border-bottom: 1px solid var(--line);
+}
+#trip-panel h2 {
+  font-size: 16px;
+  margin: 0;
+}
+#trip-panel p {
+  color: var(--muted);
+  margin: 2px 0 0;
+}
+#trip-form {
+  display: grid;
+  grid-template-columns: 2fr 1fr 1fr auto;
+  gap: 14px;
+  align-items: end;
+}
+#trip-form .primary {
+  min-height: 36px;
+}
+#trip-stops {
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  padding: 0;
+}
+#trip-stops li {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  padding: 4px 4px 4px 10px;
+  font-size: 13px;
+  border: 1px solid var(--line);
+  border-radius: var(--r1);
+  background: var(--accent-soft);
+}
+#trip-stops button {
+  border: 0;
+  background: none;
+  color: var(--muted);
+  padding: 2px 6px;
+  cursor: pointer;
+}
+#trip-stops button:hover {
+  color: var(--ink);
+}
+
+.detail-back {
+  margin-top: 20px;
+  border: 0;
+  background: none;
+  color: var(--muted);
+  padding: 6px 0;
+  font-size: 13px;
+  cursor: pointer;
+}
+.detail-back:hover {
+  color: var(--ink);
+}
+#event-detail > .eyebrow {
+  margin-top: 18px;
+}
+.detail-title {
+  font-size: 28px;
+  line-height: 1.2;
+  letter-spacing: -0.02em;
+  margin: 0 0 8px;
+}
+#event-detail > p {
+  color: var(--muted);
+  margin: 0 0 4px;
+}
+.detail-grid {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  gap: 40px;
+  padding: 24px 0;
+}
+.detail-grid h3 {
+  font: 600 12px var(--mono);
+  color: var(--muted);
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+  margin: 0 0 10px;
+}
+.detail-grid aside h3:not(:first-child) {
+  margin-top: 24px;
+}
+.detail-grid a {
+  color: var(--link);
+}
+.application {
+  border-top: 1px solid var(--line);
+  padding: 14px 0;
+}
+.application a {
+  font-size: 16px;
+  font-weight: 600;
+}
+.application p {
+  color: var(--muted);
+  font-size: 13px;
+  margin: 4px 0 0;
+}
+.detail-grid aside p {
+  color: var(--muted);
+  font-size: 13px;
+  margin: 10px 0;
+}
+.detail-grid a.workspace-link {
+  display: inline-block;
+  color: var(--bg);
+  font-size: 13px;
+  text-decoration: none;
+}
+.source-list {
+  padding-left: 18px;
+  overflow-wrap: anywhere;
+  font-size: 13px;
+}
+.source-list li {
+  margin: 10px 0;
+}
+.source-list blockquote {
+  margin: 6px 0;
+  padding-left: 10px;
+  border-left: 2px solid var(--line);
+  color: var(--muted);
+}
+
+@media (max-width: 650px) {
+  .catalogue .filters {
+    grid-template-columns: 1fr 1fr;
+    gap: 10px 12px;
+    padding: 14px 0;
+  }
+  .search-label {
+    grid-column: 1 / -1;
+  }
+  .catalogue .results-heading {
+    flex-wrap: wrap;
+  }
+  .catalogue .when {
+    margin-left: 0;
+  }
+  .event-card {
+    grid-template-columns: 48px minmax(0, 1fr);
+    gap: 12px;
+  }
+  .date-block {
+    align-self: start;
+    padding-top: 4px;
+    font-size: 20px;
+  }
+  .event-action {
+    grid-column: 2;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+  }
+  .event-action select {
+    max-width: 160px;
+  }
+  .event-action small {
+    margin-top: 0;
+  }
+  #trip-form {
+    grid-template-columns: 1fr 1fr;
+  }
+  #trip-form label:first-child,
+  #trip-form button {
+    grid-column: 1 / -1;
+  }
+  .detail-grid {
+    grid-template-columns: 1fr;
+    gap: 16px;
+  }
+}

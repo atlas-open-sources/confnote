@@ -1,0 +1,49 @@
+# Pre-commit hooks for confnote.
+# Install once with: packages/local-app/.venv/bin/pre-commit install
+# The demo-video kit's vendored libraries and binary media are third-party files kept byte for byte, like the app's
+# vendor folders (licences: tools/demo-video/motion/vendor/README.md, tools/demo-video/assets/LICENCES.md).
+exclude: '^(packages/local-app/\.venv/|\.venv/|packages/core-ui/static/vendor/|packages/core-ui/static/modules/[^/]+/vendor/|tools/demo-video/motion/vendor/|tools/demo-video/assets/(hdri|models|paper|photos|glyphs)/|\.repos/|dist/|build/)'
+
+repos:
+  - repo: https://github.com/astral-sh/ruff-pre-commit
+    rev: v0.15.13
+    hooks:
+      - id: ruff
+        args: [--fix]
+      - id: ruff-format
+
+  - repo: https://github.com/pre-commit/pre-commit-hooks
+    rev: v6.0.0
+    hooks:
+      - id: trailing-whitespace
+      - id: end-of-file-fixer
+      - id: check-yaml
+      - id: check-json
+      - id: check-added-large-files
+        args: [--maxkb=1024]
+
+  - repo: https://github.com/Yelp/detect-secrets
+    rev: v1.5.0
+    hooks:
+      - id: detect-secrets
+        args: [--baseline, .secrets.baseline]
+        exclude: '^(packages/core-ui/static/vendor/|packages/local-app/\.venv/|\.venv/|\.repos/)'
+
+  - repo: local
+    hooks:
+      - id: pytest
+        name: pytest (unit tests)
+        # Exit code 5 = "no tests collected"; treat that as a pass so the
+        # hook is a no-op until the tests/ dir is populated.
+        entry: bash -c 'packages/local-app/.venv/bin/python -m pytest -q tests/; rc=$?; [ $rc -eq 5 ] && exit 0; exit $rc'
+        language: system
+        pass_filenames: false
+        always_run: true
+        stages: [pre-commit]
+
+      - id: biome
+        name: biome check (js/css)
+        entry: npx --yes @biomejs/biome@2.4.15 check
+        language: system
+        files: '^packages/core-ui/static/.*\.(js|css)$'
+        exclude: '^packages/core-ui/static/vendor/'

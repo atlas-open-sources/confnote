@@ -1,0 +1,376 @@
+/* Profile: the web account menu in the top bar, before Settings (product-shell.js). The summary is a top-bar
+   control like .themebtn; the panel drops below it, right-aligned, on the app's tokens. */
+.product-account {
+  position: relative;
+  font: 13px / 1.5 var(--sans);
+  color: var(--ink);
+}
+.product-account summary {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  gap: 7px;
+  height: 30px;
+  padding: 0 10px 0 4px;
+  border: 1px solid var(--line);
+  border-radius: var(--r1);
+  background: var(--bg);
+  color: var(--ink);
+  font-size: 13px;
+  cursor: pointer;
+  white-space: nowrap;
+  transition:
+    border-color 0.12s,
+    background 0.12s;
+}
+.product-account summary::-webkit-details-marker {
+  display: none;
+}
+.product-account summary:hover,
+.product-account[open] summary {
+  border-color: var(--ink);
+  background: var(--accent-soft);
+}
+/* Signed out the control is just "Sign in". */
+.product-account summary:not(:has(.pa-avatar)) {
+  padding: 0 10px;
+}
+.pa-avatar {
+  display: grid;
+  place-items: center;
+  width: 22px;
+  height: 22px;
+  border-radius: 50%;
+  background: var(--accent);
+  color: var(--bg);
+  font: 600 11px / 1 var(--mono);
+}
+.product-controls {
+  position: absolute;
+  top: calc(100% + 8px);
+  right: 0;
+  z-index: 90;
+  width: min(360px, calc(100vw - 24px));
+  max-height: calc(100dvh - 80px);
+  overflow: auto;
+  display: grid;
+  gap: 14px;
+  padding: 16px;
+  border: 1px solid var(--line);
+  border-radius: var(--r2);
+  background: var(--panel);
+  box-shadow: var(--shadow-lg);
+}
+.product-controls p {
+  margin: 0;
+}
+.pa-identity {
+  font-weight: 600;
+  overflow-wrap: anywhere;
+}
+.pa-lede,
+.pa-hint,
+#account-status {
+  color: var(--muted);
+  font-size: 12px;
+}
+#account-status:empty {
+  display: none;
+}
+.pa-section {
+  display: grid;
+  gap: 8px;
+  padding-top: 14px;
+  border-top: 1px solid var(--line);
+}
+.pa-section[hidden] {
+  display: none;
+}
+.pa-h {
+  margin: 0;
+  font: 600 11px var(--mono);
+  color: var(--muted);
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+}
+#byok-form {
+  display: grid;
+  gap: 8px;
+}
+.pa-field {
+  display: grid;
+  gap: 4px;
+}
+.pa-field > span {
+  font-size: 12px;
+  color: var(--muted);
+}
+.product-controls input:not([type="checkbox"]):not([type="file"]),
+.product-controls select {
+  width: 100%;
+  min-height: 34px;
+  padding: 6px 10px;
+  border: 1px solid var(--line);
+  border-radius: var(--r1);
+  background: var(--bg);
+  color: var(--ink);
+  font: 13px var(--sans);
+}
+.product-controls input:focus,
+.product-controls select:focus {
+  outline: none;
+  border-color: var(--ink);
+}
+.pa-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+}
+.pa-btn {
+  display: inline-flex;
+  align-items: center;
+  min-height: 32px;
+  padding: 6px 11px;
+  border: 1px solid var(--line);
+  border-radius: var(--r1);
+  background: var(--bg);
+  color: var(--ink);
+  font: 13px var(--sans);
+  cursor: pointer;
+}
+.pa-btn:hover {
+  border-color: var(--ink);
+  background: var(--accent-soft);
+}
+.pa-quiet {
+  color: var(--muted);
+}
+/* The file input sits inside its button-styled label. */
+.pa-file input {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  opacity: 0;
+}
+.pa-file:focus-within {
+  border-color: var(--ink);
+}
+.pa-foot {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 10px;
+  padding-top: 14px;
+  border-top: 1px solid var(--line);
+}
+.pa-mac {
+  color: var(--link);
+  font-size: 13px;
+}
+.product-controls .primary {
+  min-height: 34px;
+  font-size: 13px;
+  text-align: center;
+  text-decoration: none;
+}
+
+/* Wallet: balance, buy-more card in the Concierge, pack picker. */
+#account-balance {
+  font-weight: 600;
+}
+/* The 402 card: shown in the Concierge when a step needs more credits. */
+.wallet-card {
+  display: grid;
+  gap: 8px;
+  margin: 12px;
+  padding: 14px 16px;
+  border: 1px solid var(--line);
+  border-radius: var(--r2);
+  background: var(--panel);
+  box-shadow: var(--shadow);
+  color: var(--ink);
+  font: 13px / 1.5 var(--sans);
+}
+.wallet-card > strong {
+  font-size: 14px;
+}
+.wallet-card p,
+.wallet-status {
+  margin: 0;
+  color: var(--muted);
+  font-size: 12px;
+}
+
+.wallet-test-mode {
+  margin: 0;
+  color: var(--warn);
+  font-size: 12px;
+  font-weight: 600;
+}
+.wallet-card .wallet-buy {
+  justify-self: start;
+}
+.wallet-buy,
+.wallet-pay,
+#account-buy-credits {
+  min-height: 34px;
+  padding: 7px 14px;
+  border: 1px solid var(--accent);
+  border-radius: var(--r1);
+  background: var(--accent);
+  color: var(--bg);
+  font: 600 13px var(--sans);
+  cursor: pointer;
+}
+.wallet-picker {
+  display: grid;
+  gap: 8px;
+}
+.wallet-picker[hidden] {
+  display: none;
+}
+.wallet-packs {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(84px, 1fr));
+  gap: 8px;
+}
+.wallet-pack {
+  display: grid;
+  gap: 2px;
+  min-height: 56px;
+  padding: 8px;
+  border: 1px solid var(--line);
+  border-radius: var(--r1);
+  background: var(--bg);
+  color: var(--ink);
+  font: inherit;
+  text-align: left;
+  cursor: pointer;
+}
+.wallet-pack:hover {
+  border-color: var(--faint);
+}
+.wallet-pack span {
+  color: var(--muted);
+  font-size: 12px;
+}
+.wallet-pack[aria-checked="true"] {
+  border-color: var(--accent);
+  box-shadow: 0 0 0 1px var(--accent);
+}
+.wallet-pay-host {
+  display: grid;
+}
+.wallet-pay-host.off {
+  opacity: 0.45;
+}
+.wallet-pay[disabled] {
+  cursor: not-allowed;
+  pointer-events: none;
+}
+.wallet-consent {
+  display: grid;
+  gap: 6px;
+  font-size: 12px;
+}
+.wallet-consent label {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  gap: 8px;
+  align-items: start;
+  color: var(--ink);
+}
+.wallet-consent input,
+.wallet-autotopup-setting input {
+  width: auto;
+  min-height: 0;
+  margin-top: 2px;
+}
+.wallet-autotopup-setting {
+  display: grid;
+  gap: 6px;
+}
+.wallet-autotopup-setting > label:first-child {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  gap: 8px;
+  align-items: start;
+}
+.wallet-autotopup-cap {
+  display: grid;
+  grid-template-columns: auto 6em;
+  gap: 6px;
+  font-size: 12px;
+  color: var(--muted);
+  align-items: center;
+}
+.wallet-autotopup-cap input {
+  min-height: 32px;
+}
+/* PayPal Card Fields render their own iframes into these slots. */
+.wallet-card-fields {
+  display: grid;
+  gap: 4px;
+}
+.wallet-consent a {
+  color: var(--link);
+}
+.wallet-consent p {
+  color: var(--muted);
+}
+#account-balance {
+  font-size: 15px;
+}
+/* Phones: the avatar alone keeps the top bar on one line. */
+@media (max-width: 650px) {
+  .product-account summary > span:not(.pa-avatar):not(:only-child) {
+    display: none;
+  }
+  .product-account summary:has(.pa-avatar) {
+    padding: 0 3px;
+  }
+}
+
+/* Demo event: a slim bar over the app while a signed-out visitor tries Beyond The Prompt. */
+.demo-event-bar {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin: 0 12px 0 auto;
+  padding: 4px 6px 4px 12px;
+  border: 1px solid var(--line);
+  border-radius: var(--r2);
+  background: var(--accent-soft);
+  color: var(--ink);
+  font-size: 12px;
+  white-space: nowrap;
+}
+.demo-event-bar .primary {
+  padding: 4px 10px;
+  text-decoration: none;
+}
+.demo-event-leave {
+  border: none;
+  background: none;
+  color: var(--muted);
+  font: inherit;
+  text-decoration: underline;
+  cursor: pointer;
+}
+.demo-sign-in {
+  width: 420px;
+}
+.demo-sign-in-actions {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-top: 16px;
+}
+.demo-sign-in-actions .primary {
+  text-decoration: none;
+}
+@media (max-width: 720px) {
+  .demo-event-bar > span {
+    display: none;
+  }
+}

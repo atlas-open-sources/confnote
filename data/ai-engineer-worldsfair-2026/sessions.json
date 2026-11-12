@@ -1,0 +1,6683 @@
+{
+  "conference": "AI Engineer World's Fair 2026",
+  "dates": "June 29 - July 2, 2026",
+  "location": "San Francisco, CA",
+  "website": "https://ai.engineer/worldsfair",
+  "scheduleVersion": 4523,
+  "totalSessions": 560,
+  "sessions": [
+    {
+      "title": "From Vibes to Production: Evaluating and Shipping AI Agents That Work 101",
+      "day": "Day 1 — Workshop Day",
+      "time": "9:00am-11:00am",
+      "room": "Track 1",
+      "type": "sponsor",
+      "track": "Track 1",
+      "status": "confirmed",
+      "speakers": [
+        "Laurie Voss"
+      ]
+    },
+    {
+      "title": "AI on Your Lakehouse: Context Comes in Shapes, Not Queries",
+      "day": "Day 1 — Workshop Day",
+      "time": "9:00am-11:00am",
+      "room": "Track 2",
+      "type": "sponsor",
+      "track": "Track 2",
+      "status": "confirmed",
+      "speakers": [
+        "Zach Blumenfeld"
+      ]
+    },
+    {
+      "title": "Cooking with Codex",
+      "day": "Day 1 — Workshop Day",
+      "time": "9:00am-11:00am",
+      "room": "Track 3",
+      "type": "sponsor",
+      "track": "Workshops Day 1",
+      "status": "confirmed",
+      "speakers": [
+        "Charlie Guo",
+        "Gabriel Chua"
+      ]
+    },
+    {
+      "title": "The best SDLC is the one you build yourself: Why orchestration changes everything",
+      "day": "Day 1 — Workshop Day",
+      "time": "9:00am-11:00am",
+      "room": "Track 4",
+      "type": "sponsor",
+      "track": "Workshops Day 1",
+      "status": "confirmed",
+      "speakers": [
+        "Shane Wolf",
+        "Andrei Bocan"
+      ]
+    },
+    {
+      "title": "AI Security Engineering 101",
+      "day": "Day 1 — Workshop Day",
+      "time": "9:00am-11:00am",
+      "room": "Track 5",
+      "type": "sponsor",
+      "track": "Workshops Day 1",
+      "status": "tentative",
+      "speakers": [
+        "Javier Garza"
+      ]
+    },
+    {
+      "title": "Total Recall: Agent Memory and Harness Engineering",
+      "day": "Day 1 — Workshop Day",
+      "time": "9:00am-11:00am",
+      "room": "Track 6",
+      "type": "sponsor",
+      "track": "Workshops Day 1",
+      "status": "confirmed",
+      "speakers": [
+        "Ignacio Martinez"
+      ]
+    },
+    {
+      "title": "Agents That Own Their Inference: Building Production AI Agents on Dedicated GPUs",
+      "day": "Day 1 — Workshop Day",
+      "time": "9:00am-11:00am",
+      "room": "Track 7",
+      "type": "sponsor",
+      "status": "confirmed",
+      "speakers": [
+        "Du'an Lightfoot"
+      ]
+    },
+    {
+      "title": "Open-Source Inference Engineering for the Agentic Era",
+      "day": "Day 1 — Workshop Day",
+      "time": "9:00am-11:00am",
+      "room": "Track 8",
+      "type": "sponsor",
+      "track": "Workshops Day 1",
+      "status": "confirmed",
+      "speakers": [
+        "Zain Hasan",
+        "Yubo Wang",
+        "Qingyang Wu",
+        "Jue Wang"
+      ]
+    },
+    {
+      "title": "Advanced workshop: Mastering AI Observability",
+      "day": "Day 1 — Workshop Day",
+      "time": "9:00am-11:00am",
+      "room": "Track 9",
+      "type": "session",
+      "status": "confirmed",
+      "speakers": [
+        "Doug Guthrie"
+      ]
+    },
+    {
+      "title": "Get Started with Models in Microsoft Foundry to Build AI Apps",
+      "day": "Day 1 — Workshop Day",
+      "time": "9:00am-10:15am",
+      "room": "Track M",
+      "type": "sponsor",
+      "track": "Track M",
+      "status": "confirmed",
+      "speakers": [
+        "Pamela Fox"
+      ]
+    },
+    {
+      "title": "How to use Arize’s newest features",
+      "day": "Day 1 — Workshop Day",
+      "time": "11:05am-12:05pm",
+      "room": "Track 1",
+      "type": "sponsor",
+      "track": "Posttraining & Midtraining",
+      "status": "confirmed",
+      "speakers": [
+        "Fuad Ali"
+      ]
+    },
+    {
+      "title": "RAG Needs a Map: Using GraphRAG to Retrieve Connected Context",
+      "day": "Day 1 — Workshop Day",
+      "time": "11:05am-12:05pm",
+      "room": "Track 2",
+      "type": "sponsor",
+      "track": "Track 2",
+      "status": "confirmed",
+      "speakers": [
+        "Nyah Macklin"
+      ]
+    },
+    {
+      "title": "How I learned to stop worrying and love the sandbox",
+      "day": "Day 1 — Workshop Day",
+      "time": "11:05am-12:05pm",
+      "room": "Track 3",
+      "type": "workshop",
+      "track": "Workshops Day 1",
+      "status": "confirmed",
+      "speakers": [
+        "Matt Brockman"
+      ]
+    },
+    {
+      "title": "The model swap workshop",
+      "day": "Day 1 — Workshop Day",
+      "time": "11:05am-12:05pm",
+      "room": "Track 4",
+      "type": "workshop",
+      "track": "Workshops Day 1",
+      "status": "confirmed",
+      "speakers": [
+        "Pamela Fox",
+        "Arun Sekhar"
+      ]
+    },
+    {
+      "title": "Teaching Agents to Search: Building Synthetic Training Pipelines with NVIDIA Data Designer",
+      "day": "Day 1 — Workshop Day",
+      "time": "11:05am-12:05pm",
+      "room": "Track 5",
+      "type": "workshop",
+      "track": "Workshops Day 1",
+      "status": "confirmed",
+      "speakers": [
+        "Dhruv Nathawani"
+      ]
+    },
+    {
+      "title": "Local LLMs and workstation agents: Part 1",
+      "day": "Day 1 — Workshop Day",
+      "time": "11:05am-12:05pm",
+      "room": "Track 6",
+      "type": "workshop",
+      "track": "Workshops Day 1",
+      "status": "confirmed",
+      "speakers": [
+        "Ahmad Osman"
+      ]
+    },
+    {
+      "title": "How to Build Quality Gates into Agentic Coding Workflows",
+      "day": "Day 1 — Workshop Day",
+      "time": "11:05am-12:05pm",
+      "room": "Track 7",
+      "type": "workshop",
+      "track": "Workshops Day 1",
+      "status": "confirmed",
+      "speakers": [
+        "Nnenna Ndukwe"
+      ]
+    },
+    {
+      "title": "What is an Inference Engine, Anyway?",
+      "day": "Day 1 — Workshop Day",
+      "time": "11:05am-12:05pm",
+      "room": "Track 8",
+      "type": "workshop",
+      "track": "Workshops Day 1",
+      "status": "confirmed",
+      "speakers": [
+        "Charles Frye"
+      ]
+    },
+    {
+      "title": "Agent Speedrun: Idea → Code → Deploy → Observe, Fix → Ship",
+      "day": "Day 1 — Workshop Day",
+      "time": "11:05am-12:05pm",
+      "room": "Track 9",
+      "type": "session",
+      "track": "Workshops Day 1",
+      "status": "confirmed",
+      "speakers": [
+        "Elizabeth Fuentes Leone",
+        "Sandhya Subramani"
+      ]
+    },
+    {
+      "title": "From zero to deployed on Azure with AI agents",
+      "day": "Day 1 — Workshop Day",
+      "time": "11:05am-12:05pm",
+      "room": "Track M",
+      "type": "sponsor",
+      "track": "Track M",
+      "status": "confirmed",
+      "speakers": [
+        "Gustavo Cordido"
+      ]
+    },
+    {
+      "title": "Evals in AI: A Deep Dive",
+      "day": "Day 1 — Workshop Day",
+      "time": "12:10pm-1:10pm",
+      "room": "Track 1",
+      "type": "workshop",
+      "track": "Workshops Day 1",
+      "status": "confirmed",
+      "speakers": [
+        "Tejas Kumar"
+      ]
+    },
+    {
+      "title": "From approval loops to autonomous agents with Docker",
+      "day": "Day 1 — Workshop Day",
+      "time": "12:10pm-1:10pm",
+      "room": "Track 2",
+      "type": "workshop",
+      "track": "Workshops Day 1",
+      "status": "confirmed",
+      "speakers": [
+        "John Craft",
+        "Dan Ndombe"
+      ]
+    },
+    {
+      "title": "2 hr deep dive on LLM Inference at Scale — Part 1 of 2",
+      "day": "Day 1 — Workshop Day",
+      "time": "12:10pm-1:10pm",
+      "room": "Track 3",
+      "type": "workshop",
+      "track": "Workshops Day 1",
+      "status": "confirmed",
+      "speakers": [
+        "Harshul Jain",
+        "Tanmay Sah"
+      ]
+    },
+    {
+      "title": "Build the Right Thing: Product Engineering for Software Developers (Part 1)",
+      "day": "Day 1 — Workshop Day",
+      "time": "12:10pm-1:10pm",
+      "room": "Track 4",
+      "type": "workshop",
+      "track": "Workshops Day 1",
+      "status": "confirmed",
+      "speakers": [
+        "Kent C. Dodds"
+      ]
+    },
+    {
+      "title": "From Zero to Leaderboard: Building an End-to-End AI Agent Evaluation Pipeline",
+      "day": "Day 1 — Workshop Day",
+      "time": "12:10pm-1:10pm",
+      "room": "Track 5",
+      "type": "workshop",
+      "track": "Workshops Day 1",
+      "status": "confirmed",
+      "speakers": [
+        "Wolfram Ravenwolf"
+      ]
+    },
+    {
+      "title": "Local LLMs and workstation agents: Part 2",
+      "day": "Day 1 — Workshop Day",
+      "time": "12:10pm-1:10pm",
+      "room": "Track 6",
+      "type": "workshop",
+      "track": "Workshops Day 1",
+      "status": "confirmed",
+      "speakers": [
+        "Ahmad Osman"
+      ]
+    },
+    {
+      "title": "Beyond RAG: Build a Relational Context Engine from Scratch",
+      "day": "Day 1 — Workshop Day",
+      "time": "12:10pm-1:10pm",
+      "room": "Track 7",
+      "type": "workshop",
+      "track": "Workshops Day 1",
+      "status": "confirmed",
+      "speakers": [
+        "Peter Werry"
+      ]
+    },
+    {
+      "title": "Building AI Agents with Real-Time Web Data",
+      "day": "Day 1 — Workshop Day",
+      "time": "12:10pm-1:10pm",
+      "room": "Track 8",
+      "type": "workshop",
+      "track": "Track 8",
+      "status": "confirmed",
+      "speakers": [
+        "Yohan Raju"
+      ]
+    },
+    {
+      "title": "Research to Reality with Google DeepMind",
+      "day": "Day 1 — Workshop Day",
+      "time": "12:10pm-1:10pm",
+      "room": "Track 9",
+      "type": "workshop",
+      "track": "Workshops Day 1",
+      "status": "confirmed",
+      "speakers": [
+        "Paige Bailey"
+      ]
+    },
+    {
+      "title": "The Cheat Sheet: get evals up and running in minute with Agent Skills",
+      "day": "Day 1 — Workshop Day",
+      "time": "1:15pm-2:15pm",
+      "room": "Track 1",
+      "type": "sponsor",
+      "track": "Track 1",
+      "status": "confirmed",
+      "speakers": [
+        "Ankur Duggal"
+      ]
+    },
+    {
+      "title": "2 hr deep dive on LLM Inference at Scale — Part 2 of 2",
+      "day": "Day 1 — Workshop Day",
+      "time": "1:15pm-2:15pm",
+      "room": "Track 3",
+      "type": "sponsor",
+      "track": "Workshops Day 1",
+      "status": "confirmed",
+      "speakers": [
+        "Harshul Jain",
+        "Tanmay Sah"
+      ]
+    },
+    {
+      "title": "Build the Right Thing: Product Engineering for Software Developers — Part 2",
+      "day": "Day 1 — Workshop Day",
+      "time": "1:15pm-2:15pm",
+      "room": "Track 4",
+      "type": "sponsor",
+      "track": "Workshops Day 1",
+      "status": "confirmed",
+      "speakers": [
+        "Kent C. Dodds"
+      ]
+    },
+    {
+      "title": "Build a Platform, Unleash an Agent on it.... and Watch it Burn!",
+      "day": "Day 1 — Workshop Day",
+      "time": "1:15pm-2:15pm",
+      "room": "Track 5",
+      "type": "sponsor",
+      "track": "Workshops Day 1",
+      "status": "confirmed",
+      "speakers": [
+        "Michael Forrester",
+        "Whitney Lee"
+      ]
+    },
+    {
+      "title": "SonarQube + OpenAI: Wiring Your Team for Agentic Development",
+      "day": "Day 1 — Workshop Day",
+      "time": "1:15pm-2:15pm",
+      "room": "Track 6",
+      "type": "sponsor",
+      "track": "Track 6",
+      "status": "confirmed",
+      "speakers": [
+        "Killian Carlsen-Phelan"
+      ]
+    },
+    {
+      "title": "Build a Document Triage Agent with Reducto: Classify, Extract, and More",
+      "day": "Day 1 — Workshop Day",
+      "time": "1:15pm-2:15pm",
+      "room": "Track 7",
+      "type": "sponsor",
+      "status": "confirmed",
+      "speakers": []
+    },
+    {
+      "title": "Turning My Obsidian Vault Into a Local AI Engineer",
+      "day": "Day 1 — Workshop Day",
+      "time": "1:15pm-2:15pm",
+      "room": "Track 8",
+      "type": "sponsor",
+      "track": "Workshops Day 1",
+      "status": "confirmed",
+      "speakers": [
+        "Filip Makraduli"
+      ]
+    },
+    {
+      "title": "Continuously improving agents with Langfuse",
+      "day": "Day 1 — Workshop Day",
+      "time": "1:15pm-2:15pm",
+      "room": "Track 9",
+      "type": "sponsor",
+      "track": "Workshops Day 1",
+      "status": "confirmed",
+      "speakers": [
+        "Lotte Verheyden",
+        "Annabell Schäfer"
+      ]
+    },
+    {
+      "title": "From Vibes to Production: Evaluating and Shipping AI Agents That Work 201",
+      "day": "Day 1 — Workshop Day",
+      "time": "2:20pm-4:20pm",
+      "room": "Track 1",
+      "type": "sponsor",
+      "track": "Track 1",
+      "status": "confirmed",
+      "speakers": [
+        "Laurie Voss"
+      ]
+    },
+    {
+      "title": "The Data Context Layer: Why Data Engineering Agents Need More Than Code and Databases",
+      "day": "Day 1 — Workshop Day",
+      "time": "2:20pm-4:20pm",
+      "room": "Track 2",
+      "type": "sponsor",
+      "track": "Track 2",
+      "status": "confirmed",
+      "speakers": [
+        "Yoni Michael"
+      ]
+    },
+    {
+      "title": "Special topics in Kernels, RL, Reward Hacking in Agents",
+      "day": "Day 1 — Workshop Day",
+      "time": "2:20pm-5:30pm",
+      "room": "Track 3",
+      "type": "session",
+      "track": "Workshops Day 1",
+      "status": "confirmed",
+      "speakers": [
+        "Daniel Han"
+      ]
+    },
+    {
+      "title": "Burn your flags: How PayPal designs interactive CLI tools for agents",
+      "day": "Day 1 — Workshop Day",
+      "time": "2:20pm-4:20pm",
+      "room": "Track 4",
+      "type": "sponsor",
+      "track": "Workshops Day 1",
+      "status": "confirmed",
+      "speakers": [
+        "Mark Lummus",
+        "Navinkumar Patil"
+      ]
+    },
+    {
+      "title": "AI Security Engineering 201",
+      "day": "Day 1 — Workshop Day",
+      "time": "2:20pm-4:20pm",
+      "room": "Track 5",
+      "type": "sponsor",
+      "track": "Workshops Day 1",
+      "status": "tentative",
+      "speakers": [
+        "Micah Silverman"
+      ]
+    },
+    {
+      "title": "Context Engineering in 2026: Compaction, Memory & Cost",
+      "day": "Day 1 — Workshop Day",
+      "time": "2:20pm-4:20pm",
+      "room": "Track 6",
+      "type": "sponsor",
+      "status": "confirmed",
+      "speakers": [
+        "Louis-François Bouchard",
+        "Samridhi Vaid",
+        "Omar Solano"
+      ]
+    },
+    {
+      "title": "Vector Isn't Enough: Hybrid Search & Retrieval for AI Engineers",
+      "day": "Day 1 — Workshop Day",
+      "time": "2:20pm-4:20pm",
+      "room": "Track 7",
+      "type": "sponsor",
+      "track": "Track 7",
+      "status": "confirmed",
+      "speakers": [
+        "Jeff Vestal"
+      ]
+    },
+    {
+      "title": "Build with Perception Agents",
+      "day": "Day 1 — Workshop Day",
+      "time": "2:20pm-4:20pm",
+      "room": "Track 8",
+      "type": "session",
+      "track": "Workshops Day 1",
+      "status": "confirmed",
+      "speakers": [
+        "Emile Baizel",
+        "Shruti Arora"
+      ]
+    },
+    {
+      "title": "Hands-on AutoResearch: Cracking OpenAI's Parameter Golf",
+      "day": "Day 1 — Workshop Day",
+      "time": "2:20pm-4:20pm",
+      "room": "Track 9",
+      "type": "session",
+      "track": "Workshops Day 1",
+      "status": "confirmed",
+      "speakers": [
+        "Zhengyao Jiang",
+        "Dixing Xu",
+        "Vayum Arora",
+        "Dhruv Srikanth"
+      ]
+    },
+    {
+      "title": "Observe, optimize and protect your hosted agents in Microsoft Foundry",
+      "day": "Day 1 — Workshop Day",
+      "time": "2:20pm-3:35pm",
+      "room": "Track M",
+      "type": "sponsor",
+      "track": "Track M",
+      "status": "confirmed",
+      "speakers": [
+        "Pamela Fox"
+      ]
+    },
+    {
+      "title": "The Autonomous Computer: Full-stack Infrastructure for Computer Use Agents",
+      "day": "Day 1 — Workshop Day",
+      "time": "4:30pm-5:30pm",
+      "room": "Track 1",
+      "type": "session",
+      "track": "Workshops Day 1",
+      "status": "confirmed",
+      "speakers": [
+        "Ang Li"
+      ]
+    },
+    {
+      "title": "The Dark Arts of Skill Engineering",
+      "day": "Day 1 — Workshop Day",
+      "time": "4:30pm-5:30pm",
+      "room": "Track 2",
+      "type": "session",
+      "status": "confirmed",
+      "speakers": [
+        "Paul Bakaus"
+      ]
+    },
+    {
+      "title": "Hill-climbing Skills: How to Improve Agents Without Touching the Model",
+      "day": "Day 1 — Workshop Day",
+      "time": "4:30pm-5:30pm",
+      "room": "Track 4",
+      "type": "workshop",
+      "track": "Workshops Day 1",
+      "status": "confirmed",
+      "speakers": [
+        "Shubhankar Srivastava"
+      ]
+    },
+    {
+      "title": "Agent Auth",
+      "day": "Day 1 — Workshop Day",
+      "time": "4:30pm-5:30pm",
+      "room": "Track 5",
+      "type": "workshop",
+      "track": "Workshops Day 1",
+      "status": "confirmed",
+      "speakers": [
+        "Bereket Habtemeskel",
+        "Paola Estefania"
+      ]
+    },
+    {
+      "title": "Prime Intellect Forge",
+      "day": "Day 1 — Workshop Day",
+      "time": "4:30pm-5:30pm",
+      "room": "Track 6",
+      "type": "workshop",
+      "track": "Workshops Day 1",
+      "status": "tentative",
+      "speakers": [
+        "Will Brown"
+      ]
+    },
+    {
+      "title": "Lifestyles of the AI-Native: Voice-coding, agent skills, hooks and scheduled tasks",
+      "day": "Day 1 — Workshop Day",
+      "time": "4:30pm-5:30pm",
+      "room": "Track 7",
+      "type": "workshop",
+      "track": "Workshops Day 1",
+      "status": "confirmed",
+      "speakers": [
+        "Nick Nisi",
+        "Zack Proser"
+      ]
+    },
+    {
+      "title": "The Art and Science of Loopcraft with Pi (and friends)",
+      "day": "Day 1 — Workshop Day",
+      "time": "4:30pm-5:30pm",
+      "room": "Track 8",
+      "type": "workshop",
+      "track": "Workshops Day 1",
+      "status": "confirmed",
+      "speakers": [
+        "Joel Hooks"
+      ]
+    },
+    {
+      "title": "Evolution of agentic surfaces",
+      "day": "Day 1 — Workshop Day",
+      "time": "4:30pm-5:30pm",
+      "room": "Track 9",
+      "type": "workshop",
+      "track": "Workshops Day 1",
+      "status": "confirmed",
+      "speakers": [
+        "Gagan Bhat",
+        "Isabella Kai He"
+      ]
+    },
+    {
+      "title": "Human Connection in the Age of AI",
+      "day": "Day 1 — Workshop Day",
+      "time": "5:00pm-6:00pm",
+      "room": "Expo Stage 2 NW",
+      "type": "workshop",
+      "track": "Expo Stage 2",
+      "status": "confirmed",
+      "speakers": [
+        "Joyce Zhang",
+        "Carole Robin, Ph.D."
+      ]
+    },
+    {
+      "title": "Expo Welcome Speech",
+      "day": "Day 1 — Workshop Day",
+      "time": "6:00pm-6:15pm",
+      "room": "Expo Stage 3 SW",
+      "type": "session",
+      "track": "Expo Stage 3",
+      "status": "confirmed",
+      "speakers": [
+        "Sonar",
+        "Extend AI"
+      ]
+    },
+    {
+      "title": "Runway AI Film Festival",
+      "day": "Day 1 — Workshop Day",
+      "time": "6:15pm-7:15pm",
+      "room": "Expo Stage 3 SW",
+      "type": "session",
+      "track": "Expo Stage 3",
+      "status": "confirmed",
+      "speakers": []
+    },
+    {
+      "title": "Three Years of AI Engineering",
+      "day": "Day 2 — Session Day 1",
+      "time": "9:00am-9:05am",
+      "room": "Main Stage",
+      "type": "keynote",
+      "track": "Software Factories",
+      "status": "confirmed",
+      "speakers": [
+        "swyx"
+      ]
+    },
+    {
+      "title": "On AI and Knowledge",
+      "day": "Day 2 — Session Day 1",
+      "time": "9:05am-9:25am",
+      "room": "Main Stage",
+      "type": "keynote",
+      "track": "Software Factories",
+      "status": "confirmed",
+      "speakers": [
+        "Pablo Castro"
+      ]
+    },
+    {
+      "title": "Opening Keynote: Topic TBD",
+      "day": "Day 2 — Session Day 1",
+      "time": "9:25am-9:45am",
+      "room": "Main Stage",
+      "type": "keynote",
+      "track": "Software Factories",
+      "status": "confirmed",
+      "speakers": [
+        "Alexander Embiricos",
+        "Romain Huet"
+      ]
+    },
+    {
+      "title": "Thom Wolf keynote",
+      "day": "Day 2 — Session Day 1",
+      "time": "9:45am-10:05am",
+      "room": "Main Stage",
+      "type": "keynote",
+      "track": "Software Factories",
+      "status": "confirmed",
+      "speakers": [
+        "Thom Wolf"
+      ]
+    },
+    {
+      "title": "GLM-5.2: Frontier Intelligence, Open Weights.",
+      "day": "Day 2 — Session Day 1",
+      "time": "10:05am-10:25am",
+      "room": "Main Stage",
+      "type": "keynote",
+      "track": "Software Factories",
+      "status": "confirmed",
+      "speakers": [
+        "Zixuan Li"
+      ]
+    },
+    {
+      "title": "Security Track intro",
+      "day": "Day 2 — Session Day 1",
+      "time": "10:25am-10:30am",
+      "room": "Main Stage",
+      "type": "keynote",
+      "track": "Software Factories",
+      "status": "confirmed",
+      "speakers": [
+        "swyx"
+      ]
+    },
+    {
+      "title": "Getting the most out of Codex",
+      "day": "Day 2 — Session Day 1",
+      "time": "10:45am-11:05am",
+      "room": "Main Stage",
+      "type": "session",
+      "track": "Software Factories",
+      "status": "confirmed",
+      "speakers": [
+        "Jason Liu"
+      ]
+    },
+    {
+      "title": "Security Firewall for Agents",
+      "day": "Day 2 — Session Day 1",
+      "time": "10:45am-11:05am",
+      "room": "Track 1",
+      "type": "session",
+      "track": "Claws & Personal Agents",
+      "status": "confirmed",
+      "speakers": [
+        "Ryan Dahl"
+      ]
+    },
+    {
+      "title": "The State of Vision",
+      "day": "Day 2 — Session Day 1",
+      "time": "10:45am-11:05am",
+      "room": "Track 2",
+      "type": "sponsor",
+      "track": "Vision & OCR",
+      "status": "confirmed",
+      "speakers": [
+        "Joseph Nelson"
+      ]
+    },
+    {
+      "title": "Pinecone 2.0",
+      "day": "Day 2 — Session Day 1",
+      "time": "10:45am-11:05am",
+      "room": "Track 3",
+      "type": "session",
+      "track": "Search & Retrieval",
+      "status": "confirmed",
+      "speakers": [
+        "Edo Liberty"
+      ]
+    },
+    {
+      "title": "Claude Managed Agents Workshop (Part 1)",
+      "day": "Day 2 — Session Day 1",
+      "time": "10:45am-11:05am",
+      "room": "Track 4",
+      "type": "session",
+      "track": "Workshops Day 2",
+      "status": "confirmed",
+      "speakers": [
+        "Priyanka Phatak",
+        "Gabriel Cemaj"
+      ]
+    },
+    {
+      "title": "Through the AI Fog: The architectural decision the next 24 months of agentic security depends on.",
+      "day": "Day 2 — Session Day 1",
+      "time": "10:45am-11:05am",
+      "room": "Track 5",
+      "type": "sponsor",
+      "track": "Security",
+      "status": "confirmed",
+      "speakers": [
+        "Manoj Nair"
+      ]
+    },
+    {
+      "title": "The New Primitives: Building AI-Native Software",
+      "day": "Day 2 — Session Day 1",
+      "time": "10:45am-11:05am",
+      "room": "Track 6",
+      "type": "session",
+      "track": "Voice & Realtime AI",
+      "status": "confirmed",
+      "speakers": [
+        "Kwindla Kramer"
+      ]
+    },
+    {
+      "title": "Will AI predict people like we predict the weather? (alternate title “A field guide to synthetic personas for market research”)",
+      "day": "Day 2 — Session Day 1",
+      "time": "10:45am-11:05am",
+      "room": "Track 7",
+      "type": "session",
+      "track": "LLM Recsys",
+      "status": "confirmed",
+      "speakers": [
+        "Ishan Anand"
+      ]
+    },
+    {
+      "title": "How Forward Deployed Engineering is done at Factory",
+      "day": "Day 2 — Session Day 1",
+      "time": "10:45am-11:05am",
+      "room": "Track 8",
+      "type": "session",
+      "track": "Forward Deployed Engineering",
+      "status": "confirmed",
+      "speakers": [
+        "Eno Reyes"
+      ]
+    },
+    {
+      "title": "Data curation for model training",
+      "day": "Day 2 — Session Day 1",
+      "time": "10:45am-11:05am",
+      "room": "Track 9",
+      "type": "session",
+      "track": "Data Quality",
+      "status": "confirmed",
+      "speakers": [
+        "Ari Morcos"
+      ]
+    },
+    {
+      "title": "Build agents fast with GitHub Copilot (from idea to working app)",
+      "day": "Day 2 — Session Day 1",
+      "time": "10:45am-11:05am",
+      "room": "Track M",
+      "type": "sponsor",
+      "track": "Track M",
+      "status": "confirmed",
+      "speakers": [
+        "Idan Gazit"
+      ]
+    },
+    {
+      "title": "Inside the AI economy: What Stripe’s data reveals",
+      "day": "Day 2 — Session Day 1",
+      "time": "10:45am-11:05am",
+      "room": "Leadership 1",
+      "type": "session",
+      "track": "Agentic Commerce",
+      "status": "confirmed",
+      "speakers": [
+        "Nilofer Rajpurkar"
+      ]
+    },
+    {
+      "title": "Governance Is the Real Bottleneck to AI ROI",
+      "day": "Day 2 — Session Day 1",
+      "time": "10:45am-11:05am",
+      "room": "Leadership 2",
+      "type": "session",
+      "track": "Claws & Personal Agents",
+      "status": "confirmed",
+      "speakers": [
+        "David Hsu"
+      ]
+    },
+    {
+      "title": "Every AI company is accidentally building a bank.",
+      "day": "Day 2 — Session Day 1",
+      "time": "10:45am-11:05am",
+      "room": "Expo Stage 1 NE",
+      "type": "session",
+      "track": "Expo Stage NE",
+      "status": "confirmed",
+      "speakers": [
+        "Dor Sasson"
+      ]
+    },
+    {
+      "title": "The Enterprise Agentic Gap: When Developer-Level AI Tools Hit Millions of Lines",
+      "day": "Day 2 — Session Day 1",
+      "time": "10:45am-11:05am",
+      "room": "Expo Stage 2 NW",
+      "type": "session",
+      "status": "confirmed",
+      "speakers": [
+        "Dan Adler"
+      ]
+    },
+    {
+      "title": "How PayPal Enterprise Payments handles agent-initiated payments across ChatGPT and Google AI Mode",
+      "day": "Day 2 — Session Day 1",
+      "time": "10:45am-11:05am",
+      "room": "Expo Stage 3 SW",
+      "type": "session",
+      "status": "confirmed",
+      "speakers": [
+        "Sam Parsons"
+      ]
+    },
+    {
+      "title": "Exa Expo Session",
+      "day": "Day 2 — Session Day 1",
+      "time": "10:45am-11:05am",
+      "room": "Expo Stage 4 SE",
+      "type": "session",
+      "status": "tentative",
+      "speakers": []
+    },
+    {
+      "title": "Show your workflow: Reimagining AI PDLC with Skills",
+      "day": "Day 2 — Session Day 1",
+      "time": "11:00am-12:00pm",
+      "room": "Leadership Lounge",
+      "type": "session",
+      "track": "CTO Circle",
+      "status": "confirmed",
+      "speakers": [
+        "Martin Harrysson",
+        "Matt Linderman",
+        "Prakhar Dixit"
+      ]
+    },
+    {
+      "title": "Rise of the Software Factory",
+      "day": "Day 2 — Session Day 1",
+      "time": "11:10am-11:30am",
+      "room": "Main Stage",
+      "type": "session",
+      "track": "Software Factories",
+      "status": "confirmed",
+      "speakers": [
+        "Tereza Tížková"
+      ]
+    },
+    {
+      "title": "Your Agent Didn’t Fail. Your Harness Did.",
+      "day": "Day 2 — Session Day 1",
+      "time": "11:10am-11:30am",
+      "room": "Track 1",
+      "type": "session",
+      "track": "Claws & Personal Agents",
+      "status": "confirmed",
+      "speakers": [
+        "Vinoth Govindarajan"
+      ]
+    },
+    {
+      "title": "Building LiteParse: the world's fastest PDF -> markdown parser",
+      "day": "Day 2 — Session Day 1",
+      "time": "11:10am-11:30am",
+      "room": "Track 2",
+      "type": "sponsor",
+      "track": "Vision & OCR",
+      "status": "confirmed",
+      "speakers": [
+        "Jerry Liu"
+      ]
+    },
+    {
+      "title": "The unreasonable effectiveness of BM25 for agentic search",
+      "day": "Day 2 — Session Day 1",
+      "time": "11:10am-11:30am",
+      "room": "Track 3",
+      "type": "session",
+      "track": "Search & Retrieval",
+      "status": "confirmed",
+      "speakers": [
+        "Jo Kristian Bergum"
+      ]
+    },
+    {
+      "title": "Claude Managed Agents workshop (Part 2)",
+      "day": "Day 2 — Session Day 1",
+      "time": "11:10am-11:30am",
+      "room": "Track 4",
+      "type": "session",
+      "track": "Workshops Day 2",
+      "status": "confirmed",
+      "speakers": [
+        "Priyanka Phatak",
+        "Gabriel Cemaj"
+      ]
+    },
+    {
+      "title": "Your LLM Stack Is a 2008 Database With Better Marketing: Why ML Security Is Dominated by Misconfiguration, Not Missing Features",
+      "day": "Day 2 — Session Day 1",
+      "time": "11:10am-11:30am",
+      "room": "Track 5",
+      "type": "sponsor",
+      "track": "Security",
+      "status": "confirmed",
+      "speakers": [
+        "Lovina Dmello"
+      ]
+    },
+    {
+      "title": "Speech-to-Speech Model Research at Google DeepMind",
+      "day": "Day 2 — Session Day 1",
+      "time": "11:10am-11:30am",
+      "room": "Track 6",
+      "type": "session",
+      "track": "Voice & Realtime AI",
+      "status": "confirmed",
+      "speakers": [
+        "Valeria Wu Fon",
+        "Tom Ouyang"
+      ]
+    },
+    {
+      "title": "How Forward Deployed Engineering is done at Cursor",
+      "day": "Day 2 — Session Day 1",
+      "time": "11:10am-11:30am",
+      "room": "Track 8",
+      "type": "session",
+      "track": "Forward Deployed Engineering",
+      "status": "confirmed",
+      "speakers": [
+        "Pauline Brunet"
+      ]
+    },
+    {
+      "title": "The Messy Reality of Scale: Synthetic Data and Pre-Training at Poolside",
+      "day": "Day 2 — Session Day 1",
+      "time": "11:10am-11:30am",
+      "room": "Track 9",
+      "type": "session",
+      "track": "Data Quality",
+      "status": "confirmed",
+      "speakers": [
+        "Robert McHardy",
+        "Marah Abdin"
+      ]
+    },
+    {
+      "title": "Building the engine while flying the plane — launching the Figma MCP server",
+      "day": "Day 2 — Session Day 1",
+      "time": "11:10am-11:30am",
+      "room": "Leadership 1",
+      "type": "session",
+      "track": "AI-Native Enterprises",
+      "status": "confirmed",
+      "speakers": [
+        "Jesse Lumarie"
+      ]
+    },
+    {
+      "title": "Your Agent Evolved. Your Evals Didn't.",
+      "day": "Day 2 — Session Day 1",
+      "time": "11:10am-11:30am",
+      "room": "Leadership 2",
+      "type": "session",
+      "track": "AI Architects: Show my Workflow",
+      "status": "confirmed",
+      "speakers": [
+        "Ameya Bhatawdekar"
+      ]
+    },
+    {
+      "title": "Give your coding agents the power of turbogrep!",
+      "day": "Day 2 — Session Day 1",
+      "time": "11:10am-11:30am",
+      "room": "Expo Stage 1 NE",
+      "type": "session",
+      "status": "confirmed",
+      "speakers": [
+        "Owen Halpert"
+      ]
+    },
+    {
+      "title": "Actionable Knowledge For Agents With Context Graphs",
+      "day": "Day 2 — Session Day 1",
+      "time": "11:10am-11:30am",
+      "room": "Expo Stage 2 NW",
+      "type": "session",
+      "track": "Expo Stage 2",
+      "status": "confirmed",
+      "speakers": [
+        "Will Lyon"
+      ]
+    },
+    {
+      "title": "Kimchi Expo Session",
+      "day": "Day 2 — Session Day 1",
+      "time": "11:10am-11:30am",
+      "room": "Expo Stage 3 SW",
+      "type": "session",
+      "status": "tentative",
+      "speakers": []
+    },
+    {
+      "title": "Agents, codebases, and teams: what it actually takes to ship together",
+      "day": "Day 2 — Session Day 1",
+      "time": "11:10am-11:30am",
+      "room": "Expo Stage 4 SE",
+      "type": "session",
+      "status": "confirmed",
+      "speakers": [
+        "Aditya Khandelwal"
+      ]
+    },
+    {
+      "title": "Orchestras, not Factories",
+      "day": "Day 2 — Session Day 1",
+      "time": "11:40am-12:00pm",
+      "room": "Main Stage",
+      "type": "session",
+      "track": "Software Factories",
+      "status": "confirmed",
+      "speakers": [
+        "Charlie Holtz"
+      ]
+    },
+    {
+      "title": "Everyone Gets A Software Company",
+      "day": "Day 2 — Session Day 1",
+      "time": "11:40am-12:00pm",
+      "room": "Track 1",
+      "type": "session",
+      "track": "Claws & Personal Agents",
+      "status": "confirmed",
+      "speakers": [
+        "Benjamin Guo",
+        "Rob Cheung"
+      ]
+    },
+    {
+      "title": "Skill issue: stop deploying vision language models, use them with Skills to build e2e vision apps on edge",
+      "day": "Day 2 — Session Day 1",
+      "time": "11:40am-12:00pm",
+      "room": "Track 2",
+      "type": "sponsor",
+      "track": "Vision & OCR",
+      "status": "confirmed",
+      "speakers": [
+        "Merve Noyan"
+      ]
+    },
+    {
+      "title": "The Search Engine for the Agentic Web",
+      "day": "Day 2 — Session Day 1",
+      "time": "11:40am-12:00pm",
+      "room": "Track 3",
+      "type": "session",
+      "track": "Search & Retrieval",
+      "status": "confirmed",
+      "speakers": [
+        "Will Bryk"
+      ]
+    },
+    {
+      "title": "Claude Managed Agents workshop (Part 3)",
+      "day": "Day 2 — Session Day 1",
+      "time": "11:40am-12:00pm",
+      "room": "Track 4",
+      "type": "session",
+      "track": "Workshops Day 2",
+      "status": "confirmed",
+      "speakers": [
+        "Priyanka Phatak",
+        "Gabriel Cemaj"
+      ]
+    },
+    {
+      "title": "We Gave an Agent Production Code Access and Then Tried to Sleep at Night",
+      "day": "Day 2 — Session Day 1",
+      "time": "11:40am-12:00pm",
+      "room": "Track 5",
+      "type": "sponsor",
+      "track": "Security",
+      "status": "confirmed",
+      "speakers": [
+        "Moritz Johner"
+      ]
+    },
+    {
+      "title": "Voice Agents Can Just Do Things",
+      "day": "Day 2 — Session Day 1",
+      "time": "11:40am-12:00pm",
+      "room": "Track 6",
+      "type": "session",
+      "track": "Voice & Realtime AI",
+      "status": "confirmed",
+      "speakers": [
+        "Charlie Guo"
+      ]
+    },
+    {
+      "title": "AI tools for Forward Deployed Engineering",
+      "day": "Day 2 — Session Day 1",
+      "time": "11:40am-12:00pm",
+      "room": "Track 8",
+      "type": "session",
+      "track": "Forward Deployed Engineering",
+      "status": "confirmed",
+      "speakers": [
+        "Vasuman Moza"
+      ]
+    },
+    {
+      "title": "Theta Software",
+      "day": "Day 2 — Session Day 1",
+      "time": "11:40am-12:00pm",
+      "room": "Track 9",
+      "type": "session",
+      "track": "Data Quality",
+      "status": "confirmed",
+      "speakers": [
+        "Rayan Garg"
+      ]
+    },
+    {
+      "title": "Use Copilot across CLI, dev, and cloud workflows to move faster end-to-end",
+      "day": "Day 2 — Session Day 1",
+      "time": "11:40am-12:00pm",
+      "room": "Track M",
+      "type": "sponsor",
+      "track": "Track M",
+      "status": "confirmed",
+      "speakers": [
+        "Pamela Fox"
+      ]
+    },
+    {
+      "title": "The AI-Native Software Factory: How Uber Agentified Every Stage of the SDLC",
+      "day": "Day 2 — Session Day 1",
+      "time": "11:40am-12:00pm",
+      "room": "Leadership 1",
+      "type": "session",
+      "track": "AI-Native Enterprises",
+      "status": "confirmed",
+      "speakers": [
+        "Uday Kiran Medisetty",
+        "Adam Huda"
+      ]
+    },
+    {
+      "title": "The Last Human Code Review: Building Trust in AI-Generated Code",
+      "day": "Day 2 — Session Day 1",
+      "time": "11:40am-12:00pm",
+      "room": "Leadership 2",
+      "type": "session",
+      "track": "AI Architects: Show my Workflow",
+      "status": "confirmed",
+      "speakers": [
+        "Itamar Friedman"
+      ]
+    },
+    {
+      "title": "Your Stack Has a Latency Problem You Can’t See",
+      "day": "Day 2 — Session Day 1",
+      "time": "11:40am-12:00pm",
+      "room": "Expo Stage 1 NE",
+      "type": "session",
+      "status": "confirmed",
+      "speakers": []
+    },
+    {
+      "title": "Agentic vs. Vector Search: An Eval-Driven Approach to Coding Agent Performance",
+      "day": "Day 2 — Session Day 1",
+      "time": "11:40am-12:00pm",
+      "room": "Expo Stage 2 NW",
+      "type": "session",
+      "status": "confirmed",
+      "speakers": [
+        "Jess Wang"
+      ]
+    },
+    {
+      "title": "Agents Don't Have Coworkers, They Have Hostages",
+      "day": "Day 2 — Session Day 1",
+      "time": "11:40am-12:00pm",
+      "room": "Expo Stage 3 SW",
+      "type": "session",
+      "status": "confirmed",
+      "speakers": [
+        "Gabriel Martinez"
+      ]
+    },
+    {
+      "title": "Would your AI agent get the job? A performance review framework for enterprise agents",
+      "day": "Day 2 — Session Day 1",
+      "time": "11:40am-12:00pm",
+      "room": "Expo Stage 4 SE",
+      "type": "session",
+      "status": "confirmed",
+      "speakers": [
+        "Andreea Pleşea",
+        "Dan Bălăceanu"
+      ]
+    },
+    {
+      "title": "What we learned by analyzing 1M AI-generated PRs",
+      "day": "Day 2 — Session Day 1",
+      "time": "12:05pm-12:25pm",
+      "room": "Main Stage",
+      "type": "session",
+      "track": "Software Factories",
+      "status": "confirmed",
+      "speakers": [
+        "Daksh Gupta"
+      ]
+    },
+    {
+      "title": "Tethered: Our Agents Are Us",
+      "day": "Day 2 — Session Day 1",
+      "time": "12:05pm-12:25pm",
+      "room": "Track 1",
+      "type": "session",
+      "track": "Claws & Personal Agents",
+      "status": "confirmed",
+      "speakers": [
+        "Shu Fang"
+      ]
+    },
+    {
+      "title": "Modality Misalignment and Originality Attribution in Short-Form Video: A Multi-Agent Approach at Platform Scale",
+      "day": "Day 2 — Session Day 1",
+      "time": "12:05pm-12:25pm",
+      "room": "Track 2",
+      "type": "sponsor",
+      "track": "Vision & OCR",
+      "status": "confirmed",
+      "speakers": [
+        "Aditya Gautam"
+      ]
+    },
+    {
+      "title": "Rebuilding the web for agents",
+      "day": "Day 2 — Session Day 1",
+      "time": "12:05pm-12:25pm",
+      "room": "Track 3",
+      "type": "session",
+      "track": "Search & Retrieval",
+      "status": "confirmed",
+      "speakers": [
+        "Liad Yosef"
+      ]
+    },
+    {
+      "title": "Claude Managed Agents workshop (Part 4)",
+      "day": "Day 2 — Session Day 1",
+      "time": "12:05pm-12:25pm",
+      "room": "Track 4",
+      "type": "session",
+      "track": "Workshops Day 2",
+      "status": "confirmed",
+      "speakers": [
+        "Priyanka Phatak",
+        "Gabriel Cemaj"
+      ]
+    },
+    {
+      "title": "Agentic Development Security",
+      "day": "Day 2 — Session Day 1",
+      "time": "12:05pm-12:25pm",
+      "room": "Track 5",
+      "type": "sponsor",
+      "track": "Security",
+      "status": "confirmed",
+      "speakers": [
+        "Ezra Tanzer"
+      ]
+    },
+    {
+      "title": "Your Voice Agent is Just a Walkie-Talkie",
+      "day": "Day 2 — Session Day 1",
+      "time": "12:05pm-12:25pm",
+      "room": "Track 6",
+      "type": "session",
+      "track": "Claws & Personal Agents",
+      "status": "confirmed",
+      "speakers": [
+        "Neil Zeghidour"
+      ]
+    },
+    {
+      "title": "How Forward Deployed Engineering is done at Cognition",
+      "day": "Day 2 — Session Day 1",
+      "time": "12:05pm-12:25pm",
+      "room": "Track 8",
+      "type": "session",
+      "track": "Forward Deployed Engineering",
+      "status": "confirmed",
+      "speakers": [
+        "Jia Wu"
+      ]
+    },
+    {
+      "title": "Bugcrowd posttraining talk",
+      "day": "Day 2 — Session Day 1",
+      "time": "12:05pm-12:25pm",
+      "room": "Track 9",
+      "type": "session",
+      "track": "Posttraining & Midtraining",
+      "status": "tentative",
+      "speakers": [
+        "David Brumley"
+      ]
+    },
+    {
+      "title": "Scaling Code Quality: Building uReview, Uber’s Multi-Agent Code Review Engine",
+      "day": "Day 2 — Session Day 1",
+      "time": "12:05pm-12:25pm",
+      "room": "Leadership 1",
+      "type": "session",
+      "track": "AI-Native Enterprises",
+      "status": "confirmed",
+      "speakers": [
+        "Will Bond",
+        "Ameya Ketkar"
+      ]
+    },
+    {
+      "title": "Prototyping as Leadership: How a CTO Ships with AI Agents",
+      "day": "Day 2 — Session Day 1",
+      "time": "12:05pm-12:25pm",
+      "room": "Leadership 2",
+      "type": "session",
+      "track": "AI Architects: Show my Workflow",
+      "status": "confirmed",
+      "speakers": [
+        "Hursh Agrawal"
+      ]
+    },
+    {
+      "title": "Your Agent Is Lying to You About Whether It Worked",
+      "day": "Day 2 — Session Day 1",
+      "time": "12:05pm-12:25pm",
+      "room": "Expo Stage 1 NE",
+      "type": "session",
+      "status": "confirmed",
+      "speakers": [
+        "Dat Ngo"
+      ]
+    },
+    {
+      "title": "Why building building agent quality platforms is hard.",
+      "day": "Day 2 — Session Day 1",
+      "time": "12:05pm-12:25pm",
+      "room": "Expo Stage 2 NW",
+      "type": "session",
+      "status": "confirmed",
+      "speakers": [
+        "Hossein Niazmandi"
+      ]
+    },
+    {
+      "title": "Can LLMs write fast multi-GPU kernels? We built a benchmark to find out.",
+      "day": "Day 2 — Session Day 1",
+      "time": "12:05pm-12:25pm",
+      "room": "Expo Stage 3 SW",
+      "type": "session",
+      "status": "confirmed",
+      "speakers": [
+        "Simran Arora"
+      ]
+    },
+    {
+      "title": "Self-Improving Agents That Teach the Company Back",
+      "day": "Day 2 — Session Day 1",
+      "time": "12:05pm-12:25pm",
+      "room": "Expo Stage 4 SE",
+      "type": "session",
+      "status": "confirmed",
+      "speakers": [
+        "Rafal Wilinski"
+      ]
+    },
+    {
+      "title": "Defying Antigravity",
+      "day": "Day 2 — Session Day 1",
+      "time": "1:30pm-1:50pm",
+      "room": "Main Stage",
+      "type": "session",
+      "track": "Software Factories",
+      "status": "confirmed",
+      "speakers": [
+        "Kevin Hou"
+      ]
+    },
+    {
+      "title": "Agents' next frontier: agent-to-agent and network effects",
+      "day": "Day 2 — Session Day 1",
+      "time": "1:30pm-1:50pm",
+      "room": "Track 1",
+      "type": "session",
+      "track": "Claws & Personal Agents",
+      "status": "confirmed",
+      "speakers": [
+        "Jean-Denis Greze"
+      ]
+    },
+    {
+      "title": "From Ingestion to Agents: How Leading AI Teams Build on Document Intelligence",
+      "day": "Day 2 — Session Day 1",
+      "time": "1:30pm-1:50pm",
+      "room": "Track 2",
+      "type": "sponsor",
+      "track": "Vision & OCR",
+      "status": "confirmed",
+      "speakers": [
+        "TBD — Reducto"
+      ]
+    },
+    {
+      "title": "If we want them to do Knowledge Work, we need to design Knowledge Agents",
+      "day": "Day 2 — Session Day 1",
+      "time": "1:30pm-1:50pm",
+      "room": "Track 3",
+      "type": "session",
+      "track": "Search & Retrieval",
+      "status": "confirmed",
+      "speakers": [
+        "Benjamin Clavié"
+      ]
+    },
+    {
+      "title": "Everybody Gets a Digital Clone! (Part 1 of 3)",
+      "day": "Day 2 — Session Day 1",
+      "time": "1:30pm-1:50pm",
+      "room": "Track 4",
+      "type": "session",
+      "track": "Workshops Day 2",
+      "status": "confirmed",
+      "speakers": [
+        "Neil Zeghidour"
+      ]
+    },
+    {
+      "title": "Using LLMs to Secure Source Code",
+      "day": "Day 2 — Session Day 1",
+      "time": "1:30pm-1:50pm",
+      "room": "Track 5",
+      "type": "sponsor",
+      "track": "Security",
+      "status": "confirmed",
+      "speakers": [
+        "Eugene Yan"
+      ]
+    },
+    {
+      "title": "Tolan: Voice-First AI Companion",
+      "day": "Day 2 — Session Day 1",
+      "time": "1:30pm-1:50pm",
+      "room": "Track 6",
+      "type": "session",
+      "track": "Voice & Realtime AI",
+      "status": "confirmed",
+      "speakers": [
+        "Paula Dozsa"
+      ]
+    },
+    {
+      "title": "TBA",
+      "day": "Day 2 — Session Day 1",
+      "time": "1:30pm-1:50pm",
+      "room": "Track 7",
+      "type": "session",
+      "track": "LLM Recsys",
+      "status": "tentative",
+      "speakers": []
+    },
+    {
+      "title": "The Dirty Secret of Forward Deployed Engineering",
+      "day": "Day 2 — Session Day 1",
+      "time": "1:30pm-1:50pm",
+      "room": "Track 8",
+      "type": "session",
+      "track": "Forward Deployed Engineering",
+      "status": "confirmed",
+      "speakers": [
+        "Natalie Meurer"
+      ]
+    },
+    {
+      "title": "The Base Model is Dead",
+      "day": "Day 2 — Session Day 1",
+      "time": "1:30pm-1:50pm",
+      "room": "Track 9",
+      "type": "session",
+      "track": "Data Quality",
+      "status": "confirmed",
+      "speakers": [
+        "Varun Singh"
+      ]
+    },
+    {
+      "title": "Modernize CI/CD using agent-assisted workflows that reduce manual debugging",
+      "day": "Day 2 — Session Day 1",
+      "time": "1:30pm-1:50pm",
+      "room": "Track M",
+      "type": "sponsor",
+      "track": "Track M",
+      "status": "confirmed",
+      "speakers": [
+        "Salil Subbakrishna"
+      ]
+    },
+    {
+      "title": "Spin at the Gate Until Green: The Engineering Primitives Behind Self-Driving Codebases",
+      "day": "Day 2 — Session Day 1",
+      "time": "1:30pm-1:50pm",
+      "room": "Leadership 1",
+      "type": "session",
+      "track": "Software Factories",
+      "status": "confirmed",
+      "speakers": [
+        "Andrew Orobator"
+      ]
+    },
+    {
+      "title": "Serving 2 Million Models Without Melting: Scaling the Hugging Face Hub",
+      "day": "Day 2 — Session Day 1",
+      "time": "1:30pm-1:50pm",
+      "room": "Leadership 2",
+      "type": "session",
+      "track": "AI Architects: Show my Workflow",
+      "status": "confirmed",
+      "speakers": [
+        "Arek Borucki"
+      ]
+    },
+    {
+      "title": "Every Agent, Everywhere, All at Once",
+      "day": "Day 2 — Session Day 1",
+      "time": "1:30pm-1:50pm",
+      "room": "Expo Stage 1 NE",
+      "type": "session",
+      "status": "confirmed",
+      "speakers": [
+        "Vlad Luzin"
+      ]
+    },
+    {
+      "title": "Deepmind Expo Session 1",
+      "day": "Day 2 — Session Day 1",
+      "time": "1:30pm-1:50pm",
+      "room": "Expo Stage 2 NW",
+      "type": "session",
+      "status": "confirmed",
+      "speakers": []
+    },
+    {
+      "title": "Stop prompting",
+      "day": "Day 2 — Session Day 1",
+      "time": "1:30pm-1:50pm",
+      "room": "Expo Stage 4 SE",
+      "type": "session",
+      "track": "Expo Stage 4",
+      "status": "confirmed",
+      "speakers": [
+        "Greg Pstrucha"
+      ]
+    },
+    {
+      "title": "Self-Improving software factories: The new open source model\"",
+      "day": "Day 2 — Session Day 1",
+      "time": "1:55pm-2:15pm",
+      "room": "Main Stage",
+      "type": "session",
+      "track": "Software Factories",
+      "status": "confirmed",
+      "speakers": [
+        "Zach Lloyd"
+      ]
+    },
+    {
+      "title": "Claude for long-horizon tasks",
+      "day": "Day 2 — Session Day 1",
+      "time": "1:55pm-2:15pm",
+      "room": "Track 1",
+      "type": "session",
+      "track": "Claws & Personal Agents",
+      "status": "confirmed",
+      "speakers": [
+        "Lance Martin"
+      ]
+    },
+    {
+      "title": "The Best Models Still Reason Like Toddlers",
+      "day": "Day 2 — Session Day 1",
+      "time": "1:55pm-2:15pm",
+      "room": "Track 2",
+      "type": "sponsor",
+      "track": "Vision & OCR",
+      "status": "confirmed",
+      "speakers": [
+        "Andrew Dai"
+      ]
+    },
+    {
+      "title": "Your Agreements Are a Database You Can't Query. We're Fixing That",
+      "day": "Day 2 — Session Day 1",
+      "time": "1:55pm-2:15pm",
+      "room": "Track 3",
+      "type": "session",
+      "track": "Search & Retrieval",
+      "status": "confirmed",
+      "speakers": [
+        "Hiral Shah",
+        "Sean Sodha"
+      ]
+    },
+    {
+      "title": "Everybody Gets a Digital Clone! (Part 2 of 3)",
+      "day": "Day 2 — Session Day 1",
+      "time": "1:55pm-2:15pm",
+      "room": "Track 4",
+      "type": "session",
+      "track": "Workshops Day 2",
+      "status": "confirmed",
+      "speakers": [
+        "Neil Zeghidour"
+      ]
+    },
+    {
+      "title": "Dual-Surface Architecture: Serving Humans and Agents from the Same Tool Layer",
+      "day": "Day 2 — Session Day 1",
+      "time": "1:55pm-2:15pm",
+      "room": "Track 5",
+      "type": "sponsor",
+      "track": "Security",
+      "status": "confirmed",
+      "speakers": [
+        "Ethan (Jung Min) Cha"
+      ]
+    },
+    {
+      "title": "5 Voice Agent Failure Modes You'll Hit in Week One",
+      "day": "Day 2 — Session Day 1",
+      "time": "1:55pm-2:15pm",
+      "room": "Track 6",
+      "type": "session",
+      "track": "Voice & Realtime AI",
+      "status": "confirmed",
+      "speakers": [
+        "Venky B",
+        "Vyas A"
+      ]
+    },
+    {
+      "title": "TBA",
+      "day": "Day 2 — Session Day 1",
+      "time": "1:55pm-2:15pm",
+      "room": "Track 7",
+      "type": "session",
+      "track": "LLM Recsys",
+      "status": "tentative",
+      "speakers": []
+    },
+    {
+      "title": "How Forward Deployed Engineering is done at Decagon",
+      "day": "Day 2 — Session Day 1",
+      "time": "1:55pm-2:15pm",
+      "room": "Track 8",
+      "type": "session",
+      "track": "Forward Deployed Engineering",
+      "status": "confirmed",
+      "speakers": [
+        "Sunny Rekhi"
+      ]
+    },
+    {
+      "title": "Ending AI Slop",
+      "day": "Day 2 — Session Day 1",
+      "time": "1:55pm-2:15pm",
+      "room": "Track 9",
+      "type": "session",
+      "track": "Data Quality",
+      "status": "confirmed",
+      "speakers": [
+        "Thais Castello Branco"
+      ]
+    },
+    {
+      "title": "AI Evals Platform for Cross-Functional Teams at Scale",
+      "day": "Day 2 — Session Day 1",
+      "time": "1:55pm-2:15pm",
+      "room": "Leadership 1",
+      "type": "session",
+      "track": "AI-Native Enterprises",
+      "status": "confirmed",
+      "speakers": [
+        "Nachiket Paranjape",
+        "Swaroop Chitlur Haridas"
+      ]
+    },
+    {
+      "title": "IT Admin for the AI Workforce: Why Your AI Agents Will Need Their Own IT Department",
+      "day": "Day 2 — Session Day 1",
+      "time": "1:55pm-2:15pm",
+      "room": "Leadership 2",
+      "type": "session",
+      "track": "AI Architects: Show my Workflow",
+      "status": "confirmed",
+      "speakers": [
+        "Sarthak Aggarwal"
+      ]
+    },
+    {
+      "title": "Who Approved That MCP Server? Governing the Tool Layer",
+      "day": "Day 2 — Session Day 1",
+      "time": "1:55pm-2:15pm",
+      "room": "Expo Stage 1 NE",
+      "type": "session",
+      "status": "confirmed",
+      "speakers": [
+        "Jim Clark"
+      ]
+    },
+    {
+      "title": "Voice Agents Are Mostly Invisible. Here's How to See Them.",
+      "day": "Day 2 — Session Day 1",
+      "time": "1:55pm-2:15pm",
+      "room": "Expo Stage 2 NW",
+      "type": "session",
+      "status": "confirmed",
+      "speakers": [
+        "Fuad Ali"
+      ]
+    },
+    {
+      "title": "Greptile Expo Session",
+      "day": "Day 2 — Session Day 1",
+      "time": "1:55pm-2:15pm",
+      "room": "Expo Stage 3 SW",
+      "type": "session",
+      "status": "tentative",
+      "speakers": []
+    },
+    {
+      "title": "Deploying browser agents at scale",
+      "day": "Day 2 — Session Day 1",
+      "time": "1:55pm-2:15pm",
+      "room": "Expo Stage 4 SE",
+      "type": "session",
+      "status": "confirmed",
+      "speakers": [
+        "Derek Meegan"
+      ]
+    },
+    {
+      "title": "River: Shopify’s Slack-Native AI Agent",
+      "day": "Day 2 — Session Day 1",
+      "time": "2:25pm-2:45pm",
+      "room": "Main Stage",
+      "type": "session",
+      "track": "Software Factories",
+      "status": "tentative",
+      "speakers": [
+        "Jevon McDonald"
+      ]
+    },
+    {
+      "title": "Tool Execution layer for agents",
+      "day": "Day 2 — Session Day 1",
+      "time": "2:25pm-2:45pm",
+      "room": "Track 1",
+      "type": "session",
+      "track": "Claws & Personal Agents",
+      "status": "confirmed",
+      "speakers": [
+        "Karan Vaidya"
+      ]
+    },
+    {
+      "title": "You’re Not Thinking Big Enough: Rebuilding Food Systems from First Principles with AI Agents",
+      "day": "Day 2 — Session Day 1",
+      "time": "2:25pm-2:45pm",
+      "room": "Track 2",
+      "type": "sponsor",
+      "track": "Vision & OCR",
+      "status": "confirmed",
+      "speakers": [
+        "Cody Menefee"
+      ]
+    },
+    {
+      "title": "How to Connect AI to Billions of Legal Documents",
+      "day": "Day 2 — Session Day 1",
+      "time": "2:25pm-2:45pm",
+      "room": "Track 3",
+      "type": "session",
+      "track": "Search & Retrieval",
+      "status": "confirmed",
+      "speakers": [
+        "Simon Eskildsen",
+        "Jacob Lauritzen"
+      ]
+    },
+    {
+      "title": "Everybody Gets a Digital Clone! (Part 3 of 3)",
+      "day": "Day 2 — Session Day 1",
+      "time": "2:25pm-2:45pm",
+      "room": "Track 4",
+      "type": "session",
+      "track": "Workshops Day 2",
+      "status": "confirmed",
+      "speakers": [
+        "Neil Zeghidour"
+      ]
+    },
+    {
+      "title": "Agentic Security: Permissions, Provenance, and the Agent Supply Chain",
+      "day": "Day 2 — Session Day 1",
+      "time": "2:25pm-2:45pm",
+      "room": "Track 5",
+      "type": "sponsor",
+      "track": "Security",
+      "status": "confirmed",
+      "speakers": [
+        "Steve Yegge"
+      ]
+    },
+    {
+      "title": "I Monitored Crime Audio. Voice Agents Scare Me More.",
+      "day": "Day 2 — Session Day 1",
+      "time": "2:25pm-2:45pm",
+      "room": "Track 6",
+      "type": "session",
+      "track": "Voice & Realtime AI",
+      "status": "confirmed",
+      "speakers": [
+        "Sumanyu Sharma"
+      ]
+    },
+    {
+      "title": "TBA",
+      "day": "Day 2 — Session Day 1",
+      "time": "2:25pm-2:45pm",
+      "room": "Track 7",
+      "type": "session",
+      "track": "LLM Recsys",
+      "status": "tentative",
+      "speakers": []
+    },
+    {
+      "title": "How Forward Deployed Engineering is done at Ramp",
+      "day": "Day 2 — Session Day 1",
+      "time": "2:25pm-2:45pm",
+      "room": "Track 8",
+      "type": "session",
+      "track": "Forward Deployed Engineering",
+      "status": "confirmed",
+      "speakers": [
+        "Leo Mehr"
+      ]
+    },
+    {
+      "title": "Scaling to Long-Horizons: Algorithms, Environments, Compute",
+      "day": "Day 2 — Session Day 1",
+      "time": "2:25pm-2:45pm",
+      "room": "Track 9",
+      "type": "session",
+      "track": "Data Quality",
+      "status": "confirmed",
+      "speakers": [
+        "Ross Taylor",
+        "Chengxi Taylor"
+      ]
+    },
+    {
+      "title": "Using AI tools to teach old apps new tricks",
+      "day": "Day 2 — Session Day 1",
+      "time": "2:25pm-2:45pm",
+      "room": "Track M",
+      "type": "sponsor",
+      "track": "Track M",
+      "status": "confirmed",
+      "speakers": [
+        "Maria Bledsoe"
+      ]
+    },
+    {
+      "title": "Productionizing LLM Gateways: Architecture, Tradeoffs, and Hard Lessons from the Trenches",
+      "day": "Day 2 — Session Day 1",
+      "time": "2:25pm-2:45pm",
+      "room": "Leadership 1",
+      "type": "session",
+      "track": "AI-Native Enterprises",
+      "status": "confirmed",
+      "speakers": [
+        "Kanish Manuja"
+      ]
+    },
+    {
+      "title": "The Era of Compound Engineering",
+      "day": "Day 2 — Session Day 1",
+      "time": "2:25pm-2:45pm",
+      "room": "Leadership 2",
+      "type": "session",
+      "track": "AI Architects: Show my Workflow",
+      "status": "confirmed",
+      "speakers": [
+        "Kieran Klaassen"
+      ]
+    },
+    {
+      "title": "Beyond Golden Signals: Monitoring in the Age of GenAI",
+      "day": "Day 2 — Session Day 1",
+      "time": "2:25pm-2:45pm",
+      "room": "Expo Stage 1 NE",
+      "type": "session",
+      "status": "confirmed",
+      "speakers": [
+        "Marina Petzel"
+      ]
+    },
+    {
+      "title": "Build agents fast with GitHub Copilot (from idea to working app)",
+      "day": "Day 2 — Session Day 1",
+      "time": "2:25pm-2:45pm",
+      "room": "Expo Stage 2 NW",
+      "type": "session",
+      "track": "Expo Stage 2",
+      "status": "confirmed",
+      "speakers": [
+        "Idan Gazit"
+      ]
+    },
+    {
+      "title": "Buildkite Expo 1",
+      "day": "Day 2 — Session Day 1",
+      "time": "2:25pm-2:45pm",
+      "room": "Expo Stage 3 SW",
+      "type": "session",
+      "status": "confirmed",
+      "speakers": []
+    },
+    {
+      "title": "Continuous Engineering: Software Development for the Age of Agents",
+      "day": "Day 2 — Session Day 1",
+      "time": "2:25pm-2:45pm",
+      "room": "Expo Stage 4 SE",
+      "type": "session",
+      "status": "confirmed",
+      "speakers": []
+    },
+    {
+      "title": "Notion's Token Town",
+      "day": "Day 2 — Session Day 1",
+      "time": "2:50pm-3:10pm",
+      "room": "Main Stage",
+      "type": "session",
+      "track": "Software Factories",
+      "status": "confirmed",
+      "speakers": [
+        "Sarah Sachs"
+      ]
+    },
+    {
+      "title": "Your company brain will leak secrets. Here's how we stopped it for big banks and ourselves.",
+      "day": "Day 2 — Session Day 1",
+      "time": "2:50pm-3:10pm",
+      "room": "Track 1",
+      "type": "session",
+      "track": "Claws & Personal Agents",
+      "status": "confirmed",
+      "speakers": [
+        "Tanmai Gopal"
+      ]
+    },
+    {
+      "title": "Perceptron Mk1 — Perceptron Inc",
+      "day": "Day 2 — Session Day 1",
+      "time": "2:50pm-3:10pm",
+      "room": "Track 2",
+      "type": "sponsor",
+      "track": "Vision & OCR",
+      "status": "confirmed",
+      "speakers": [
+        "Armen Aghajanyan"
+      ]
+    },
+    {
+      "title": "Where RL Will Take Search",
+      "day": "Day 2 — Session Day 1",
+      "time": "2:50pm-3:10pm",
+      "room": "Track 3",
+      "type": "session",
+      "track": "Search & Retrieval",
+      "status": "confirmed",
+      "speakers": [
+        "Maximilian-David Rumpf",
+        "Lotte Seifert"
+      ]
+    },
+    {
+      "title": "Setting Yourself Up for Success — Part 1",
+      "day": "Day 2 — Session Day 1",
+      "time": "2:50pm-3:10pm",
+      "room": "Track 4",
+      "type": "session",
+      "track": "Workshops Day 2",
+      "status": "confirmed",
+      "speakers": [
+        "Jason Liu"
+      ]
+    },
+    {
+      "title": "It's 10pm. Do You Know Where Your Agents Are?",
+      "day": "Day 2 — Session Day 1",
+      "time": "2:50pm-3:10pm",
+      "room": "Track 5",
+      "type": "sponsor",
+      "track": "Security",
+      "status": "confirmed",
+      "speakers": [
+        "Kim Maida"
+      ]
+    },
+    {
+      "title": "Realtime Voice Agents with Frontier Intelligence",
+      "day": "Day 2 — Session Day 1",
+      "time": "2:50pm-3:10pm",
+      "room": "Track 6",
+      "type": "session",
+      "track": "Voice & Realtime AI",
+      "status": "confirmed",
+      "speakers": [
+        "Bohan Li"
+      ]
+    },
+    {
+      "title": "When Will The Benchmaxxing Plague End?",
+      "day": "Day 2 — Session Day 1",
+      "time": "2:50pm-3:10pm",
+      "room": "Track 9",
+      "type": "session",
+      "track": "AI Architects: Show my Workflow",
+      "status": "confirmed",
+      "speakers": [
+        "Nick Heiner"
+      ]
+    },
+    {
+      "title": "From AI-Assisted to AI-Native: Building a Frontier Development Team",
+      "day": "Day 2 — Session Day 1",
+      "time": "2:50pm-3:10pm",
+      "room": "Leadership 1",
+      "type": "session",
+      "track": "AI-Native Enterprises",
+      "status": "confirmed",
+      "speakers": [
+        "Clare Liguori"
+      ]
+    },
+    {
+      "title": "How I automate my own job at Hugging Face using agents",
+      "day": "Day 2 — Session Day 1",
+      "time": "2:50pm-3:10pm",
+      "room": "Leadership 2",
+      "type": "session",
+      "track": "AI Architects: Show my Workflow",
+      "status": "confirmed",
+      "speakers": [
+        "Niels Rogge"
+      ]
+    },
+    {
+      "title": "6 Pillars of an Agentic Harness That Fixes Production Incidents",
+      "day": "Day 2 — Session Day 1",
+      "time": "2:50pm-3:10pm",
+      "room": "Expo Stage 1 NE",
+      "type": "session",
+      "status": "confirmed",
+      "speakers": [
+        "Varun Krovvidi"
+      ]
+    },
+    {
+      "title": "Video Discovery for Agentic World-Model Training",
+      "day": "Day 2 — Session Day 1",
+      "time": "2:50pm-3:10pm",
+      "room": "Expo Stage 2 NW",
+      "type": "session",
+      "status": "confirmed",
+      "speakers": []
+    },
+    {
+      "title": "Baseten Expo Session",
+      "day": "Day 2 — Session Day 1",
+      "time": "2:50pm-3:10pm",
+      "room": "Expo Stage 3 SW",
+      "type": "session",
+      "status": "confirmed",
+      "speakers": []
+    },
+    {
+      "title": "Self-Driving Production: AI Wrote your Code. AI Should Fix It, Too",
+      "day": "Day 2 — Session Day 1",
+      "time": "2:50pm-3:10pm",
+      "room": "Expo Stage 4 SE",
+      "type": "session",
+      "status": "confirmed",
+      "speakers": []
+    },
+    {
+      "title": "fighting slop with slop",
+      "day": "Day 2 — Session Day 1",
+      "time": "3:20pm-3:40pm",
+      "room": "Main Stage",
+      "type": "session",
+      "track": "Software Factories",
+      "status": "confirmed",
+      "speakers": [
+        "Vaibhav Gupta"
+      ]
+    },
+    {
+      "title": "Every Harness Will Become A Claw",
+      "day": "Day 2 — Session Day 1",
+      "time": "3:20pm-3:40pm",
+      "room": "Track 1",
+      "type": "session",
+      "track": "Claws & Personal Agents",
+      "status": "confirmed",
+      "speakers": [
+        "Sam Bhagwat"
+      ]
+    },
+    {
+      "title": "From Scratch to SOTA: Training a 3B State-Space Vision Model for 1.4 Billion People",
+      "day": "Day 2 — Session Day 1",
+      "time": "3:20pm-3:40pm",
+      "room": "Track 2",
+      "type": "sponsor",
+      "track": "Vision & OCR",
+      "status": "confirmed",
+      "speakers": [
+        "Krishna Prasad Srinivasan"
+      ]
+    },
+    {
+      "title": "Stop Chunking Like It's 2022",
+      "day": "Day 2 — Session Day 1",
+      "time": "3:20pm-3:40pm",
+      "room": "Track 3",
+      "type": "session",
+      "track": "Search & Retrieval",
+      "status": "confirmed",
+      "speakers": [
+        "Yuval Belfer",
+        "Niv Granot"
+      ]
+    },
+    {
+      "title": "Setting Yourself Up for Success — Part 2",
+      "day": "Day 2 — Session Day 1",
+      "time": "3:20pm-3:40pm",
+      "room": "Track 4",
+      "type": "session",
+      "track": "Workshops Day 2",
+      "status": "confirmed",
+      "speakers": [
+        "Jason Liu"
+      ]
+    },
+    {
+      "title": "AI’s Jurassic Park Period",
+      "day": "Day 2 — Session Day 1",
+      "time": "3:20pm-3:40pm",
+      "room": "Track 5",
+      "type": "sponsor",
+      "track": "Security",
+      "status": "confirmed",
+      "speakers": [
+        "Aaron Stanley"
+      ]
+    },
+    {
+      "title": "\"My name is... my name is...\": A Linguistic Map for Building and Debugging Voice Agents",
+      "day": "Day 2 — Session Day 1",
+      "time": "3:20pm-3:40pm",
+      "room": "Track 6",
+      "type": "session",
+      "track": "Voice & Realtime AI",
+      "status": "confirmed",
+      "speakers": [
+        "Midam Kim"
+      ]
+    },
+    {
+      "title": "How Forward Deployed Engineering is done at Kepler",
+      "day": "Day 2 — Session Day 1",
+      "time": "3:20pm-3:40pm",
+      "room": "Track 8",
+      "type": "session",
+      "track": "Forward Deployed Engineering",
+      "status": "confirmed",
+      "speakers": [
+        "Vinoo Ganesh"
+      ]
+    },
+    {
+      "title": "Building Worlds for Models",
+      "day": "Day 2 — Session Day 1",
+      "time": "3:20pm-3:40pm",
+      "room": "Track 9",
+      "type": "session",
+      "track": "Data Quality",
+      "status": "confirmed",
+      "speakers": [
+        "Nicolai Ouporov"
+      ]
+    },
+    {
+      "title": "Surviving Your Own Velocity: How VS Code Ships Weekly with 40 People",
+      "day": "Day 2 — Session Day 1",
+      "time": "3:20pm-3:40pm",
+      "room": "Track M",
+      "type": "sponsor",
+      "track": "Track M",
+      "status": "confirmed",
+      "speakers": [
+        "Harald Kirschner"
+      ]
+    },
+    {
+      "title": "How to Get Your Org to Adopt Coding Agents (Without Shipping Garbage)",
+      "day": "Day 2 — Session Day 1",
+      "time": "3:20pm-3:40pm",
+      "room": "Leadership 1",
+      "type": "session",
+      "track": "AI-Native Enterprises",
+      "status": "confirmed",
+      "speakers": [
+        "Eyal Blum"
+      ]
+    },
+    {
+      "title": "Your Fine-Tuned Model Is Tech Debt: A 50x ROI House of Cards",
+      "day": "Day 2 — Session Day 1",
+      "time": "3:20pm-3:40pm",
+      "room": "Leadership 2",
+      "type": "session",
+      "track": "AI Architects: Show my Workflow",
+      "status": "confirmed",
+      "speakers": [
+        "Dan Bjornn"
+      ]
+    },
+    {
+      "title": "From Context to Memory: Your Agents Need a Real Memory Layer",
+      "day": "Day 2 — Session Day 1",
+      "time": "3:20pm-3:40pm",
+      "room": "Expo Stage 2 NW",
+      "type": "session",
+      "status": "confirmed",
+      "speakers": [
+        "Anders Swanson"
+      ]
+    },
+    {
+      "title": "Running a 20T-Token Data Pipeline: Infrastructure Lessons from Production",
+      "day": "Day 2 — Session Day 1",
+      "time": "3:20pm-3:40pm",
+      "room": "Expo Stage 3 SW",
+      "type": "session",
+      "status": "confirmed",
+      "speakers": [
+        "Bogdan Gaza"
+      ]
+    },
+    {
+      "title": "From raw documents to retrievable knowledge",
+      "day": "Day 2 — Session Day 1",
+      "time": "3:20pm-3:40pm",
+      "room": "Expo Stage 4 SE",
+      "type": "session",
+      "status": "confirmed",
+      "speakers": [
+        "Leo Platzer"
+      ]
+    },
+    {
+      "title": "The Software Factory Survivor's Guide",
+      "day": "Day 2 — Session Day 1",
+      "time": "3:45pm-4:05pm",
+      "room": "Main Stage",
+      "type": "session",
+      "track": "Software Factories",
+      "status": "confirmed",
+      "speakers": [
+        "Kyle Mistele"
+      ]
+    },
+    {
+      "title": "Gadgets: Personal app vibe coding that is actually safe",
+      "day": "Day 2 — Session Day 1",
+      "time": "3:45pm-4:05pm",
+      "room": "Track 1",
+      "type": "session",
+      "track": "Software Factories",
+      "status": "confirmed",
+      "speakers": [
+        "Kenton Varda"
+      ]
+    },
+    {
+      "title": "Setting Yourself Up for Success — Part 3",
+      "day": "Day 2 — Session Day 1",
+      "time": "3:45pm-4:05pm",
+      "room": "Track 4",
+      "type": "session",
+      "track": "Workshops Day 2",
+      "status": "confirmed",
+      "speakers": [
+        "Jason Liu"
+      ]
+    },
+    {
+      "title": "Secure Cloud Compute",
+      "day": "Day 2 — Session Day 1",
+      "time": "3:45pm-4:05pm",
+      "room": "Track 5",
+      "type": "sponsor",
+      "track": "Security",
+      "status": "tentative",
+      "speakers": [
+        "Ethan Sutin"
+      ]
+    },
+    {
+      "title": "Reduce the OUCH: Smarter behavior for AI assistants and robots",
+      "day": "Day 2 — Session Day 1",
+      "time": "3:45pm-4:05pm",
+      "room": "Track 6",
+      "type": "session",
+      "track": "Voice & Realtime AI",
+      "status": "confirmed",
+      "speakers": [
+        "Amit Desai"
+      ]
+    },
+    {
+      "title": "Tools for data curation and post-training LLMs",
+      "day": "Day 2 — Session Day 1",
+      "time": "3:45pm-4:05pm",
+      "room": "Track 9",
+      "type": "session",
+      "track": "Data Quality",
+      "status": "confirmed",
+      "speakers": [
+        "Mahesh Sathiamoorthy"
+      ]
+    },
+    {
+      "title": "AI-transforming 18K engineers, 40K repos, and an agent swarm: what worked, what didn't",
+      "day": "Day 2 — Session Day 1",
+      "time": "3:45pm-4:05pm",
+      "room": "Leadership 1",
+      "type": "session",
+      "track": "AI-Native Enterprises",
+      "status": "confirmed",
+      "speakers": [
+        "Oscar Mullin"
+      ]
+    },
+    {
+      "title": "Unlock Agent Autonomy: The Runtime for AI-Native Systems",
+      "day": "Day 2 — Session Day 1",
+      "time": "3:45pm-4:05pm",
+      "room": "Leadership 2",
+      "type": "session",
+      "track": "AI Architects: Show my Workflow",
+      "status": "confirmed",
+      "speakers": [
+        "Tushar Jain"
+      ]
+    },
+    {
+      "title": "How We Built the Airbyte Agent MCP Server and CLI",
+      "day": "Day 2 — Session Day 1",
+      "time": "3:45pm-4:05pm",
+      "room": "Expo Stage 1 NE",
+      "type": "session",
+      "track": "Expo Stage 1",
+      "status": "confirmed",
+      "speakers": [
+        "Cam Kennedy"
+      ]
+    },
+    {
+      "title": "From Chatbots to Agents: How Reducto builds for Agent Experience to Enable Real Work",
+      "day": "Day 2 — Session Day 1",
+      "time": "3:45pm-4:05pm",
+      "room": "Expo Stage 2 NW",
+      "type": "session",
+      "status": "confirmed",
+      "speakers": [
+        "Abhi Arya"
+      ]
+    },
+    {
+      "title": "Towards Reliable Financial Agents: How a 4B Model Outsmarted a 235B Giant",
+      "day": "Day 2 — Session Day 1",
+      "time": "3:45pm-4:05pm",
+      "room": "Expo Stage 3 SW",
+      "type": "session",
+      "status": "confirmed",
+      "speakers": [
+        "Charlie Dickens"
+      ]
+    },
+    {
+      "title": "AI Enablement at Automattic: How a Remote Company Builds AI Fluency",
+      "day": "Day 2 — Session Day 1",
+      "time": "3:45pm-4:05pm",
+      "room": "Expo Stage 4 SE",
+      "type": "session",
+      "status": "confirmed",
+      "speakers": [
+        "Em Shreve"
+      ]
+    },
+    {
+      "title": "Harness Engineering is not Enough: Why Software Factories Fail",
+      "day": "Day 2 — Session Day 1",
+      "time": "4:30pm-4:50pm",
+      "room": "Main Stage",
+      "type": "keynote",
+      "track": "Software Factories",
+      "status": "confirmed",
+      "speakers": [
+        "Dex Horthy"
+      ]
+    },
+    {
+      "title": "In Code They Act, In Proof We Trust",
+      "day": "Day 2 — Session Day 1",
+      "time": "4:50pm-5:10pm",
+      "room": "Main Stage",
+      "type": "keynote",
+      "track": "Harness Engineering",
+      "status": "confirmed",
+      "speakers": [
+        "Erik Meijer"
+      ]
+    },
+    {
+      "title": "The Future of Cursor",
+      "day": "Day 2 — Session Day 1",
+      "time": "5:10pm-5:30pm",
+      "room": "Main Stage",
+      "type": "keynote",
+      "track": "Software Factories",
+      "status": "confirmed",
+      "speakers": [
+        "Lee Robinson"
+      ]
+    },
+    {
+      "title": "2026 AI Engineering Survey",
+      "day": "Day 3 — Session Day 2",
+      "time": "9:00am-9:05am",
+      "room": "Main Stage",
+      "type": "keynote",
+      "track": "Autoresearch",
+      "status": "confirmed",
+      "speakers": [
+        "Barr Yaron"
+      ]
+    },
+    {
+      "title": "Seeing like an Agent",
+      "day": "Day 3 — Session Day 2",
+      "time": "9:05am-9:25am",
+      "room": "Main Stage",
+      "type": "keynote",
+      "track": "Autoresearch",
+      "status": "confirmed",
+      "speakers": [
+        "Thariq Shihipar"
+      ]
+    },
+    {
+      "title": "In the Land of AI Agents, the Verifiers Are King",
+      "day": "Day 3 — Session Day 2",
+      "time": "9:25am-9:45am",
+      "room": "Main Stage",
+      "type": "keynote",
+      "track": "Software Factories",
+      "status": "confirmed",
+      "speakers": [
+        "Tariq Shaukat"
+      ]
+    },
+    {
+      "title": "Perception Agents",
+      "day": "Day 3 — Session Day 2",
+      "time": "9:45am-10:05am",
+      "room": "Main Stage",
+      "type": "keynote",
+      "track": "Autoresearch",
+      "status": "confirmed",
+      "speakers": [
+        "Antje Barth"
+      ]
+    },
+    {
+      "title": "Research to Reality with Google DeepMind",
+      "day": "Day 3 — Session Day 2",
+      "time": "10:05am-10:25am",
+      "room": "Main Stage",
+      "type": "keynote",
+      "track": "Autoresearch",
+      "status": "confirmed",
+      "speakers": [
+        "Benoit Schillings"
+      ]
+    },
+    {
+      "title": "Evals Track Intro",
+      "day": "Day 3 — Session Day 2",
+      "time": "10:25am-10:30am",
+      "room": "Main Stage",
+      "type": "keynote",
+      "track": "Autoresearch",
+      "status": "confirmed",
+      "speakers": [
+        "Laurie Voss",
+        "Aparna Dhinakaran"
+      ]
+    },
+    {
+      "title": "First Steps Toward Automated AI Research",
+      "day": "Day 3 — Session Day 2",
+      "time": "10:45am-11:05am",
+      "room": "Main Stage",
+      "type": "session",
+      "track": "Autoresearch",
+      "status": "confirmed",
+      "speakers": [
+        "Richard Socher"
+      ]
+    },
+    {
+      "title": "Don’t build agents, build environments",
+      "day": "Day 3 — Session Day 2",
+      "time": "10:45am-11:05am",
+      "room": "Track 1",
+      "type": "session",
+      "track": "Sandbox & Platform Engineering",
+      "status": "tentative",
+      "speakers": [
+        "Adam Azzam"
+      ]
+    },
+    {
+      "title": "Building the simulation infrastructure for practical world model use",
+      "day": "Day 3 — Session Day 2",
+      "time": "10:45am-11:05am",
+      "room": "Track 2",
+      "type": "sponsor",
+      "track": "Robotics & World Models",
+      "status": "confirmed",
+      "speakers": [
+        "Christopher Manning"
+      ]
+    },
+    {
+      "title": "Beyond Static Intelligence: Evaluating Continual Learning",
+      "day": "Day 3 — Session Day 2",
+      "time": "10:45am-11:05am",
+      "room": "Track 3",
+      "type": "session",
+      "track": "Memory & Continual Learning",
+      "status": "confirmed",
+      "speakers": [
+        "Parth Asawa"
+      ]
+    },
+    {
+      "title": "Build realtime multimodal agents with Gemini Live",
+      "day": "Day 3 — Session Day 2",
+      "time": "10:45am-11:05am",
+      "room": "Track 4",
+      "type": "session",
+      "track": "Workshops Day 2",
+      "status": "confirmed",
+      "speakers": [
+        "Thor 雷神 Schaeff"
+      ]
+    },
+    {
+      "title": "Vending-Bench: Long-Horizon Agent Evals for a Simulated Vending Business",
+      "day": "Day 3 — Session Day 2",
+      "time": "10:45am-11:05am",
+      "room": "Track 5",
+      "type": "sponsor",
+      "track": "Evals",
+      "status": "confirmed",
+      "speakers": [
+        "Lukas Petersson"
+      ]
+    },
+    {
+      "title": "Understanding is the new bottleneck",
+      "day": "Day 3 — Session Day 2",
+      "time": "10:45am-11:05am",
+      "room": "Track 6",
+      "type": "session",
+      "track": "Design Engineering",
+      "status": "confirmed",
+      "speakers": [
+        "Geoffrey Litt"
+      ]
+    },
+    {
+      "title": "Computer-use models will agentify the web, not APIs",
+      "day": "Day 3 — Session Day 2",
+      "time": "10:45am-11:05am",
+      "room": "Track 7",
+      "type": "session",
+      "track": "Computer Use",
+      "status": "confirmed",
+      "speakers": [
+        "Dhruv Batra"
+      ]
+    },
+    {
+      "title": "Build-Time vs. Run-Time: Why Your Dev Tools Will Fail in Production",
+      "day": "Day 3 — Session Day 2",
+      "time": "10:45am-11:05am",
+      "room": "Track 8",
+      "type": "session",
+      "track": "Context Engineering",
+      "status": "confirmed",
+      "speakers": [
+        "Averi Kitsch",
+        "Prerna Kakkar"
+      ]
+    },
+    {
+      "title": "What's next after RLHF?",
+      "day": "Day 3 — Session Day 2",
+      "time": "10:45am-11:05am",
+      "room": "Track 9",
+      "type": "session",
+      "track": "Posttraining & Midtraining",
+      "status": "confirmed",
+      "speakers": [
+        "Diogo Almeida"
+      ]
+    },
+    {
+      "title": "From framework to runtime: running agents with Foundry Agent Service",
+      "day": "Day 3 — Session Day 2",
+      "time": "10:45am-11:05am",
+      "room": "Track M",
+      "type": "sponsor",
+      "track": "Track M",
+      "status": "confirmed",
+      "speakers": [
+        "Tina Manghnani",
+        "Keiji Kanazawa"
+      ]
+    },
+    {
+      "title": "Vertical Superintelligence: Making AI Work in America's Messiest Industries",
+      "day": "Day 3 — Session Day 2",
+      "time": "10:45am-11:05am",
+      "room": "Leadership 1",
+      "type": "session",
+      "track": "AI-Native Enterprises",
+      "status": "confirmed",
+      "speakers": [
+        "Varun Shenoy",
+        "Rasmus Wissmann"
+      ]
+    },
+    {
+      "title": "The Z/L Continuum: Should AI Engineers Still Read Code?",
+      "day": "Day 3 — Session Day 2",
+      "time": "10:45am-11:05am",
+      "room": "Leadership 2",
+      "type": "session",
+      "track": "AI Architects: Tokenmaxxing",
+      "status": "confirmed",
+      "speakers": [
+        "Alex Volkov"
+      ]
+    },
+    {
+      "title": "Circle Expo Session",
+      "day": "Day 3 — Session Day 2",
+      "time": "10:45am-11:05am",
+      "room": "Expo Stage 1 NE",
+      "type": "session",
+      "status": "confirmed",
+      "speakers": []
+    },
+    {
+      "title": "AI Engineering & Governance 2026 Trends",
+      "day": "Day 3 — Session Day 2",
+      "time": "10:45am-11:05am",
+      "room": "Expo Stage 2 NW",
+      "type": "session",
+      "track": "Expo Stage 2",
+      "status": "confirmed",
+      "speakers": [
+        "Wallon Walusayi"
+      ]
+    },
+    {
+      "title": "Why AI Didn't Actually Make You Ship Faster",
+      "day": "Day 3 — Session Day 2",
+      "time": "10:45am-11:05am",
+      "room": "Expo Stage 3 SW",
+      "type": "session",
+      "track": "Expo Stage 3",
+      "status": "confirmed",
+      "speakers": [
+        "Gabriel Spencer-Harper"
+      ]
+    },
+    {
+      "title": "Redesigning how software gets built",
+      "day": "Day 3 — Session Day 2",
+      "time": "10:45am-11:05am",
+      "room": "Expo Stage 4 SE",
+      "type": "session",
+      "track": "Expo Stage 4",
+      "status": "confirmed",
+      "speakers": [
+        "TBD — Sonar"
+      ]
+    },
+    {
+      "title": "Tokenomics: From AI Spend to AI Value",
+      "day": "Day 3 — Session Day 2",
+      "time": "11:00am-12:00pm",
+      "room": "Leadership Lounge",
+      "type": "session",
+      "track": "CTO Circle",
+      "status": "confirmed",
+      "speakers": [
+        "Martin Harrysson",
+        "Matt Linderman",
+        "Prakhar Dixit"
+      ]
+    },
+    {
+      "title": "Autoresearch for Dense Retrieval: Test-Time Compute with Frozen Embedding Models",
+      "day": "Day 3 — Session Day 2",
+      "time": "11:10am-11:30am",
+      "room": "Main Stage",
+      "type": "session",
+      "track": "Autoresearch",
+      "status": "confirmed",
+      "speakers": [
+        "Han Xiao"
+      ]
+    },
+    {
+      "title": "Building a Unified Interface For LLMs",
+      "day": "Day 3 — Session Day 2",
+      "time": "11:10am-11:30am",
+      "room": "Track 1",
+      "type": "session",
+      "track": "Sandbox & Platform Engineering",
+      "status": "confirmed",
+      "speakers": [
+        "Shashank Goyal"
+      ]
+    },
+    {
+      "title": "Building the simulation infrastructure for practical world model use",
+      "day": "Day 3 — Session Day 2",
+      "time": "11:10am-11:30am",
+      "room": "Track 2",
+      "type": "sponsor",
+      "track": "Robotics & World Models",
+      "status": "confirmed",
+      "speakers": [
+        "Christopher Manning"
+      ]
+    },
+    {
+      "title": "Scaling up Continual Learning",
+      "day": "Day 3 — Session Day 2",
+      "time": "11:10am-11:30am",
+      "room": "Track 3",
+      "type": "session",
+      "track": "Memory & Continual Learning",
+      "status": "confirmed",
+      "speakers": [
+        "Ronak Malde"
+      ]
+    },
+    {
+      "title": "Build realtime multimodal agents with Gemini Live (continued 2)",
+      "day": "Day 3 — Session Day 2",
+      "time": "11:10am-11:30am",
+      "room": "Track 4",
+      "type": "session",
+      "track": "Workshops Day 2",
+      "status": "confirmed",
+      "speakers": [
+        "Thor 雷神 Schaeff"
+      ]
+    },
+    {
+      "title": "From Alert to PR: Building an Autonomous Agent Debugger",
+      "day": "Day 3 — Session Day 2",
+      "time": "11:10am-11:30am",
+      "room": "Track 5",
+      "type": "sponsor",
+      "track": "Evals",
+      "status": "confirmed",
+      "speakers": [
+        "Jason Lopatecki"
+      ]
+    },
+    {
+      "title": "The Spatial Harness: Bringing Agents to the Canvas",
+      "day": "Day 3 — Session Day 2",
+      "time": "11:10am-11:30am",
+      "room": "Track 6",
+      "type": "session",
+      "track": "Design Engineering",
+      "status": "confirmed",
+      "speakers": [
+        "Max Drake"
+      ]
+    },
+    {
+      "title": "Computer Use at the Edge of the Statistical Precipice",
+      "day": "Day 3 — Session Day 2",
+      "time": "11:10am-11:30am",
+      "room": "Track 7",
+      "type": "session",
+      "track": "Computer Use",
+      "status": "confirmed",
+      "speakers": [
+        "Pierluca D'Oro"
+      ]
+    },
+    {
+      "title": "It’s Tokens All The Way Down: How RLMs are Different",
+      "day": "Day 3 — Session Day 2",
+      "time": "11:10am-11:30am",
+      "room": "Track 8",
+      "type": "session",
+      "track": "Context Engineering",
+      "status": "confirmed",
+      "speakers": [
+        "Kevin Madura"
+      ]
+    },
+    {
+      "title": "State of Data",
+      "day": "Day 3 — Session Day 2",
+      "time": "11:10am-11:30am",
+      "room": "Track 9",
+      "type": "session",
+      "track": "Posttraining & Midtraining",
+      "status": "confirmed",
+      "speakers": [
+        "Sean Cai"
+      ]
+    },
+    {
+      "title": "How to avoid disaster when vibe-coding a billing engine",
+      "day": "Day 3 — Session Day 2",
+      "time": "11:10am-11:30am",
+      "room": "Leadership 1",
+      "type": "session",
+      "track": "AI-Native Enterprises",
+      "status": "confirmed",
+      "speakers": [
+        "Andrew Garvin"
+      ]
+    },
+    {
+      "title": "Is Orchestration the Future?",
+      "day": "Day 3 — Session Day 2",
+      "time": "11:10am-11:30am",
+      "room": "Leadership 2",
+      "type": "session",
+      "track": "AI Architects: Tokenmaxxing",
+      "status": "confirmed",
+      "speakers": [
+        "Vlad Luzin"
+      ]
+    },
+    {
+      "title": "Harnessing Agents: The Durable Runtime for Dynamic Workflows",
+      "day": "Day 3 — Session Day 2",
+      "time": "11:10am-11:30am",
+      "room": "Expo Stage 1 NE",
+      "type": "session",
+      "status": "confirmed",
+      "speakers": [
+        "Viren Baraiya"
+      ]
+    },
+    {
+      "title": "AI-Assisted Engineering: 5 Trends We're Seeing From 500+ Organizations",
+      "day": "Day 3 — Session Day 2",
+      "time": "11:10am-11:30am",
+      "room": "Expo Stage 2 NW",
+      "type": "session",
+      "track": "Expo Stage 2",
+      "status": "confirmed",
+      "speakers": [
+        "Justin Reock"
+      ]
+    },
+    {
+      "title": "The Death of Keyword Search and the Rise of Agent-Readable Catalogs",
+      "day": "Day 3 — Session Day 2",
+      "time": "11:10am-11:30am",
+      "room": "Expo Stage 3 SW",
+      "type": "session",
+      "track": "Expo Stage 3",
+      "status": "confirmed",
+      "speakers": [
+        "Nixon Dinh"
+      ]
+    },
+    {
+      "title": "FDE Playbook: Build an AI Support Agent and Give It a Voice",
+      "day": "Day 3 — Session Day 2",
+      "time": "11:10am-11:30am",
+      "room": "Expo Stage 4 SE",
+      "type": "session",
+      "track": "Expo Stage 4",
+      "status": "confirmed",
+      "speakers": [
+        "Matt Lawler"
+      ]
+    },
+    {
+      "title": "Memory Harnesses for Long-Running Research Agents",
+      "day": "Day 3 — Session Day 2",
+      "time": "11:40am-12:00pm",
+      "room": "Main Stage",
+      "type": "session",
+      "track": "Memory & Continual Learning",
+      "status": "confirmed",
+      "speakers": [
+        "Stefania Druga"
+      ]
+    },
+    {
+      "title": "Kubernetes Is Not Your Sandbox",
+      "day": "Day 3 — Session Day 2",
+      "time": "11:40am-12:00pm",
+      "room": "Track 1",
+      "type": "session",
+      "track": "Sandbox & Platform Engineering",
+      "status": "confirmed",
+      "speakers": [
+        "Ivan Burazin"
+      ]
+    },
+    {
+      "title": "Commercial Grade-Robots for Real World Usage",
+      "day": "Day 3 — Session Day 2",
+      "time": "11:40am-12:00pm",
+      "room": "Track 2",
+      "type": "sponsor",
+      "track": "Robotics & World Models",
+      "status": "confirmed",
+      "speakers": [
+        "Jason Ma"
+      ]
+    },
+    {
+      "title": "Scaling Compute on Context",
+      "day": "Day 3 — Session Day 2",
+      "time": "11:40am-12:00pm",
+      "room": "Track 3",
+      "type": "session",
+      "track": "Memory & Continual Learning",
+      "status": "confirmed",
+      "speakers": [
+        "Jack Morris"
+      ]
+    },
+    {
+      "title": "Build realtime multimodal agents with Gemini Live (continued 3)",
+      "day": "Day 3 — Session Day 2",
+      "time": "11:40am-12:00pm",
+      "room": "Track 4",
+      "type": "session",
+      "track": "Workshops Day 2",
+      "status": "confirmed",
+      "speakers": [
+        "Thor 雷神 Schaeff"
+      ]
+    },
+    {
+      "title": "Building Closed-Loop Evals for a Multimodal Agent at Uber Scale",
+      "day": "Day 3 — Session Day 2",
+      "time": "11:40am-12:00pm",
+      "room": "Track 5",
+      "type": "sponsor",
+      "track": "Evals",
+      "status": "confirmed",
+      "speakers": [
+        "Soumya Gupta",
+        "Jai Chopra"
+      ]
+    },
+    {
+      "title": "The Design-Code Roundtrip That Isn't",
+      "day": "Day 3 — Session Day 2",
+      "time": "11:40am-12:00pm",
+      "room": "Track 6",
+      "type": "session",
+      "track": "Design Engineering",
+      "status": "confirmed",
+      "speakers": [
+        "Jonathan Gordon"
+      ]
+    },
+    {
+      "title": "Bringing agents onto the world wide web",
+      "day": "Day 3 — Session Day 2",
+      "time": "11:40am-12:00pm",
+      "room": "Track 7",
+      "type": "session",
+      "track": "Computer Use",
+      "status": "confirmed",
+      "speakers": [
+        "Paul Klein IV"
+      ]
+    },
+    {
+      "title": "500 Skills, Zero Fine-Tuning: LinkedIn's Playbook for AI Agents That Actually Know Your Codebase",
+      "day": "Day 3 — Session Day 2",
+      "time": "11:40am-12:00pm",
+      "room": "Track 8",
+      "type": "session",
+      "track": "Context Engineering",
+      "status": "confirmed",
+      "speakers": [
+        "Ajay Prakash"
+      ]
+    },
+    {
+      "title": "Arithmetic (fka Operating Intelligence)",
+      "day": "Day 3 — Session Day 2",
+      "time": "11:40am-12:00pm",
+      "room": "Track 9",
+      "type": "session",
+      "track": "Data Quality",
+      "status": "confirmed",
+      "speakers": [
+        "Uri Rolls"
+      ]
+    },
+    {
+      "title": "OpenAI, Anthropic, or agent frameworks: choose the right AI stack",
+      "day": "Day 3 — Session Day 2",
+      "time": "11:40am-12:00pm",
+      "room": "Track M",
+      "type": "sponsor",
+      "track": "Track M",
+      "status": "confirmed",
+      "speakers": [
+        "Arun Sekhar",
+        "Pamela Fox"
+      ]
+    },
+    {
+      "title": "Your Code Has Bugs. Lean4 Has Proofs. A Practical Guide to Formal Verification for Engineers",
+      "day": "Day 3 — Session Day 2",
+      "time": "11:40am-12:00pm",
+      "room": "Leadership 1",
+      "type": "session",
+      "track": "AI-Native Enterprises",
+      "status": "confirmed",
+      "speakers": [
+        "Varun Pant"
+      ]
+    },
+    {
+      "title": "How to Kill the Code Review",
+      "day": "Day 3 — Session Day 2",
+      "time": "11:40am-12:00pm",
+      "room": "Leadership 2",
+      "type": "session",
+      "track": "AI Architects: Tokenmaxxing",
+      "status": "confirmed",
+      "speakers": [
+        "Ankit Jain"
+      ]
+    },
+    {
+      "title": "Fault-Tolerant Training at Scale: Making Hardware Failures a Non-Event",
+      "day": "Day 3 — Session Day 2",
+      "time": "11:40am-12:00pm",
+      "room": "Expo Stage 1 NE",
+      "type": "session",
+      "status": "confirmed",
+      "speakers": []
+    },
+    {
+      "title": "How to generate mergeable code with a context engine",
+      "day": "Day 3 — Session Day 2",
+      "time": "11:40am-12:00pm",
+      "room": "Expo Stage 2 NW",
+      "type": "session",
+      "status": "confirmed",
+      "speakers": [
+        "Peter Werry"
+      ]
+    },
+    {
+      "title": "The Next Run Should Be Better",
+      "day": "Day 3 — Session Day 2",
+      "time": "11:40am-12:00pm",
+      "room": "Expo Stage 3 SW",
+      "type": "session",
+      "status": "confirmed",
+      "speakers": [
+        "Jake Broekhuizen"
+      ]
+    },
+    {
+      "title": "AI agents don't read your policy docs. They hit your APIs.",
+      "day": "Day 3 — Session Day 2",
+      "time": "11:40am-12:00pm",
+      "room": "Expo Stage 4 SE",
+      "type": "session",
+      "status": "confirmed",
+      "speakers": []
+    },
+    {
+      "title": "« the era of (auto) research »",
+      "day": "Day 3 — Session Day 2",
+      "time": "12:05pm-12:25pm",
+      "room": "Main Stage",
+      "type": "session",
+      "track": "Autoresearch",
+      "status": "confirmed",
+      "speakers": [
+        "Elie Bakouch"
+      ]
+    },
+    {
+      "title": "Your agent needs a sandbox, not a desert",
+      "day": "Day 3 — Session Day 2",
+      "time": "12:05pm-12:25pm",
+      "room": "Track 1",
+      "type": "session",
+      "track": "Sandbox & Platform Engineering",
+      "status": "confirmed",
+      "speakers": [
+        "Samuel Colvin"
+      ]
+    },
+    {
+      "title": "Tell the Robot What You Want",
+      "day": "Day 3 — Session Day 2",
+      "time": "12:05pm-12:25pm",
+      "room": "Track 2",
+      "type": "sponsor",
+      "track": "Robotics & World Models",
+      "status": "confirmed",
+      "speakers": [
+        "Sandhya Subramani"
+      ]
+    },
+    {
+      "title": "Intelligence + Continual Learning = Expertise",
+      "day": "Day 3 — Session Day 2",
+      "time": "12:05pm-12:25pm",
+      "room": "Track 3",
+      "type": "session",
+      "track": "Memory & Continual Learning",
+      "status": "confirmed",
+      "speakers": [
+        "Yu Su"
+      ]
+    },
+    {
+      "title": "Build realtime multimodal agents with Gemini Live (continued 4)",
+      "day": "Day 3 — Session Day 2",
+      "time": "12:05pm-12:25pm",
+      "room": "Track 4",
+      "type": "session",
+      "track": "Workshops Day 3",
+      "status": "confirmed",
+      "speakers": [
+        "Thor 雷神 Schaeff"
+      ]
+    },
+    {
+      "title": "From Agent Traces to Agent Simulations: The next era of agent evaluation",
+      "day": "Day 3 — Session Day 2",
+      "time": "12:05pm-12:25pm",
+      "room": "Track 5",
+      "type": "sponsor",
+      "track": "Evals",
+      "status": "confirmed",
+      "speakers": [
+        "Rustem Feyzkhanov"
+      ]
+    },
+    {
+      "title": "Mousepower: agents that can’t be measured, can’t be managed.",
+      "day": "Day 3 — Session Day 2",
+      "time": "12:05pm-12:25pm",
+      "room": "Track 6",
+      "type": "session",
+      "track": "Design Engineering",
+      "status": "confirmed",
+      "speakers": [
+        "Maximillian Piras"
+      ]
+    },
+    {
+      "title": "The Dark Arts of Web Automation: Teaching Agents to Use Websites Like Humans",
+      "day": "Day 3 — Session Day 2",
+      "time": "12:05pm-12:25pm",
+      "room": "Track 7",
+      "type": "session",
+      "track": "Computer Use",
+      "status": "confirmed",
+      "speakers": [
+        "Corey Gallon"
+      ]
+    },
+    {
+      "title": "Your agents lack context: Here's how to fix \"You're absolutely right!\"",
+      "day": "Day 3 — Session Day 2",
+      "time": "12:05pm-12:25pm",
+      "room": "Track 8",
+      "type": "session",
+      "track": "Context Engineering",
+      "status": "confirmed",
+      "speakers": [
+        "Brandon Waselnuk"
+      ]
+    },
+    {
+      "title": "Bring your own harness: flexible post-training",
+      "day": "Day 3 — Session Day 2",
+      "time": "12:05pm-12:25pm",
+      "room": "Track 9",
+      "type": "session",
+      "track": "Posttraining & Midtraining",
+      "status": "confirmed",
+      "speakers": [
+        "Raymond Feng"
+      ]
+    },
+    {
+      "title": "AI-Native Organisations runs on Skills: How to Extract, Structure, evaluate and Scale Them",
+      "day": "Day 3 — Session Day 2",
+      "time": "12:05pm-12:25pm",
+      "room": "Leadership 1",
+      "type": "session",
+      "track": "AI-Native Enterprises",
+      "status": "confirmed",
+      "speakers": [
+        "Imad Touil"
+      ]
+    },
+    {
+      "title": "The Death of the Code Review",
+      "day": "Day 3 — Session Day 2",
+      "time": "12:05pm-12:25pm",
+      "room": "Leadership 2",
+      "type": "session",
+      "track": "AI Architects: Tokenmaxxing",
+      "status": "confirmed",
+      "speakers": [
+        "Laurie Voss"
+      ]
+    },
+    {
+      "title": "Your agent architecture has a half-life of 6 months",
+      "day": "Day 3 — Session Day 2",
+      "time": "12:05pm-12:25pm",
+      "room": "Expo Stage 1 NE",
+      "type": "session",
+      "status": "confirmed",
+      "speakers": [
+        "Dan Farrelly"
+      ]
+    },
+    {
+      "title": "From Stateless to Stateful: Orchestrating Real-Time Voice & Messaging Agents with Twilio and Amazon Bedrock",
+      "day": "Day 3 — Session Day 2",
+      "time": "12:05pm-12:25pm",
+      "room": "Expo Stage 2 NW",
+      "type": "session",
+      "status": "confirmed",
+      "speakers": [
+        "Rishab Kumar"
+      ]
+    },
+    {
+      "title": "Harnessing Collective Agent Intelligence for Open Science",
+      "day": "Day 3 — Session Day 2",
+      "time": "12:05pm-12:25pm",
+      "room": "Expo Stage 3 SW",
+      "type": "session",
+      "status": "confirmed",
+      "speakers": [
+        "James Zou"
+      ]
+    },
+    {
+      "title": "Prompt, Memory, Weights: The Architecture Decisions Most AI Teams Make by Accident",
+      "day": "Day 3 — Session Day 2",
+      "time": "12:05pm-12:25pm",
+      "room": "Expo Stage 4 SE",
+      "type": "session",
+      "track": "Context Engineering",
+      "status": "confirmed",
+      "speakers": [
+        "Anant Srivastava"
+      ]
+    },
+    {
+      "title": "Tokenomics: From AI Spend to AI Value (Working Lunch)",
+      "day": "Day 3 — Session Day 2",
+      "time": "12:30pm-1:30pm",
+      "room": "Leadership Lounge",
+      "type": "session",
+      "track": "CTO Circle",
+      "status": "confirmed",
+      "speakers": [
+        "Martin Harrysson",
+        "Matt Linderman",
+        "Prakhar Dixit"
+      ]
+    },
+    {
+      "title": "Closing the Loop: An Autonomous AI Research Agent",
+      "day": "Day 3 — Session Day 2",
+      "time": "1:30pm-1:50pm",
+      "room": "Main Stage",
+      "type": "session",
+      "track": "Autoresearch",
+      "status": "confirmed",
+      "speakers": [
+        "Tim Sweeney"
+      ]
+    },
+    {
+      "title": "From fork() to Fleet: Designing an Agent Sandbox Cloud Pt 1",
+      "day": "Day 3 — Session Day 2",
+      "time": "1:30pm-1:50pm",
+      "room": "Track 1",
+      "type": "session",
+      "track": "Sandbox & Platform Engineering",
+      "status": "confirmed",
+      "speakers": [
+        "Abhishek Bhardwaj"
+      ]
+    },
+    {
+      "title": "Unitree",
+      "day": "Day 3 — Session Day 2",
+      "time": "1:30pm-1:50pm",
+      "room": "Track 2",
+      "type": "sponsor",
+      "track": "Robotics & World Models",
+      "status": "tentative",
+      "speakers": [
+        "TBD — Unitree"
+      ]
+    },
+    {
+      "title": "Adaption Labs — Gradient-Free Continual Learning",
+      "day": "Day 3 — Session Day 2",
+      "time": "1:30pm-1:50pm",
+      "room": "Track 3",
+      "type": "session",
+      "track": "Memory & Continual Learning",
+      "status": "confirmed",
+      "speakers": [
+        "Sara Hooker"
+      ]
+    },
+    {
+      "title": "The Agentic Power User's Playbook: Tips and Tricks for Swarm-Style Agentic Development",
+      "day": "Day 3 — Session Day 2",
+      "time": "1:30pm-1:50pm",
+      "room": "Track 4",
+      "type": "session",
+      "track": "Workshops Day 3",
+      "status": "confirmed",
+      "speakers": [
+        "John Lindquist"
+      ]
+    },
+    {
+      "title": "Model Whisperers: How Evals and Prompts Shape Agent Behavior",
+      "day": "Day 3 — Session Day 2",
+      "time": "1:30pm-1:50pm",
+      "room": "Track 5",
+      "type": "sponsor",
+      "track": "Evals",
+      "status": "confirmed",
+      "speakers": [
+        "Chris Souza",
+        "Preetika Bhateja",
+        "Daniel Bump"
+      ]
+    },
+    {
+      "title": "Design at the Speed of Adjectives",
+      "day": "Day 3 — Session Day 2",
+      "time": "1:30pm-1:50pm",
+      "room": "Track 6",
+      "type": "session",
+      "track": "Design Engineering",
+      "status": "confirmed",
+      "speakers": [
+        "Paul Bakaus"
+      ]
+    },
+    {
+      "title": "From RL to IRL",
+      "day": "Day 3 — Session Day 2",
+      "time": "1:30pm-1:50pm",
+      "room": "Track 7",
+      "type": "session",
+      "track": "Computer Use",
+      "status": "confirmed",
+      "speakers": [
+        "Gaurav Mishra"
+      ]
+    },
+    {
+      "title": "How long can your skills be before your agent forgets what you told it?",
+      "day": "Day 3 — Session Day 2",
+      "time": "1:30pm-1:50pm",
+      "room": "Track 8",
+      "type": "session",
+      "track": "Context Engineering",
+      "status": "confirmed",
+      "speakers": [
+        "Laurie Voss"
+      ]
+    },
+    {
+      "title": "PRIME-RL: Async & Decentralized RL Training at Scale",
+      "day": "Day 3 — Session Day 2",
+      "time": "1:30pm-1:50pm",
+      "room": "Track 9",
+      "type": "session",
+      "track": "Posttraining & Midtraining",
+      "status": "confirmed",
+      "speakers": [
+        "Will Brown"
+      ]
+    },
+    {
+      "title": "Design multi-agent systems that actually work",
+      "day": "Day 3 — Session Day 2",
+      "time": "1:30pm-1:50pm",
+      "room": "Track M",
+      "type": "sponsor",
+      "track": "Track M",
+      "status": "confirmed",
+      "speakers": [
+        "Tina Manghnani"
+      ]
+    },
+    {
+      "title": "The Half Life of Agent Infrastructure",
+      "day": "Day 3 — Session Day 2",
+      "time": "1:30pm-1:50pm",
+      "room": "Leadership 1",
+      "type": "session",
+      "track": "AI-Native Enterprises",
+      "status": "confirmed",
+      "speakers": [
+        "Ben Kus"
+      ]
+    },
+    {
+      "title": "Tokenmaxxing is the New \"Lines of Code\"",
+      "day": "Day 3 — Session Day 2",
+      "time": "1:30pm-1:50pm",
+      "room": "Leadership 2",
+      "type": "session",
+      "track": "AI Architects: Tokenmaxxing",
+      "status": "confirmed",
+      "speakers": [
+        "Nicholas Arcolano"
+      ]
+    },
+    {
+      "title": "Surviving Your Own Velocity: How VS Code Ships Weekly with 40 People",
+      "day": "Day 3 — Session Day 2",
+      "time": "1:30pm-1:50pm",
+      "room": "Expo Stage 2 NW",
+      "type": "session",
+      "track": "Expo Stage 2",
+      "status": "confirmed",
+      "speakers": [
+        "Harald Kirschner"
+      ]
+    },
+    {
+      "title": "Deepmind Expo Session 3",
+      "day": "Day 3 — Session Day 2",
+      "time": "1:30pm-1:50pm",
+      "room": "Expo Stage 3 SW",
+      "type": "session",
+      "status": "tentative",
+      "speakers": []
+    },
+    {
+      "title": "Daytona Expo 1",
+      "day": "Day 3 — Session Day 2",
+      "time": "1:30pm-1:50pm",
+      "room": "Expo Stage 4 SE",
+      "type": "session",
+      "status": "tentative",
+      "speakers": []
+    },
+    {
+      "title": "An AI Agent Became the #1 Contributor in OpenAI's Hiring Challenge",
+      "day": "Day 3 — Session Day 2",
+      "time": "1:55pm-2:15pm",
+      "room": "Main Stage",
+      "type": "session",
+      "track": "Autoresearch",
+      "status": "confirmed",
+      "speakers": [
+        "Zhengyao Jiang"
+      ]
+    },
+    {
+      "title": "From fork() to Fleet: Designing an Agent Sandbox Cloud Pt2",
+      "day": "Day 3 — Session Day 2",
+      "time": "1:55pm-2:15pm",
+      "room": "Track 1",
+      "type": "session",
+      "track": "Sandbox & Platform Engineering",
+      "status": "confirmed",
+      "speakers": [
+        "Abhishek Bhardwaj"
+      ]
+    },
+    {
+      "title": "Frontier Robotics Research",
+      "day": "Day 3 — Session Day 2",
+      "time": "1:55pm-2:15pm",
+      "room": "Track 2",
+      "type": "sponsor",
+      "track": "Robotics & World Models",
+      "status": "confirmed",
+      "speakers": [
+        "Deepak Pathak"
+      ]
+    },
+    {
+      "title": "Improving Agents is a Data Mining Problem",
+      "day": "Day 3 — Session Day 2",
+      "time": "1:55pm-2:15pm",
+      "room": "Track 3",
+      "type": "session",
+      "track": "Memory & Continual Learning",
+      "status": "confirmed",
+      "speakers": [
+        "Vivek Trivedy"
+      ]
+    },
+    {
+      "title": "The Agentic Power User's Playbook: Tips and Tricks for Swarm-Style Agentic Development (continued 2)",
+      "day": "Day 3 — Session Day 2",
+      "time": "1:55pm-2:15pm",
+      "room": "Track 4",
+      "type": "session",
+      "track": "Workshops Day 3",
+      "status": "confirmed",
+      "speakers": [
+        "John Lindquist"
+      ]
+    },
+    {
+      "title": "Evaling Video Slop",
+      "day": "Day 3 — Session Day 2",
+      "time": "1:55pm-2:15pm",
+      "room": "Track 5",
+      "type": "sponsor",
+      "track": "Evals",
+      "status": "confirmed",
+      "speakers": [
+        "Maor Bril"
+      ]
+    },
+    {
+      "title": "Training Taste",
+      "day": "Day 3 — Session Day 2",
+      "time": "1:55pm-2:15pm",
+      "room": "Track 6",
+      "type": "session",
+      "track": "Design Engineering",
+      "status": "tentative",
+      "speakers": [
+        "Thais Castello Branco"
+      ]
+    },
+    {
+      "title": "The Rise of CaaS: Context-as-a-Service for Agentic AI",
+      "day": "Day 3 — Session Day 2",
+      "time": "1:55pm-2:15pm",
+      "room": "Track 7",
+      "type": "session",
+      "track": "Computer Use",
+      "status": "confirmed",
+      "speakers": [
+        "TBD — Bright Data speaker"
+      ]
+    },
+    {
+      "title": "Cut Through the Context Hype: 4 Layers Your Agent Is Missing",
+      "day": "Day 3 — Session Day 2",
+      "time": "1:55pm-2:15pm",
+      "room": "Track 8",
+      "type": "session",
+      "track": "Context Engineering",
+      "status": "confirmed",
+      "speakers": [
+        "Prukalpa Sankar"
+      ]
+    },
+    {
+      "title": "Emulated: The data for fully autonomous software engineers and companies",
+      "day": "Day 3 — Session Day 2",
+      "time": "1:55pm-2:15pm",
+      "room": "Track 9",
+      "type": "session",
+      "track": "Posttraining & Midtraining",
+      "status": "confirmed",
+      "speakers": [
+        "Joseph Wang"
+      ]
+    },
+    {
+      "title": "Guardians of the State: How We Built an Air-Gapped AI Fortress for Consumer Data",
+      "day": "Day 3 — Session Day 2",
+      "time": "1:55pm-2:15pm",
+      "room": "Leadership 1",
+      "type": "session",
+      "track": "AI-Native Enterprises",
+      "status": "confirmed",
+      "speakers": [
+        "Rachna Srivastava"
+      ]
+    },
+    {
+      "title": "Superhuman performance is a shape, not just nines.",
+      "day": "Day 3 — Session Day 2",
+      "time": "1:55pm-2:15pm",
+      "room": "Leadership 2",
+      "type": "session",
+      "track": "AI Architects: Tokenmaxxing",
+      "status": "confirmed",
+      "speakers": [
+        "Matthew Jewkes"
+      ]
+    },
+    {
+      "title": "Edge-Native AI: Building Ultra-Fast Agents and MCP Servers with Spin",
+      "day": "Day 3 — Session Day 2",
+      "time": "1:55pm-2:15pm",
+      "room": "Expo Stage 1 NE",
+      "type": "session",
+      "track": "Expo Stage 2",
+      "status": "confirmed",
+      "speakers": [
+        "Thorsten Hans"
+      ]
+    },
+    {
+      "title": "Why your company needs a context graph, and how to build it",
+      "day": "Day 3 — Session Day 2",
+      "time": "1:55pm-2:15pm",
+      "room": "Expo Stage 2 NW",
+      "type": "session",
+      "track": "Expo Stage 3",
+      "status": "confirmed",
+      "speakers": [
+        "Gil Feig"
+      ]
+    },
+    {
+      "title": "Warp: Building Self-Improving Agent Software Factories",
+      "day": "Day 3 — Session Day 2",
+      "time": "1:55pm-2:15pm",
+      "room": "Expo Stage 3 SW",
+      "type": "session",
+      "status": "tentative",
+      "speakers": [
+        "Suraj Gupta"
+      ]
+    },
+    {
+      "title": "Natively Multimodal from Step Zero",
+      "day": "Day 3 — Session Day 2",
+      "time": "1:55pm-2:15pm",
+      "room": "Expo Stage 4 SE",
+      "type": "session",
+      "status": "confirmed",
+      "speakers": []
+    },
+    {
+      "title": "Self-Improvement of Context, Harness, and Model Weights through Reflective Optimization",
+      "day": "Day 3 — Session Day 2",
+      "time": "2:25pm-2:45pm",
+      "room": "Main Stage",
+      "type": "session",
+      "track": "Autoresearch",
+      "status": "confirmed",
+      "speakers": [
+        "Lakshya Agrawal"
+      ]
+    },
+    {
+      "title": "1,000 Agent Tasks in a Sandbox: What Breaks When LLMs Write and Run Code",
+      "day": "Day 3 — Session Day 2",
+      "time": "2:25pm-2:45pm",
+      "room": "Track 1",
+      "type": "session",
+      "track": "Sandbox & Platform Engineering",
+      "status": "confirmed",
+      "speakers": [
+        "Kevin Orellana"
+      ]
+    },
+    {
+      "title": "From Manual Drones to Autonomous Multi-Agent Missions",
+      "day": "Day 3 — Session Day 2",
+      "time": "2:25pm-2:45pm",
+      "room": "Track 2",
+      "type": "sponsor",
+      "track": "Robotics & World Models",
+      "status": "confirmed",
+      "speakers": [
+        "Juraj Kabzan"
+      ]
+    },
+    {
+      "title": "Distillation and Continual Learning for Enterprise AI",
+      "day": "Day 3 — Session Day 2",
+      "time": "2:25pm-2:45pm",
+      "room": "Track 3",
+      "type": "session",
+      "track": "Memory & Continual Learning",
+      "status": "confirmed",
+      "speakers": [
+        "Samuel Denton"
+      ]
+    },
+    {
+      "title": "The Agentic Power User's Playbook: Tips and Tricks for Swarm-Style Agentic Development (continued 3)",
+      "day": "Day 3 — Session Day 2",
+      "time": "2:25pm-2:45pm",
+      "room": "Track 4",
+      "type": "session",
+      "track": "Workshops Day 3",
+      "status": "confirmed",
+      "speakers": [
+        "John Lindquist"
+      ]
+    },
+    {
+      "title": "Don't Summarize. Sample. — How YouTube Re-Built Search for the LLM Era",
+      "day": "Day 3 — Session Day 2",
+      "time": "2:25pm-2:45pm",
+      "room": "Track 5",
+      "type": "sponsor",
+      "track": "Evals",
+      "status": "confirmed",
+      "speakers": [
+        "Mihnea Munteanu"
+      ]
+    },
+    {
+      "title": "Imagination Engineering",
+      "day": "Day 3 — Session Day 2",
+      "time": "2:25pm-2:45pm",
+      "room": "Track 6",
+      "type": "session",
+      "track": "Design Engineering",
+      "status": "confirmed",
+      "speakers": [
+        "Eve Bouffard"
+      ]
+    },
+    {
+      "title": "Computer-Use 2.0: Agents Just Got Multi-Cursor",
+      "day": "Day 3 — Session Day 2",
+      "time": "2:25pm-2:45pm",
+      "room": "Track 7",
+      "type": "session",
+      "track": "Computer Use",
+      "status": "confirmed",
+      "speakers": [
+        "Francesco Bonacci",
+        "Dillon DuPont"
+      ]
+    },
+    {
+      "title": "MCP Apps - Extending the frontier",
+      "day": "Day 3 — Session Day 2",
+      "time": "2:25pm-2:45pm",
+      "room": "Track 8",
+      "type": "session",
+      "track": "Context Engineering",
+      "status": "confirmed",
+      "speakers": [
+        "Liad Yosef",
+        "Ido Salomon"
+      ]
+    },
+    {
+      "title": "LatchBio",
+      "day": "Day 3 — Session Day 2",
+      "time": "2:25pm-2:45pm",
+      "room": "Track 9",
+      "type": "session",
+      "track": "Posttraining & Midtraining",
+      "status": "confirmed",
+      "speakers": [
+        "Kenny Workman"
+      ]
+    },
+    {
+      "title": "Power agents with Microsoft IQ",
+      "day": "Day 3 — Session Day 2",
+      "time": "2:25pm-2:45pm",
+      "room": "Track M",
+      "type": "sponsor",
+      "track": "Track M",
+      "status": "confirmed",
+      "speakers": [
+        "Marco Casalaina"
+      ]
+    },
+    {
+      "title": "From Tokenmaxxing to Trusted Throughput",
+      "day": "Day 3 — Session Day 2",
+      "time": "2:25pm-2:45pm",
+      "room": "Leadership 1",
+      "type": "session",
+      "track": "AI-Native Enterprises",
+      "status": "confirmed",
+      "speakers": [
+        "Mingsheng Hong"
+      ]
+    },
+    {
+      "title": "I Let Agents Refactor My Codebase for 3 Weeks. Then I Read the Code.",
+      "day": "Day 3 — Session Day 2",
+      "time": "2:25pm-2:45pm",
+      "room": "Leadership 2",
+      "type": "session",
+      "track": "AI Architects: Tokenmaxxing",
+      "status": "confirmed",
+      "speakers": [
+        "Keiji Kanazawa"
+      ]
+    },
+    {
+      "title": "Power agents with Microsoft IQ",
+      "day": "Day 3 — Session Day 2",
+      "time": "2:25pm-2:45pm",
+      "room": "Expo Stage 1 NE",
+      "type": "session",
+      "track": "Expo Stage 1",
+      "status": "confirmed",
+      "speakers": [
+        "Ronak Chokshi"
+      ]
+    },
+    {
+      "title": "Beyond Code Generation: API Context for Agentic Engineering",
+      "day": "Day 3 — Session Day 2",
+      "time": "2:25pm-2:45pm",
+      "room": "Expo Stage 2 NW",
+      "type": "session",
+      "status": "confirmed",
+      "speakers": [
+        "Kamalakannan Nandagopal"
+      ]
+    },
+    {
+      "title": "Latency Is a Budget. Humanlike Is the Goal.",
+      "day": "Day 3 — Session Day 2",
+      "time": "2:25pm-2:45pm",
+      "room": "Expo Stage 3 SW",
+      "type": "session",
+      "status": "confirmed",
+      "speakers": [
+        "Jesse Hall"
+      ]
+    },
+    {
+      "title": "Lightrun Expo Session",
+      "day": "Day 3 — Session Day 2",
+      "time": "2:25pm-2:45pm",
+      "room": "Expo Stage 4 SE",
+      "type": "session",
+      "status": "tentative",
+      "speakers": []
+    },
+    {
+      "title": "Autoresearch for Kernels",
+      "day": "Day 3 — Session Day 2",
+      "time": "2:50pm-3:10pm",
+      "room": "Main Stage",
+      "type": "session",
+      "track": "Autoresearch",
+      "status": "confirmed",
+      "speakers": [
+        "Tejas Bhakta"
+      ]
+    },
+    {
+      "title": "The Next Trillion Users of the Internet Still Don't Have an Identity",
+      "day": "Day 3 — Session Day 2",
+      "time": "2:50pm-3:10pm",
+      "room": "Track 1",
+      "type": "session",
+      "track": "Sandbox & Platform Engineering",
+      "status": "confirmed",
+      "speakers": [
+        "Adi Singh"
+      ]
+    },
+    {
+      "title": "Why Large? Tiny LMs & Agents on Edge/Robotics",
+      "day": "Day 3 — Session Day 2",
+      "time": "2:50pm-3:10pm",
+      "room": "Track 2",
+      "type": "sponsor",
+      "track": "Robotics & World Models",
+      "status": "confirmed",
+      "speakers": [
+        "Cormac Brick"
+      ]
+    },
+    {
+      "title": "Designing Agents (The Floor Is the Frontier)",
+      "day": "Day 3 — Session Day 2",
+      "time": "2:50pm-3:10pm",
+      "room": "Track 3",
+      "type": "session",
+      "track": "Memory & Continual Learning",
+      "status": "confirmed",
+      "speakers": [
+        "Ben Hylak"
+      ]
+    },
+    {
+      "title": "Don't Write Skills, Train Models",
+      "day": "Day 3 — Session Day 2",
+      "time": "2:50pm-3:10pm",
+      "room": "Track 4",
+      "type": "session",
+      "track": "Workshops Day 3",
+      "status": "confirmed",
+      "speakers": [
+        "Brian Douglas",
+        "John McBride"
+      ]
+    },
+    {
+      "title": "Evals Driven-Development: Engineering a Mental Health AI Coach Ethically & Safely",
+      "day": "Day 3 — Session Day 2",
+      "time": "2:50pm-3:10pm",
+      "room": "Track 5",
+      "type": "sponsor",
+      "track": "Evals",
+      "status": "confirmed",
+      "speakers": [
+        "Akele Reed",
+        "Dave Revere",
+        "Doug Keller"
+      ]
+    },
+    {
+      "title": "The Missing Layer: Design Taste in AI Agents // Stop Letting Your Agents Ship Ugly UIs",
+      "day": "Day 3 — Session Day 2",
+      "time": "2:50pm-3:10pm",
+      "room": "Track 6",
+      "type": "session",
+      "track": "Design Engineering",
+      "status": "confirmed",
+      "speakers": [
+        "Hassan El Mghari"
+      ]
+    },
+    {
+      "title": "How Web Data Infrastructure Powers the Next Generation of AI",
+      "day": "Day 3 — Session Day 2",
+      "time": "2:50pm-3:10pm",
+      "room": "Track 7",
+      "type": "session",
+      "track": "Computer Use",
+      "status": "confirmed",
+      "speakers": [
+        "Patricija Žemaitytė"
+      ]
+    },
+    {
+      "title": "MCP Apps: Give the Model Data, Give the User a UI",
+      "day": "Day 3 — Session Day 2",
+      "time": "2:50pm-3:10pm",
+      "room": "Track 8",
+      "type": "session",
+      "track": "Context Engineering",
+      "status": "confirmed",
+      "speakers": [
+        "Dustin Mihalik"
+      ]
+    },
+    {
+      "title": "Agents at Scale: Inside MiniMax's Model and the Infrastructure Behind It",
+      "day": "Day 3 — Session Day 2",
+      "time": "2:50pm-3:10pm",
+      "room": "Track 9",
+      "type": "session",
+      "track": "Posttraining & Midtraining",
+      "status": "confirmed",
+      "speakers": [
+        "Olive Song",
+        "Dan Fu"
+      ]
+    },
+    {
+      "title": "Agents Are Where Microservices Were in 2015. We're Making All the Same Mistakes.",
+      "day": "Day 3 — Session Day 2",
+      "time": "2:50pm-3:10pm",
+      "room": "Leadership 1",
+      "type": "session",
+      "track": "AI-Native Enterprises",
+      "status": "confirmed",
+      "speakers": [
+        "Roberto Milev",
+        "Uday Kanagala"
+      ]
+    },
+    {
+      "title": "Intelligent Model Routing: Frontier Performance Without Frontier Bills",
+      "day": "Day 3 — Session Day 2",
+      "time": "2:50pm-3:10pm",
+      "room": "Leadership 2",
+      "type": "session",
+      "track": "Sandbox & Platform Engineering",
+      "status": "confirmed",
+      "speakers": [
+        "Tomás Hernando Kofman"
+      ]
+    },
+    {
+      "title": "Inference performance as a competitive advantage",
+      "day": "Day 3 — Session Day 2",
+      "time": "2:50pm-3:10pm",
+      "room": "Expo Stage 1 NE",
+      "type": "session",
+      "status": "confirmed",
+      "speakers": [
+        "Alex Campos",
+        "Yunmo Koo"
+      ]
+    },
+    {
+      "title": "Building an Agent Harness for the Business, Not the Builder",
+      "day": "Day 3 — Session Day 2",
+      "time": "2:50pm-3:10pm",
+      "room": "Expo Stage 2 NW",
+      "type": "session",
+      "status": "confirmed",
+      "speakers": [
+        "Garrett Galow"
+      ]
+    },
+    {
+      "title": "The Frontier Is Coming Home",
+      "day": "Day 3 — Session Day 2",
+      "time": "2:50pm-3:10pm",
+      "room": "Expo Stage 3 SW",
+      "type": "session",
+      "status": "confirmed",
+      "speakers": [
+        "Dylan Couzon"
+      ]
+    },
+    {
+      "title": "Continuous Offensive Security the only approach in an agent-first world",
+      "day": "Day 3 — Session Day 2",
+      "time": "2:50pm-3:10pm",
+      "room": "Expo Stage 4 SE",
+      "type": "session",
+      "status": "tentative",
+      "speakers": [
+        "Eli Cohen"
+      ]
+    },
+    {
+      "title": "Autoresearch in the wild",
+      "day": "Day 3 — Session Day 2",
+      "time": "3:20pm-3:40pm",
+      "room": "Main Stage",
+      "type": "session",
+      "track": "Autoresearch",
+      "status": "confirmed",
+      "speakers": [
+        "Roland Gavrilescu",
+        "Julian Bright"
+      ]
+    },
+    {
+      "title": "Sandboxes Aren't Optional: Runtime Isolation Patterns for Coding Agents at Scale",
+      "day": "Day 3 — Session Day 2",
+      "time": "3:20pm-3:40pm",
+      "room": "Track 1",
+      "type": "session",
+      "track": "Sandbox & Platform Engineering",
+      "status": "confirmed",
+      "speakers": [
+        "Robert Brennan"
+      ]
+    },
+    {
+      "title": "From Self-Driving Monorepo to Self-Driving Cars",
+      "day": "Day 3 — Session Day 2",
+      "time": "3:20pm-3:40pm",
+      "room": "Track 2",
+      "type": "sponsor",
+      "track": "Robotics & World Models",
+      "status": "confirmed",
+      "speakers": [
+        "Amit Navindgi"
+      ]
+    },
+    {
+      "title": "Lessons from Studying Every Memory System",
+      "day": "Day 3 — Session Day 2",
+      "time": "3:20pm-3:40pm",
+      "room": "Track 3",
+      "type": "session",
+      "track": "Memory & Continual Learning",
+      "status": "confirmed",
+      "speakers": [
+        "Shlok Khemani"
+      ]
+    },
+    {
+      "title": "Don't Write Skills, Train Models (cont. 2/3)",
+      "day": "Day 3 — Session Day 2",
+      "time": "3:20pm-3:40pm",
+      "room": "Track 4",
+      "type": "session",
+      "track": "Workshops Day 3",
+      "status": "confirmed",
+      "speakers": [
+        "Brian Douglas"
+      ]
+    },
+    {
+      "title": "Don't Ship Skills Without Evals",
+      "day": "Day 3 — Session Day 2",
+      "time": "3:20pm-3:40pm",
+      "room": "Track 5",
+      "type": "sponsor",
+      "track": "Evals",
+      "status": "confirmed",
+      "speakers": [
+        "Philipp Schmid"
+      ]
+    },
+    {
+      "title": "Generative UI... in Python?",
+      "day": "Day 3 — Session Day 2",
+      "time": "3:20pm-3:40pm",
+      "room": "Track 6",
+      "type": "session",
+      "track": "Design Engineering",
+      "status": "confirmed",
+      "speakers": [
+        "Jeremiah Lowin"
+      ]
+    },
+    {
+      "title": "MCP Tasks (async)/ Why the heck aren't any agents supporting MCP tasks/async?",
+      "day": "Day 3 — Session Day 2",
+      "time": "3:20pm-3:40pm",
+      "room": "Track 8",
+      "type": "session",
+      "track": "Context Engineering",
+      "status": "confirmed",
+      "speakers": [
+        "Cornelia Davis"
+      ]
+    },
+    {
+      "title": "Benchmarks: The Good, the Bad, and the Ugly",
+      "day": "Day 3 — Session Day 2",
+      "time": "3:20pm-3:40pm",
+      "room": "Track 9",
+      "type": "session",
+      "track": "Posttraining & Midtraining",
+      "status": "tentative",
+      "speakers": [
+        "Ali Khial"
+      ]
+    },
+    {
+      "title": "Deploy agents to users in M365, Teams, and apps",
+      "day": "Day 3 — Session Day 2",
+      "time": "3:20pm-3:40pm",
+      "room": "Track M",
+      "type": "sponsor",
+      "track": "Track M",
+      "status": "confirmed",
+      "speakers": [
+        "Ashu Joshi"
+      ]
+    },
+    {
+      "title": "Agentic Sites: Building Hyper Personalized Websites",
+      "day": "Day 3 — Session Day 2",
+      "time": "3:20pm-3:40pm",
+      "room": "Leadership 1",
+      "type": "session",
+      "track": "AI-Native Enterprises",
+      "status": "confirmed",
+      "speakers": [
+        "Carlos Sanchez"
+      ]
+    },
+    {
+      "title": "Inference is the New Training Loop: Architecting High-Reliability Agents and Continuous AI Systems",
+      "day": "Day 3 — Session Day 2",
+      "time": "3:20pm-3:40pm",
+      "room": "Leadership 2",
+      "type": "session",
+      "track": "Posttraining & Midtraining",
+      "status": "confirmed",
+      "speakers": [
+        "David Corbitt"
+      ]
+    },
+    {
+      "title": "The Self-Improving OSS Agent Stack",
+      "day": "Day 3 — Session Day 2",
+      "time": "3:20pm-3:40pm",
+      "room": "Expo Stage 1 NE",
+      "type": "session",
+      "status": "confirmed",
+      "speakers": []
+    },
+    {
+      "title": "Runpod Expo Session",
+      "day": "Day 3 — Session Day 2",
+      "time": "3:20pm-3:40pm",
+      "room": "Expo Stage 2 NW",
+      "type": "session",
+      "status": "tentative",
+      "speakers": [
+        "Pranjal Jain"
+      ]
+    },
+    {
+      "title": "The Infinite Context Window Is a Myth: Context Engineering for AI Agents",
+      "day": "Day 3 — Session Day 2",
+      "time": "3:20pm-3:40pm",
+      "room": "Expo Stage 3 SW",
+      "type": "session",
+      "status": "confirmed",
+      "speakers": [
+        "Morgan Willis"
+      ]
+    },
+    {
+      "title": "Vibe Code Safely: Introducing Gadgets",
+      "day": "Day 3 — Session Day 2",
+      "time": "3:20pm-3:40pm",
+      "room": "Expo Stage 4 SE",
+      "type": "session",
+      "status": "confirmed",
+      "speakers": []
+    },
+    {
+      "title": "Autoresearch in a Multi-Agent AI Village",
+      "day": "Day 3 — Session Day 2",
+      "time": "3:45pm-4:05pm",
+      "room": "Main Stage",
+      "type": "session",
+      "track": "Autoresearch",
+      "status": "confirmed",
+      "speakers": [
+        "Erina Karati",
+        "Arunachalam Manikandan"
+      ]
+    },
+    {
+      "title": "Building ambitious software",
+      "day": "Day 3 — Session Day 2",
+      "time": "3:45pm-4:05pm",
+      "room": "Track 1",
+      "type": "session",
+      "track": "Sandbox & Platform Engineering",
+      "status": "confirmed",
+      "speakers": [
+        "Jonathan Kelley"
+      ]
+    },
+    {
+      "title": "I gave an AI a body",
+      "day": "Day 3 — Session Day 2",
+      "time": "3:45pm-4:05pm",
+      "room": "Track 2",
+      "type": "sponsor",
+      "track": "Robotics & World Models",
+      "status": "confirmed",
+      "speakers": [
+        "Cyrus Clarke"
+      ]
+    },
+    {
+      "title": "LLM Knowledge Bases: a practical guide",
+      "day": "Day 3 — Session Day 2",
+      "time": "3:45pm-4:05pm",
+      "room": "Track 3",
+      "type": "session",
+      "track": "Memory & Continual Learning",
+      "status": "confirmed",
+      "speakers": [
+        "Ben Holmes"
+      ]
+    },
+    {
+      "title": "Don't Write Skills, Train Models (cont. 3/3)",
+      "day": "Day 3 — Session Day 2",
+      "time": "3:45pm-4:05pm",
+      "room": "Track 4",
+      "type": "session",
+      "track": "Workshops Day 3",
+      "status": "confirmed",
+      "speakers": [
+        "Brian Douglas"
+      ]
+    },
+    {
+      "title": "The Future of Eval Environments",
+      "day": "Day 3 — Session Day 2",
+      "time": "3:45pm-4:05pm",
+      "room": "Track 5",
+      "type": "sponsor",
+      "track": "Evals",
+      "status": "tentative",
+      "speakers": [
+        "Alex Shaw"
+      ]
+    },
+    {
+      "title": "Let My People Code",
+      "day": "Day 3 — Session Day 2",
+      "time": "3:45pm-4:05pm",
+      "room": "Track 6",
+      "type": "session",
+      "track": "Design Engineering",
+      "status": "confirmed",
+      "speakers": [
+        "Vincent Wendy"
+      ]
+    },
+    {
+      "title": "The Universal Remote Control for AI",
+      "day": "Day 3 — Session Day 2",
+      "time": "3:45pm-4:05pm",
+      "room": "Track 8",
+      "type": "session",
+      "track": "Context Engineering",
+      "status": "confirmed",
+      "speakers": [
+        "Alex Hancock"
+      ]
+    },
+    {
+      "title": "The Chief AI Officer: A framework for the emerging Swiss Army Knife of roles",
+      "day": "Day 3 — Session Day 2",
+      "time": "3:45pm-4:05pm",
+      "room": "Leadership 1",
+      "type": "session",
+      "track": "AI Architects: Tokenmaxxing",
+      "status": "confirmed",
+      "speakers": [
+        "Rania Khalaf"
+      ]
+    },
+    {
+      "title": "The state of AI in software development: Insights across 400+ organizations",
+      "day": "Day 3 — Session Day 2",
+      "time": "3:45pm-4:05pm",
+      "room": "Leadership 2",
+      "type": "session",
+      "track": "AI Architects: Tokenmaxxing",
+      "status": "confirmed",
+      "speakers": [
+        "Justin Reock"
+      ]
+    },
+    {
+      "title": "Modular: Taming the AI Hardware Cambrian Explosion",
+      "day": "Day 3 — Session Day 2",
+      "time": "3:45pm-4:05pm",
+      "room": "Expo Stage 1 NE",
+      "type": "session",
+      "status": "confirmed",
+      "speakers": [
+        "Abdul Dakkak"
+      ]
+    },
+    {
+      "title": "Codex, Behind the Harness",
+      "day": "Day 3 — Session Day 2",
+      "time": "3:45pm-4:05pm",
+      "room": "Expo Stage 2 NW",
+      "type": "session",
+      "status": "confirmed",
+      "speakers": [
+        "Dominik Kundel"
+      ]
+    },
+    {
+      "title": "Stop Renting Intelligence: The Train-to-Deploy Loop for Specialized AI",
+      "day": "Day 3 — Session Day 2",
+      "time": "3:45pm-4:05pm",
+      "room": "Expo Stage 3 SW",
+      "type": "session",
+      "status": "confirmed",
+      "speakers": [
+        "Jetashree Ravi"
+      ]
+    },
+    {
+      "title": "Ray Actors, Vision Tokens, and the GIL: Engineering an SFT Data Pipeline That Keeps GPUs Busy",
+      "day": "Day 3 — Session Day 2",
+      "time": "3:45pm-4:05pm",
+      "room": "Expo Stage 4 SE",
+      "type": "session",
+      "status": "confirmed",
+      "speakers": [
+        "Tarun Sunkaraneni"
+      ]
+    },
+    {
+      "title": "Closing Keynote",
+      "day": "Day 3 — Session Day 2",
+      "time": "4:30pm-4:50pm",
+      "room": "Main Stage",
+      "type": "keynote",
+      "track": "Autoresearch",
+      "status": "confirmed",
+      "speakers": [
+        "Addy Osmani"
+      ]
+    },
+    {
+      "title": "Trends in AI",
+      "day": "Day 3 — Session Day 2",
+      "time": "4:50pm-5:10pm",
+      "room": "Main Stage",
+      "type": "keynote",
+      "track": "Autoresearch",
+      "status": "confirmed",
+      "speakers": [
+        "George Cameron",
+        "Micah Hill-Smith"
+      ]
+    },
+    {
+      "title": "Closing Keynote — TBD",
+      "day": "Day 3 — Session Day 2",
+      "time": "5:10pm-5:30pm",
+      "room": "Main Stage",
+      "type": "keynote",
+      "track": "Autoresearch",
+      "status": "tentative",
+      "speakers": [
+        "Anastasios N. Angelopoulos"
+      ]
+    },
+    {
+      "title": "Building Great Agent Skills: The Missing Manual",
+      "day": "Day 4 — Session Day 3",
+      "time": "9:00am-9:20am",
+      "room": "Main Stage",
+      "type": "keynote",
+      "track": "Software Factories",
+      "status": "confirmed",
+      "speakers": [
+        "Matt Pocock"
+      ]
+    },
+    {
+      "title": "TCP and RDMA are Killing Inference Throughput; Homa can Fix It",
+      "day": "Day 4 — Session Day 3",
+      "time": "9:20am-9:40am",
+      "room": "Main Stage",
+      "type": "keynote",
+      "track": "Software Factories",
+      "status": "confirmed",
+      "speakers": [
+        "John Ousterhout"
+      ]
+    },
+    {
+      "title": "The Unreasonable Effectiveness of Separating the Task from the Model",
+      "day": "Day 4 — Session Day 3",
+      "time": "9:40am-10:00am",
+      "room": "Main Stage",
+      "type": "keynote",
+      "track": "Harness Engineering",
+      "status": "confirmed",
+      "speakers": [
+        "Maxime Rivest",
+        "Isaac Miller"
+      ]
+    },
+    {
+      "title": "How Tag changed Labs",
+      "day": "Day 4 — Session Day 3",
+      "time": "10:00am-10:20am",
+      "room": "Main Stage",
+      "type": "keynote",
+      "track": "Harness Engineering",
+      "status": "confirmed",
+      "speakers": [
+        "Mike Krieger"
+      ]
+    },
+    {
+      "title": "Why Graphs?",
+      "day": "Day 4 — Session Day 3",
+      "time": "10:20am-10:30am",
+      "room": "Main Stage",
+      "type": "keynote",
+      "track": "Graphs",
+      "status": "confirmed",
+      "speakers": [
+        "Emil Eifrem"
+      ]
+    },
+    {
+      "title": "Tokens Should Have Jobs",
+      "day": "Day 4 — Session Day 3",
+      "time": "10:45am-11:05am",
+      "room": "Main Stage",
+      "type": "session",
+      "track": "Harness Engineering",
+      "status": "confirmed",
+      "speakers": [
+        "Katelyn Lesse",
+        "Angela Jiang"
+      ]
+    },
+    {
+      "title": "Training Krea 2",
+      "day": "Day 4 — Session Day 3",
+      "time": "10:45am-11:05am",
+      "room": "Track 1",
+      "type": "session",
+      "track": "Generative Media",
+      "status": "confirmed",
+      "speakers": [
+        "Sangwu Lee"
+      ]
+    },
+    {
+      "title": "Designing Multimodal Collaborative Agents for Next-Gen Commerce",
+      "day": "Day 4 — Session Day 3",
+      "time": "10:45am-11:05am",
+      "room": "Track 2",
+      "type": "sponsor",
+      "track": "Agentic Commerce",
+      "status": "confirmed",
+      "speakers": [
+        "Nidhi Kaushik Vyas"
+      ]
+    },
+    {
+      "title": "ALPHALAB: Autonomous Multi-Agent Research Across Optimization Domains with Frontier LLMs",
+      "day": "Day 4 — Session Day 3",
+      "time": "10:45am-11:05am",
+      "room": "Track 3",
+      "type": "session",
+      "track": "AI in Finance",
+      "status": "confirmed",
+      "speakers": [
+        "Brendan Rappazzo"
+      ]
+    },
+    {
+      "title": "State of the Union: Why Local, Why Now",
+      "day": "Day 4 — Session Day 3",
+      "time": "10:45am-11:05am",
+      "room": "Track 4",
+      "type": "session",
+      "track": "Local AI",
+      "status": "confirmed",
+      "speakers": [
+        "Nader Khalil",
+        "Joseph Nelson",
+        "Alex Cheema",
+        "Ahmad Osman"
+      ]
+    },
+    {
+      "title": "CrabRAG: Why Automated Assistants Need Graph Memory, Not More Tokens",
+      "day": "Day 4 — Session Day 3",
+      "time": "10:45am-11:05am",
+      "room": "Track 5",
+      "type": "sponsor",
+      "track": "Graphs",
+      "status": "confirmed",
+      "speakers": [
+        "Stephen Chin"
+      ]
+    },
+    {
+      "title": "GTM Engineering: The Technical Bits",
+      "day": "Day 4 — Session Day 3",
+      "time": "10:45am-11:05am",
+      "room": "Track 6",
+      "type": "session",
+      "track": "AI in GTM",
+      "status": "confirmed",
+      "speakers": [
+        "Everett Berry"
+      ]
+    },
+    {
+      "title": "From Ambient Documentation to Clinical Intelligence",
+      "day": "Day 4 — Session Day 3",
+      "time": "10:45am-11:05am",
+      "room": "Track 7",
+      "type": "session",
+      "track": "AI in Healthcare",
+      "status": "confirmed",
+      "speakers": [
+        "Chaitanya Asawa"
+      ]
+    },
+    {
+      "title": "DeepSWE: expert code datasets",
+      "day": "Day 4 — Session Day 3",
+      "time": "10:45am-11:05am",
+      "room": "Track 8",
+      "type": "session",
+      "track": "Agentic Engineering",
+      "status": "confirmed",
+      "speakers": [
+        "Serena Ge"
+      ]
+    },
+    {
+      "title": "Operating Distributed Inference Systems at Scale",
+      "day": "Day 4 — Session Day 3",
+      "time": "10:45am-11:05am",
+      "room": "Track 9",
+      "type": "session",
+      "track": "Inference",
+      "status": "confirmed",
+      "speakers": [
+        "Nishant Gupta",
+        "Naman Ahuja"
+      ]
+    },
+    {
+      "title": "Diagnosing agent failures in production",
+      "day": "Day 4 — Session Day 3",
+      "time": "10:45am-11:05am",
+      "room": "Track M",
+      "type": "sponsor",
+      "track": "Track M",
+      "status": "confirmed",
+      "speakers": [
+        "Pamela Fox"
+      ]
+    },
+    {
+      "title": "Building safe payment infrastructure for machine-to-machine commerce",
+      "day": "Day 4 — Session Day 3",
+      "time": "10:45am-11:05am",
+      "room": "Leadership 1",
+      "type": "session",
+      "track": "Agentic Commerce",
+      "status": "confirmed",
+      "speakers": [
+        "Jennifer Lee"
+      ]
+    },
+    {
+      "title": "The Agent Behind the Curtain: Building the Oz Cloud Agent Platform",
+      "day": "Day 4 — Session Day 3",
+      "time": "10:45am-11:05am",
+      "room": "Leadership 2",
+      "type": "session",
+      "track": "AI Architects: AI Factories",
+      "status": "confirmed",
+      "speakers": [
+        "Safia Abdalla"
+      ]
+    },
+    {
+      "title": "AI Engineering & Governance 2026 Trends",
+      "day": "Day 4 — Session Day 3",
+      "time": "10:45am-11:05am",
+      "room": "Expo Stage 1 NE",
+      "type": "session",
+      "track": "Expo Stage 1",
+      "status": "confirmed",
+      "speakers": [
+        "Wallon Walusayi"
+      ]
+    },
+    {
+      "title": "Your Agent Can't Tell If It's Right",
+      "day": "Day 4 — Session Day 3",
+      "time": "10:45am-11:05am",
+      "room": "Expo Stage 2 NW",
+      "type": "session",
+      "status": "confirmed",
+      "speakers": [
+        "Willem Pienaar"
+      ]
+    },
+    {
+      "title": "No, That's Not a Software Factory",
+      "day": "Day 4 — Session Day 3",
+      "time": "10:45am-11:05am",
+      "room": "Expo Stage 3 SW",
+      "type": "session",
+      "track": "Expo Stage 3",
+      "status": "confirmed",
+      "speakers": [
+        "Ryan Cooke"
+      ]
+    },
+    {
+      "title": "Vector Isn't Enough: Hybrid Search & Retrieval for AI Engineers",
+      "day": "Day 4 — Session Day 3",
+      "time": "10:45am-11:05am",
+      "room": "Expo Stage 4 SE",
+      "type": "session",
+      "status": "tentative",
+      "speakers": []
+    },
+    {
+      "title": "The Agentic Product Development Organization",
+      "day": "Day 4 — Session Day 3",
+      "time": "11:00am-12:00pm",
+      "room": "Leadership Lounge",
+      "type": "session",
+      "track": "CTO Circle",
+      "status": "confirmed",
+      "speakers": [
+        "Martin Harrysson",
+        "Matt Linderman",
+        "Prakhar Dixit"
+      ]
+    },
+    {
+      "title": "MCPs, CLIs, and Skills: Choosing the Right Tooling Layer for Agentic Development",
+      "day": "Day 4 — Session Day 3",
+      "time": "11:10am-11:30am",
+      "room": "Main Stage",
+      "type": "session",
+      "track": "Agentic Engineering",
+      "status": "confirmed",
+      "speakers": [
+        "Nikita Kothari"
+      ]
+    },
+    {
+      "title": "HTML Is All Agents Need",
+      "day": "Day 4 — Session Day 3",
+      "time": "11:10am-11:30am",
+      "room": "Track 1",
+      "type": "session",
+      "track": "Generative Media",
+      "status": "confirmed",
+      "speakers": [
+        "James Russo"
+      ]
+    },
+    {
+      "title": "Why Your AI Agent Needs a Wallet: Agentic commerce on Arc with USDC and Nanopayments",
+      "day": "Day 4 — Session Day 3",
+      "time": "11:10am-11:30am",
+      "room": "Track 2",
+      "type": "sponsor",
+      "track": "Agentic Commerce",
+      "status": "confirmed",
+      "speakers": [
+        "Harshal Bhangale"
+      ]
+    },
+    {
+      "title": "Why Off-the-Shelf AI Doesn't Understand Money",
+      "day": "Day 4 — Session Day 3",
+      "time": "11:10am-11:30am",
+      "room": "Track 3",
+      "type": "session",
+      "track": "AI in Finance",
+      "status": "confirmed",
+      "speakers": [
+        "Udi Menkes"
+      ]
+    },
+    {
+      "title": "State of the Union: Why Local, Why Now",
+      "day": "Day 4 — Session Day 3",
+      "time": "11:10am-11:30am",
+      "room": "Track 4",
+      "type": "session",
+      "track": "Local AI",
+      "status": "confirmed",
+      "speakers": [
+        "Nader Khalil",
+        "Joseph Nelson",
+        "Alex Cheema",
+        "Ahmad Osman"
+      ]
+    },
+    {
+      "title": "Active Graph Agent Runtime (BabyAGI 4)",
+      "day": "Day 4 — Session Day 3",
+      "time": "11:10am-11:30am",
+      "room": "Track 5",
+      "type": "sponsor",
+      "track": "Graphs",
+      "status": "confirmed",
+      "speakers": [
+        "Yohei Nakajima"
+      ]
+    },
+    {
+      "title": "Reverse-Engineering the AI Buyer",
+      "day": "Day 4 — Session Day 3",
+      "time": "11:10am-11:30am",
+      "room": "Track 6",
+      "type": "session",
+      "track": "AI in GTM",
+      "status": "confirmed",
+      "speakers": [
+        "Aliisa Rosenthal"
+      ]
+    },
+    {
+      "title": "Guardrails First: Engineering Member-Facing Health AI",
+      "day": "Day 4 — Session Day 3",
+      "time": "11:10am-11:30am",
+      "room": "Track 7",
+      "type": "session",
+      "track": "AI in Healthcare",
+      "status": "confirmed",
+      "speakers": [
+        "Rashi Agrawal"
+      ]
+    },
+    {
+      "title": "Anthropic's CCA Exam as a Field-Guide for Agentic Engineering",
+      "day": "Day 4 — Session Day 3",
+      "time": "11:10am-11:30am",
+      "room": "Track 8",
+      "type": "session",
+      "track": "Agentic Engineering",
+      "status": "confirmed",
+      "speakers": [
+        "Frank Coyle"
+      ]
+    },
+    {
+      "title": "Routing LLM Inference in Production: From Engine Signals to Policy",
+      "day": "Day 4 — Session Day 3",
+      "time": "11:10am-11:30am",
+      "room": "Track 9",
+      "type": "session",
+      "track": "Inference",
+      "status": "confirmed",
+      "speakers": [
+        "Qianru Lao",
+        "Lu Zhang"
+      ]
+    },
+    {
+      "title": "Tracing and debugging agents across systems with OpenTelemetry",
+      "day": "Day 4 — Session Day 3",
+      "time": "11:10am-11:30am",
+      "room": "Track M",
+      "type": "sponsor",
+      "track": "Track M",
+      "status": "confirmed",
+      "speakers": [
+        "Chang Liu"
+      ]
+    },
+    {
+      "title": "Tribal Dungeons of Global Shipping: AI Agents at Global Scale",
+      "day": "Day 4 — Session Day 3",
+      "time": "11:10am-11:30am",
+      "room": "Leadership 1",
+      "type": "session",
+      "track": "AI-Native Enterprises",
+      "status": "confirmed",
+      "speakers": [
+        "Dmitry Buykin"
+      ]
+    },
+    {
+      "title": "FinOps for AI Agents: Who Spent All the Tokens?",
+      "day": "Day 4 — Session Day 3",
+      "time": "11:10am-11:30am",
+      "room": "Leadership 2",
+      "type": "session",
+      "track": "AI Architects: AI Factories",
+      "status": "confirmed",
+      "speakers": [
+        "Tisha Chawla",
+        "Susheem Koul"
+      ]
+    },
+    {
+      "title": "Beyond RAG: See a relational context engine reduce token burn",
+      "day": "Day 4 — Session Day 3",
+      "time": "11:10am-11:30am",
+      "room": "Expo Stage 1 NE",
+      "type": "session",
+      "status": "confirmed",
+      "speakers": [
+        "Brandon Waselnuk"
+      ]
+    },
+    {
+      "title": "Keycard AI Expo 1",
+      "day": "Day 4 — Session Day 3",
+      "time": "11:10am-11:30am",
+      "room": "Expo Stage 2 NW",
+      "type": "session",
+      "status": "tentative",
+      "speakers": []
+    },
+    {
+      "title": "The Lethal Trifecta Is Already on Your Developers' Laptops",
+      "day": "Day 4 — Session Day 3",
+      "time": "11:10am-11:30am",
+      "room": "Expo Stage 3 SW",
+      "type": "session",
+      "status": "confirmed",
+      "speakers": [
+        "Michael Patterson"
+      ]
+    },
+    {
+      "title": "Your AI Agent Has No Nervous System",
+      "day": "Day 4 — Session Day 3",
+      "time": "11:10am-11:30am",
+      "room": "Expo Stage 4 SE",
+      "type": "session",
+      "status": "confirmed",
+      "speakers": [
+        "Matt Gibiec"
+      ]
+    },
+    {
+      "title": "Auth for Agents: Unblock Autonomous AI with auth.md",
+      "day": "Day 4 — Session Day 3",
+      "time": "11:40am-12:00pm",
+      "room": "Main Stage",
+      "type": "session",
+      "track": "Agentic Engineering",
+      "status": "confirmed",
+      "speakers": [
+        "Michael Grinich"
+      ]
+    },
+    {
+      "title": "Building an Agentic Video Editor for Mass Consumer",
+      "day": "Day 4 — Session Day 3",
+      "time": "11:40am-12:00pm",
+      "room": "Track 1",
+      "type": "session",
+      "track": "Generative Media",
+      "status": "confirmed",
+      "speakers": [
+        "Ekaterina Deyneka"
+      ]
+    },
+    {
+      "title": "When AI Agents Pay and Sellers Monetize: Building x402 Apps for Agentic Commerce on AWS",
+      "day": "Day 4 — Session Day 3",
+      "time": "11:40am-12:00pm",
+      "room": "Track 2",
+      "type": "sponsor",
+      "track": "Agentic Commerce",
+      "status": "confirmed",
+      "speakers": [
+        "Anil Nadiminti"
+      ]
+    },
+    {
+      "title": "Let's integrate AI Agents in Event-Sourced Systems",
+      "day": "Day 4 — Session Day 3",
+      "time": "11:40am-12:00pm",
+      "room": "Track 3",
+      "type": "session",
+      "track": "AI in Finance",
+      "status": "confirmed",
+      "speakers": [
+        "Divakar Kumar"
+      ]
+    },
+    {
+      "title": "Demo: GLM 5.2 on DGX Station — Frontier Intelligence Under Your Desk",
+      "day": "Day 4 — Session Day 3",
+      "time": "11:40am-12:00pm",
+      "room": "Track 4",
+      "type": "session",
+      "track": "Local AI",
+      "status": "confirmed",
+      "speakers": [
+        "Ahmad Osman"
+      ]
+    },
+    {
+      "title": "Your Moat Is Your Data Model",
+      "day": "Day 4 — Session Day 3",
+      "time": "11:40am-12:00pm",
+      "room": "Track 5",
+      "type": "sponsor",
+      "track": "Graphs",
+      "status": "confirmed",
+      "speakers": [
+        "Mike Phipps"
+      ]
+    },
+    {
+      "title": "AI in GTM at Notion",
+      "day": "Day 4 — Session Day 3",
+      "time": "11:40am-12:00pm",
+      "room": "Track 6",
+      "type": "session",
+      "track": "AI in GTM",
+      "status": "confirmed",
+      "speakers": [
+        "Flora Liu"
+      ]
+    },
+    {
+      "title": "Shipping AI to a Million Patients Without an A/B Test",
+      "day": "Day 4 — Session Day 3",
+      "time": "11:40am-12:00pm",
+      "room": "Track 7",
+      "type": "session",
+      "track": "AI in Healthcare",
+      "status": "confirmed",
+      "speakers": [
+        "Jared Joselowitz"
+      ]
+    },
+    {
+      "title": "Guide, Verify, Solve: The Engineering Discipline Agentic Development Demands",
+      "day": "Day 4 — Session Day 3",
+      "time": "11:40am-12:00pm",
+      "room": "Track 8",
+      "type": "session",
+      "track": "Agentic Engineering",
+      "status": "confirmed",
+      "speakers": [
+        "Manish Kapur",
+        "Anirban Chatterjee"
+      ]
+    },
+    {
+      "title": "Are LLM Performance Benchmarks Reliable?",
+      "day": "Day 4 — Session Day 3",
+      "time": "11:40am-12:00pm",
+      "room": "Track 9",
+      "type": "session",
+      "track": "Inference",
+      "status": "confirmed",
+      "speakers": [
+        "Ashok Chandrasekar",
+        "Jason Kramberger"
+      ]
+    },
+    {
+      "title": "Benchmarking VS Code with VSC-Bench: How to measure agent performance",
+      "day": "Day 4 — Session Day 3",
+      "time": "11:40am-12:00pm",
+      "room": "Track M",
+      "type": "sponsor",
+      "track": "Track M",
+      "status": "confirmed",
+      "speakers": [
+        "Ross Wollman"
+      ]
+    },
+    {
+      "title": "All the Things We Have to Do to Satisfy Your Insatiable Need for Tokens",
+      "day": "Day 4 — Session Day 3",
+      "time": "11:40am-12:00pm",
+      "room": "Leadership 1",
+      "type": "session",
+      "track": "Inference",
+      "status": "confirmed",
+      "speakers": [
+        "Daniel Kim",
+        "Michelle Nguyen"
+      ]
+    },
+    {
+      "title": "What If Your Chip Design Team Moved Like a Single Body?",
+      "day": "Day 4 — Session Day 3",
+      "time": "11:40am-12:00pm",
+      "room": "Leadership 2",
+      "type": "session",
+      "track": "AI Architects: AI Factories",
+      "status": "confirmed",
+      "speakers": [
+        "Khaled Alashmouny",
+        "Abduallah Mohamed"
+      ]
+    },
+    {
+      "title": "The Art of Building Verifiers for Computer Use Agents",
+      "day": "Day 4 — Session Day 3",
+      "time": "11:40am-12:00pm",
+      "room": "Expo Stage 1 NE",
+      "type": "session",
+      "status": "confirmed",
+      "speakers": [
+        "Miguel González Fernández",
+        "Corby Rosset"
+      ]
+    },
+    {
+      "title": "Seeing the Plumbing: Profiling vLLM Speculative Decoding on NVIDIA Blackwell",
+      "day": "Day 4 — Session Day 3",
+      "time": "11:40am-12:00pm",
+      "room": "Expo Stage 2 NW",
+      "type": "session",
+      "status": "confirmed",
+      "speakers": [
+        "Sheilah Kirui"
+      ]
+    },
+    {
+      "title": "Voice is the universal interface",
+      "day": "Day 4 — Session Day 3",
+      "time": "11:40am-12:00pm",
+      "room": "Expo Stage 3 SW",
+      "type": "session",
+      "status": "confirmed",
+      "speakers": [
+        "Kwindla Kramer",
+        "Neil Zeghidour"
+      ]
+    },
+    {
+      "title": "Building agents is trivial now, context is the next frontier",
+      "day": "Day 4 — Session Day 3",
+      "time": "11:40am-12:00pm",
+      "room": "Expo Stage 4 SE",
+      "type": "session",
+      "status": "tentative",
+      "speakers": [
+        "Jeff Ng"
+      ]
+    },
+    {
+      "title": "Harness Engineering: Building the Production Cage for Powerful Domain Agents",
+      "day": "Day 4 — Session Day 3",
+      "time": "12:05pm-12:25pm",
+      "room": "Main Stage",
+      "type": "session",
+      "track": "Harness Engineering",
+      "status": "confirmed",
+      "speakers": [
+        "Mike Chambers"
+      ]
+    },
+    {
+      "title": "The Next Game Engine Won't Have a Manual",
+      "day": "Day 4 — Session Day 3",
+      "time": "12:05pm-12:25pm",
+      "room": "Track 1",
+      "type": "session",
+      "track": "Generative Media",
+      "status": "confirmed",
+      "speakers": [
+        "Arturo Nunez"
+      ]
+    },
+    {
+      "title": "x402 isn’t good (yet)",
+      "day": "Day 4 — Session Day 3",
+      "time": "12:05pm-12:25pm",
+      "room": "Track 2",
+      "type": "sponsor",
+      "track": "Agentic Commerce",
+      "status": "confirmed",
+      "speakers": [
+        "Jan Curn"
+      ]
+    },
+    {
+      "title": "How Kepler Built Verifiable AI for Financial Services",
+      "day": "Day 4 — Session Day 3",
+      "time": "12:05pm-12:25pm",
+      "room": "Track 3",
+      "type": "session",
+      "track": "AI in Finance",
+      "status": "confirmed",
+      "speakers": [
+        "Vinoo Ganesh"
+      ]
+    },
+    {
+      "title": "Local AI Demos",
+      "day": "Day 4 — Session Day 3",
+      "time": "12:05pm-12:25pm",
+      "room": "Track 4",
+      "type": "session",
+      "track": "Local AI",
+      "status": "confirmed",
+      "speakers": []
+    },
+    {
+      "title": "From Systems of Record to Systems of Context",
+      "day": "Day 4 — Session Day 3",
+      "time": "12:05pm-12:25pm",
+      "room": "Track 5",
+      "type": "sponsor",
+      "track": "Graphs",
+      "status": "confirmed",
+      "speakers": [
+        "Omri Bruchim"
+      ]
+    },
+    {
+      "title": "The Building Blocks of GTM Orchestration",
+      "day": "Day 4 — Session Day 3",
+      "time": "12:05pm-12:25pm",
+      "room": "Track 6",
+      "type": "session",
+      "track": "AI in GTM",
+      "status": "confirmed",
+      "speakers": [
+        "Arman Vaziri"
+      ]
+    },
+    {
+      "title": "200 Million Patient Interactions Later: What the Generic Voice Stack Misses",
+      "day": "Day 4 — Session Day 3",
+      "time": "12:05pm-12:25pm",
+      "room": "Track 7",
+      "type": "session",
+      "track": "AI in Healthcare",
+      "status": "confirmed",
+      "speakers": [
+        "Vivek Muppalla"
+      ]
+    },
+    {
+      "title": "Benchmarking Coding Agents on New vs Legacy Code bases",
+      "day": "Day 4 — Session Day 3",
+      "time": "12:05pm-12:25pm",
+      "room": "Track 8",
+      "type": "session",
+      "track": "Agentic Engineering",
+      "status": "confirmed",
+      "speakers": [
+        "Denys Linkov"
+      ]
+    },
+    {
+      "title": "Vertical Mobility: Building an AI Inference Platform That Scales from MVP to Trillion-Parameter Workloads",
+      "day": "Day 4 — Session Day 3",
+      "time": "12:05pm-12:25pm",
+      "room": "Track 9",
+      "type": "session",
+      "track": "Inference",
+      "status": "confirmed",
+      "speakers": [
+        "Rita Zhang",
+        "Sitanshu Gupta"
+      ]
+    },
+    {
+      "title": "Stop Model Shopping: Why Ownership Beats Choice in the Agent Stack",
+      "day": "Day 4 — Session Day 3",
+      "time": "12:05pm-12:25pm",
+      "room": "Leadership 1",
+      "type": "session",
+      "track": "Inference",
+      "status": "confirmed",
+      "speakers": [
+        "George Hu"
+      ]
+    },
+    {
+      "title": "Preferences > Benchmarks: Model Routing for How Teams Actually Build: Model Routing for How Teams Actually Build",
+      "day": "Day 4 — Session Day 3",
+      "time": "12:05pm-12:25pm",
+      "room": "Leadership 2",
+      "type": "session",
+      "track": "AI Architects: AI Factories",
+      "status": "confirmed",
+      "speakers": [
+        "Archana Kamath",
+        "Tyler Gillam"
+      ]
+    },
+    {
+      "title": "The Missing Layer in Agentic AI",
+      "day": "Day 4 — Session Day 3",
+      "time": "12:05pm-12:25pm",
+      "room": "Expo Stage 1 NE",
+      "type": "session",
+      "status": "confirmed",
+      "speakers": [
+        "Giedrius Steimantas"
+      ]
+    },
+    {
+      "title": "While You Were Generating: The Verification Gap Nobody Talked About",
+      "day": "Day 4 — Session Day 3",
+      "time": "12:05pm-12:25pm",
+      "room": "Expo Stage 2 NW",
+      "type": "session",
+      "status": "confirmed",
+      "speakers": [
+        "Ali Adl-Tabatabai"
+      ]
+    },
+    {
+      "title": "Move fast and (don’t) break things",
+      "day": "Day 4 — Session Day 3",
+      "time": "12:05pm-12:25pm",
+      "room": "Expo Stage 3 SW",
+      "type": "session",
+      "status": "tentative",
+      "speakers": [
+        "Ben Dicken"
+      ]
+    },
+    {
+      "title": "Agents That Forge Their Own Tools: Self-Modifying AI in the Wild",
+      "day": "Day 4 — Session Day 3",
+      "time": "12:05pm-12:25pm",
+      "room": "Expo Stage 4 SE",
+      "type": "session",
+      "status": "confirmed",
+      "speakers": [
+        "Sandhya Subramani"
+      ]
+    },
+    {
+      "title": "Loophole - Adversarial Agents To Stress Test Your Morality",
+      "day": "Day 4 — Session Day 3",
+      "time": "1:30pm-1:50pm",
+      "room": "Main Stage",
+      "type": "session",
+      "track": "Harness Engineering",
+      "status": "confirmed",
+      "speakers": [
+        "Brendan Rappazzo"
+      ]
+    },
+    {
+      "title": "While my guitar gently speaks",
+      "day": "Day 4 — Session Day 3",
+      "time": "1:30pm-1:50pm",
+      "room": "Track 1",
+      "type": "session",
+      "track": "Generative Media",
+      "status": "confirmed",
+      "speakers": [
+        "Todd Fisher"
+      ]
+    },
+    {
+      "title": "Agent Spending Without Controls: The Missing Infrastructure Layer for AI Pa…",
+      "day": "Day 4 — Session Day 3",
+      "time": "1:30pm-1:50pm",
+      "room": "Track 2",
+      "type": "sponsor",
+      "track": "Agentic Commerce",
+      "status": "confirmed",
+      "speakers": [
+        "Rodrigo Coelho",
+        "Pranav Maheshwari"
+      ]
+    },
+    {
+      "title": "Build for the Memo, Not the Demo — Notes from 200 Investment Committees",
+      "day": "Day 4 — Session Day 3",
+      "time": "1:30pm-1:50pm",
+      "room": "Track 3",
+      "type": "session",
+      "track": "AI in Finance",
+      "status": "confirmed",
+      "speakers": [
+        "Shawn Chan"
+      ]
+    },
+    {
+      "title": "Local Models: Trust, Control, Optimization",
+      "day": "Day 4 — Session Day 3",
+      "time": "1:30pm-1:50pm",
+      "room": "Track 4",
+      "type": "session",
+      "track": "Local AI",
+      "status": "confirmed",
+      "speakers": [
+        "Carter Abdallah",
+        "Vincent Weisser",
+        "Lucas Atkins",
+        "Chris Alexiuk",
+        "Lou"
+      ]
+    },
+    {
+      "title": "AI : Learned Execution Graphs for Real-Time Anomaly Detection & Drift Classification in APIs",
+      "day": "Day 4 — Session Day 3",
+      "time": "1:30pm-1:50pm",
+      "room": "Track 5",
+      "type": "sponsor",
+      "track": "Graphs",
+      "status": "confirmed",
+      "speakers": [
+        "Ritvik Pandya"
+      ]
+    },
+    {
+      "title": "How Juries and Librarians Can Solve GTM's AI Trust Problem",
+      "day": "Day 4 — Session Day 3",
+      "time": "1:30pm-1:50pm",
+      "room": "Track 6",
+      "type": "session",
+      "track": "AI in GTM",
+      "status": "confirmed",
+      "speakers": [
+        "Alex Bauer"
+      ]
+    },
+    {
+      "title": "Al is becoming the World's largest Relationship Therapist. We Can't Afford to Get it Wrong.",
+      "day": "Day 4 — Session Day 3",
+      "time": "1:30pm-1:50pm",
+      "room": "Track 7",
+      "type": "session",
+      "track": "AI in Healthcare",
+      "status": "confirmed",
+      "speakers": [
+        "Clay Cockrell",
+        "Tony Fabrikant"
+      ]
+    },
+    {
+      "title": "Building on the Codex Harness",
+      "day": "Day 4 — Session Day 3",
+      "time": "1:30pm-1:50pm",
+      "room": "Track 8",
+      "type": "session",
+      "track": "Agentic Engineering",
+      "status": "confirmed",
+      "speakers": [
+        "Dominik Kundel"
+      ]
+    },
+    {
+      "title": "What's New in Inference Engineering",
+      "day": "Day 4 — Session Day 3",
+      "time": "1:30pm-1:50pm",
+      "room": "Track 9",
+      "type": "session",
+      "track": "Inference",
+      "status": "confirmed",
+      "speakers": [
+        "Philip Kiely"
+      ]
+    },
+    {
+      "title": "Evaluating and optimizing AI agents: from observability to continuous improvement",
+      "day": "Day 4 — Session Day 3",
+      "time": "1:30pm-1:50pm",
+      "room": "Track M",
+      "type": "sponsor",
+      "track": "Track M",
+      "status": "confirmed",
+      "speakers": [
+        "Chang Liu"
+      ]
+    },
+    {
+      "title": "From Zero to AI-Native: Scaling AI Across the Org",
+      "day": "Day 4 — Session Day 3",
+      "time": "1:30pm-1:50pm",
+      "room": "Leadership 1",
+      "type": "session",
+      "track": "AI-Native Enterprises",
+      "status": "confirmed",
+      "speakers": [
+        "Josh Leavitt"
+      ]
+    },
+    {
+      "title": "Coding Agents Don't Scale Themselves. Neither Do Your Teams.The Rise of Agent Enablement.",
+      "day": "Day 4 — Session Day 3",
+      "time": "1:30pm-1:50pm",
+      "room": "Leadership 2",
+      "type": "session",
+      "track": "AI Architects: AI Factories",
+      "status": "confirmed",
+      "speakers": [
+        "Patrick Debois"
+      ]
+    },
+    {
+      "title": "YOLO Mode, Safely: microVM Sandboxes for Any Agent",
+      "day": "Day 4 — Session Day 3",
+      "time": "1:30pm-1:50pm",
+      "room": "Expo Stage 2 NW",
+      "type": "session",
+      "status": "confirmed",
+      "speakers": [
+        "Eric Jia"
+      ]
+    },
+    {
+      "title": "Your Model is Private. Your System Isn't.",
+      "day": "Day 4 — Session Day 3",
+      "time": "1:30pm-1:50pm",
+      "room": "Expo Stage 3 SW",
+      "type": "session",
+      "status": "confirmed",
+      "speakers": [
+        "Joshua Mo"
+      ]
+    },
+    {
+      "title": "Video Discovery for Agentic World-Model Training",
+      "day": "Day 4 — Session Day 3",
+      "time": "1:30pm-1:50pm",
+      "room": "Expo Stage 4 SE",
+      "type": "session",
+      "status": "confirmed",
+      "speakers": []
+    },
+    {
+      "title": "🎵 Every step you take, every call you make - the reliable agent stack",
+      "day": "Day 4 — Session Day 3",
+      "time": "1:55pm-2:15pm",
+      "room": "Main Stage",
+      "type": "session",
+      "track": "Harness Engineering",
+      "status": "confirmed",
+      "speakers": [
+        "Giselle van Dongen"
+      ]
+    },
+    {
+      "title": "Voice agents with Realtime Video",
+      "day": "Day 4 — Session Day 3",
+      "time": "1:55pm-2:15pm",
+      "room": "Track 1",
+      "type": "session",
+      "track": "Generative Media",
+      "status": "confirmed",
+      "speakers": [
+        "Lina Colucci"
+      ]
+    },
+    {
+      "title": "Teaching agents to pay",
+      "day": "Day 4 — Session Day 3",
+      "time": "1:55pm-2:15pm",
+      "room": "Track 2",
+      "type": "sponsor",
+      "track": "Agentic Commerce",
+      "status": "confirmed",
+      "speakers": [
+        "Anna Spysz"
+      ]
+    },
+    {
+      "title": "We Vetted 2,000 AI Skills Before They Reached Developers",
+      "day": "Day 4 — Session Day 3",
+      "time": "1:55pm-2:15pm",
+      "room": "Track 3",
+      "type": "session",
+      "track": "AI in Finance",
+      "status": "confirmed",
+      "speakers": [
+        "Lucas Palma"
+      ]
+    },
+    {
+      "title": "Local Models: Trust, Control, Optimization",
+      "day": "Day 4 — Session Day 3",
+      "time": "1:55pm-2:15pm",
+      "room": "Track 4",
+      "type": "session",
+      "track": "Local AI",
+      "status": "confirmed",
+      "speakers": [
+        "Carter Abdallah",
+        "Vincent Weisser",
+        "Lucas Atkins",
+        "Chris Alexiuk",
+        "Lou"
+      ]
+    },
+    {
+      "title": "Why Agentic Systems Need Ontologies",
+      "day": "Day 4 — Session Day 3",
+      "time": "1:55pm-2:15pm",
+      "room": "Track 5",
+      "type": "sponsor",
+      "track": "Graphs",
+      "status": "confirmed",
+      "speakers": [
+        "Frank Coyle"
+      ]
+    },
+    {
+      "title": "How We Got LLMs to Recommend Our Open Source Library (Without Paying or Plug-ins)",
+      "day": "Day 4 — Session Day 3",
+      "time": "1:55pm-2:15pm",
+      "room": "Track 6",
+      "type": "session",
+      "track": "AI in GTM",
+      "status": "confirmed",
+      "speakers": [
+        "Christopher Burns"
+      ]
+    },
+    {
+      "title": "Healthcare’s Agent Bytecode: X12 as the Harness for AI Agents",
+      "day": "Day 4 — Session Day 3",
+      "time": "1:55pm-2:15pm",
+      "room": "Track 7",
+      "type": "session",
+      "track": "AI in Healthcare",
+      "status": "confirmed",
+      "speakers": [
+        "Vasant Kearney"
+      ]
+    },
+    {
+      "title": "Multiplayer agentic engineering: enabling your whole team and your best agents to work together",
+      "day": "Day 4 — Session Day 3",
+      "time": "1:55pm-2:15pm",
+      "room": "Track 8",
+      "type": "session",
+      "track": "Agentic Engineering",
+      "status": "confirmed",
+      "speakers": [
+        "Arjun Singh"
+      ]
+    },
+    {
+      "title": "Rob Wachen — transformer-only ASICs for inference",
+      "day": "Day 4 — Session Day 3",
+      "time": "1:55pm-2:15pm",
+      "room": "Track 9",
+      "type": "session",
+      "track": "Inference",
+      "status": "confirmed",
+      "speakers": [
+        "Rob Wachen"
+      ]
+    },
+    {
+      "title": "Blast Radius Zero: One‑Command OpenClaw Sandboxes in the Cloud",
+      "day": "Day 4 — Session Day 3",
+      "time": "1:55pm-2:15pm",
+      "room": "Track M",
+      "type": "sponsor",
+      "track": "Track M",
+      "status": "confirmed",
+      "speakers": [
+        "Arun Sekhar"
+      ]
+    },
+    {
+      "title": "Which AI startups actually land enterprise contracts? Lessons from evaluating 100+ AI startups at Millennium Management",
+      "day": "Day 4 — Session Day 3",
+      "time": "1:55pm-2:15pm",
+      "room": "Leadership 1",
+      "type": "session",
+      "track": "AI-Native Enterprises",
+      "status": "confirmed",
+      "speakers": [
+        "Brian Lewis"
+      ]
+    },
+    {
+      "title": "Agent Frameworks Considered Harmful",
+      "day": "Day 4 — Session Day 3",
+      "time": "1:55pm-2:15pm",
+      "room": "Leadership 2",
+      "type": "session",
+      "track": "Harness Engineering",
+      "status": "confirmed",
+      "speakers": [
+        "Rémi Louf"
+      ]
+    },
+    {
+      "title": "Dash0 Add-On Expo Session",
+      "day": "Day 4 — Session Day 3",
+      "time": "1:55pm-2:15pm",
+      "room": "Expo Stage 1 NE",
+      "type": "session",
+      "status": "tentative",
+      "speakers": []
+    },
+    {
+      "title": "MCP doesn’t suck — your agent does",
+      "day": "Day 4 — Session Day 3",
+      "time": "1:55pm-2:15pm",
+      "room": "Expo Stage 2 NW",
+      "type": "session",
+      "status": "confirmed",
+      "speakers": [
+        "Jan Curn"
+      ]
+    },
+    {
+      "title": "From Agent Prototype to Production: Evaluation-Led Development in Microsoft Foundry",
+      "day": "Day 4 — Session Day 3",
+      "time": "1:55pm-2:15pm",
+      "room": "Expo Stage 3 SW",
+      "type": "session",
+      "status": "confirmed",
+      "speakers": [
+        "Sharmila Chockalingam"
+      ]
+    },
+    {
+      "title": "Everyone talks about document search, but what about results?",
+      "day": "Day 4 — Session Day 3",
+      "time": "1:55pm-2:15pm",
+      "room": "Expo Stage 4 SE",
+      "type": "session",
+      "status": "confirmed",
+      "speakers": [
+        "George He"
+      ]
+    },
+    {
+      "title": "We let an AI agent execute Bash and lived to talk about it",
+      "day": "Day 4 — Session Day 3",
+      "time": "2:25pm-2:45pm",
+      "room": "Main Stage",
+      "type": "session",
+      "track": "Harness Engineering",
+      "status": "confirmed",
+      "speakers": [
+        "Sarah Sanders"
+      ]
+    },
+    {
+      "title": "Generative Video at the Speed of Light",
+      "day": "Day 4 — Session Day 3",
+      "time": "2:25pm-2:45pm",
+      "room": "Track 1",
+      "type": "session",
+      "track": "Generative Media",
+      "status": "confirmed",
+      "speakers": [
+        "Keegan McCallum"
+      ]
+    },
+    {
+      "title": "The Agentic Commerce Stack",
+      "day": "Day 4 — Session Day 3",
+      "time": "2:25pm-2:45pm",
+      "room": "Track 2",
+      "type": "sponsor",
+      "track": "Agentic Commerce",
+      "status": "confirmed",
+      "speakers": [
+        "Ahnaf Prio"
+      ]
+    },
+    {
+      "title": "Your Finance Agent's Bottleneck Is You",
+      "day": "Day 4 — Session Day 3",
+      "time": "2:25pm-2:45pm",
+      "room": "Track 3",
+      "type": "session",
+      "track": "AI in Finance",
+      "status": "confirmed",
+      "speakers": [
+        "Ramana Siddanth Emani"
+      ]
+    },
+    {
+      "title": "Compression at the Edge",
+      "day": "Day 4 — Session Day 3",
+      "time": "2:25pm-2:45pm",
+      "room": "Track 4",
+      "type": "session",
+      "track": "Local AI",
+      "status": "confirmed",
+      "speakers": [
+        "Chris Alexiuk",
+        "Daniel Han",
+        "Asma Beevi",
+        "Merve Noyan",
+        "Michael Chiang"
+      ]
+    },
+    {
+      "title": "Video Has No Memory. Here's How We Built One.",
+      "day": "Day 4 — Session Day 3",
+      "time": "2:25pm-2:45pm",
+      "room": "Track 5",
+      "type": "sponsor",
+      "track": "Graphs",
+      "status": "confirmed",
+      "speakers": [
+        "James Le"
+      ]
+    },
+    {
+      "title": "Lessons From Building The World's Largest Knowledge Graph",
+      "day": "Day 4 — Session Day 3",
+      "time": "2:25pm-2:45pm",
+      "room": "Track 6",
+      "type": "session",
+      "track": "AI in GTM",
+      "status": "confirmed",
+      "speakers": [
+        "Jeffrey Wang"
+      ]
+    },
+    {
+      "title": "Trading Desks to Clinical Trials: Parallels in Applied Vertical AI",
+      "day": "Day 4 — Session Day 3",
+      "time": "2:25pm-2:45pm",
+      "room": "Track 7",
+      "type": "session",
+      "track": "AI in Healthcare",
+      "status": "confirmed",
+      "speakers": [
+        "Ayush Bhardwaj"
+      ]
+    },
+    {
+      "title": "Always-on agents run production without the on-call tax",
+      "day": "Day 4 — Session Day 3",
+      "time": "2:25pm-2:45pm",
+      "room": "Track 8",
+      "type": "session",
+      "track": "Agentic Engineering",
+      "status": "confirmed",
+      "speakers": [
+        "Justin Smith"
+      ]
+    },
+    {
+      "title": "The Frontier AI Inference Cloud for Agents",
+      "day": "Day 4 — Session Day 3",
+      "time": "2:25pm-2:45pm",
+      "room": "Track 9",
+      "type": "session",
+      "track": "Inference",
+      "status": "confirmed",
+      "speakers": [
+        "Byung-Gon (Gon) Chun"
+      ]
+    },
+    {
+      "title": "Operate agents safely at scale with enterprise governance",
+      "day": "Day 4 — Session Day 3",
+      "time": "2:25pm-2:45pm",
+      "room": "Track M",
+      "type": "sponsor",
+      "track": "Track M",
+      "status": "confirmed",
+      "speakers": [
+        "Ashu Joshi"
+      ]
+    },
+    {
+      "title": "Your Hero Agent Needs a Party",
+      "day": "Day 4 — Session Day 3",
+      "time": "2:25pm-2:45pm",
+      "room": "Leadership 1",
+      "type": "session",
+      "track": "AI-Native Enterprises",
+      "status": "confirmed",
+      "speakers": [
+        "Kunal Lanjewar"
+      ]
+    },
+    {
+      "title": "Optimizing Open Models for Production Grade Inference",
+      "day": "Day 4 — Session Day 3",
+      "time": "2:25pm-2:45pm",
+      "room": "Expo Stage 1 NE",
+      "type": "session",
+      "status": "tentative",
+      "speakers": [
+        "Sujee Maniyam",
+        "Dylan Bristot"
+      ]
+    },
+    {
+      "title": "[Braintrust Expo Session 3]",
+      "day": "Day 4 — Session Day 3",
+      "time": "2:25pm-2:45pm",
+      "room": "Expo Stage 3 SW",
+      "type": "session",
+      "status": "tentative",
+      "speakers": []
+    },
+    {
+      "title": "The Human Is an Async API",
+      "day": "Day 4 — Session Day 3",
+      "time": "2:25pm-2:45pm",
+      "room": "Expo Stage 4 SE",
+      "type": "session",
+      "status": "confirmed",
+      "speakers": [
+        "Melanie Warrick"
+      ]
+    },
+    {
+      "title": "No Memory, No Harness: Why the Database Is the Last Line of Defense",
+      "day": "Day 4 — Session Day 3",
+      "time": "2:50pm-3:10pm",
+      "room": "Main Stage",
+      "type": "session",
+      "track": "Harness Engineering",
+      "status": "confirmed",
+      "speakers": [
+        "Kay Malcolm"
+      ]
+    },
+    {
+      "title": "Serving Diffusion Models at Scale",
+      "day": "Day 4 — Session Day 3",
+      "time": "2:50pm-3:10pm",
+      "room": "Track 1",
+      "type": "session",
+      "track": "Generative Media",
+      "status": "confirmed",
+      "speakers": [
+        "Gabriel"
+      ]
+    },
+    {
+      "title": "Your Agent Just Authorized What?!",
+      "day": "Day 4 — Session Day 3",
+      "time": "2:50pm-3:10pm",
+      "room": "Track 2",
+      "type": "sponsor",
+      "track": "Agentic Commerce",
+      "status": "confirmed",
+      "speakers": [
+        "Jay Mok"
+      ]
+    },
+    {
+      "title": "Simulationmaxxing for 20x Faster Agent Dev",
+      "day": "Day 4 — Session Day 3",
+      "time": "2:50pm-3:10pm",
+      "room": "Track 3",
+      "type": "session",
+      "track": "AI in Finance",
+      "status": "confirmed",
+      "speakers": [
+        "Shreya Rajpal"
+      ]
+    },
+    {
+      "title": "Compression at the Edge",
+      "day": "Day 4 — Session Day 3",
+      "time": "2:50pm-3:10pm",
+      "room": "Track 4",
+      "type": "session",
+      "track": "Local AI",
+      "status": "confirmed",
+      "speakers": [
+        "Chris Alexiuk",
+        "Daniel Han",
+        "Asma Beevi",
+        "Merve Noyan",
+        "Michael Chiang"
+      ]
+    },
+    {
+      "title": "On-Device Agentic AI for the New York Times Games",
+      "day": "Day 4 — Session Day 3",
+      "time": "2:50pm-3:10pm",
+      "room": "Track 5",
+      "type": "sponsor",
+      "track": "Graphs",
+      "status": "confirmed",
+      "speakers": [
+        "Shafik Quoraishee",
+        "Joanne Song"
+      ]
+    },
+    {
+      "title": "How AI Agents Let GTM Teams Scale",
+      "day": "Day 4 — Session Day 3",
+      "time": "2:50pm-3:10pm",
+      "room": "Track 6",
+      "type": "session",
+      "track": "AI in GTM",
+      "status": "confirmed",
+      "speakers": [
+        "Justin Joyce"
+      ]
+    },
+    {
+      "title": "How to build an AI-Native Health Company",
+      "day": "Day 4 — Session Day 3",
+      "time": "2:50pm-3:10pm",
+      "room": "Track 7",
+      "type": "session",
+      "track": "AI in Healthcare",
+      "status": "confirmed",
+      "speakers": [
+        "Dan Feng"
+      ]
+    },
+    {
+      "title": "Realtime multiplayer, automation, and you!",
+      "day": "Day 4 — Session Day 3",
+      "time": "2:50pm-3:10pm",
+      "room": "Track 8",
+      "type": "session",
+      "track": "Agentic Engineering",
+      "status": "confirmed",
+      "speakers": [
+        "Idan Gazit"
+      ]
+    },
+    {
+      "title": "KV Cache-Aware Routing and P/D Disaggregation on Kubernetes: The Parts Public Benchmarks Don't Show",
+      "day": "Day 4 — Session Day 3",
+      "time": "2:50pm-3:10pm",
+      "room": "Track 9",
+      "type": "session",
+      "track": "Inference",
+      "status": "confirmed",
+      "speakers": [
+        "Yuchen Fama",
+        "Michey Mehta",
+        "Ashish Kamra"
+      ]
+    },
+    {
+      "title": "AI Agents Are Just Distributed Systems Now",
+      "day": "Day 4 — Session Day 3",
+      "time": "2:50pm-3:10pm",
+      "room": "Leadership 1",
+      "type": "session",
+      "track": "AI-Native Enterprises",
+      "status": "confirmed",
+      "speakers": [
+        "Salman Munaf"
+      ]
+    },
+    {
+      "title": "Inside 847 Production Clinical AI Notes",
+      "day": "Day 4 — Session Day 3",
+      "time": "2:50pm-3:10pm",
+      "room": "Leadership 2",
+      "type": "session",
+      "track": "AI Architects: AI Factories",
+      "status": "confirmed",
+      "speakers": [
+        "Sebastian Fox"
+      ]
+    },
+    {
+      "title": "Harness Engineering: The New Core Skill for Agentic Developers",
+      "day": "Day 4 — Session Day 3",
+      "time": "2:50pm-3:10pm",
+      "room": "Expo Stage 1 NE",
+      "type": "session",
+      "status": "confirmed",
+      "speakers": [
+        "Dru Knox"
+      ]
+    },
+    {
+      "title": "Designing Evals That Earn User Trust",
+      "day": "Day 4 — Session Day 3",
+      "time": "2:50pm-3:10pm",
+      "room": "Expo Stage 2 NW",
+      "type": "session",
+      "status": "confirmed",
+      "speakers": [
+        "Felipe Blanes"
+      ]
+    },
+    {
+      "title": "Small Claws Are Beautiful: Edge Agents with NanoClaw, Raspberry Pi, and Graph Memory",
+      "day": "Day 4 — Session Day 3",
+      "time": "2:50pm-3:10pm",
+      "room": "Expo Stage 3 SW",
+      "type": "session",
+      "track": "Expo Stage 3",
+      "status": "confirmed",
+      "speakers": [
+        "Jeremy Adams"
+      ]
+    },
+    {
+      "title": "The Software Factory",
+      "day": "Day 4 — Session Day 3",
+      "time": "2:50pm-3:10pm",
+      "room": "Expo Stage 4 SE",
+      "type": "session",
+      "status": "confirmed",
+      "speakers": []
+    },
+    {
+      "title": "We Solved Agent Building - The Evolution of Building A Successful Data Science Agent",
+      "day": "Day 4 — Session Day 3",
+      "time": "3:20pm-3:40pm",
+      "room": "Main Stage",
+      "type": "session",
+      "track": "Harness Engineering",
+      "status": "confirmed",
+      "speakers": [
+        "Andrew Qu"
+      ]
+    },
+    {
+      "title": "The Next Medium: Why Real-Time Interactive Video Changes Everything for Developers",
+      "day": "Day 4 — Session Day 3",
+      "time": "3:20pm-3:40pm",
+      "room": "Track 1",
+      "type": "session",
+      "track": "Generative Media",
+      "status": "confirmed",
+      "speakers": [
+        "Ahmed Ahres"
+      ]
+    },
+    {
+      "title": "The End of the Static Screen: Architecting Intent-Driven UX with Agentic Orchestration",
+      "day": "Day 4 — Session Day 3",
+      "time": "3:20pm-3:40pm",
+      "room": "Track 2",
+      "type": "sponsor",
+      "track": "Agentic Commerce",
+      "status": "confirmed",
+      "speakers": [
+        "Gus Iwanaga"
+      ]
+    },
+    {
+      "title": "It's a Skill Issue : Best practices in building skills that work",
+      "day": "Day 4 — Session Day 3",
+      "time": "3:20pm-3:40pm",
+      "room": "Track 3",
+      "type": "session",
+      "track": "AI in Finance",
+      "status": "confirmed",
+      "speakers": [
+        "Yogendra Miraje"
+      ]
+    },
+    {
+      "title": "Model Routing",
+      "day": "Day 4 — Session Day 3",
+      "time": "3:20pm-3:40pm",
+      "room": "Track 4",
+      "type": "session",
+      "track": "Local AI",
+      "status": "confirmed",
+      "speakers": [
+        "Nader Khalil",
+        "Walden Yan",
+        "Tanay Varshney",
+        "Alex Atallah"
+      ]
+    },
+    {
+      "title": "Citation Needed: Provenance for LLM-Built Knowledge Graphs",
+      "day": "Day 4 — Session Day 3",
+      "time": "3:20pm-3:40pm",
+      "room": "Track 5",
+      "type": "sponsor",
+      "track": "Graphs",
+      "status": "confirmed",
+      "speakers": [
+        "Daniel Chalef"
+      ]
+    },
+    {
+      "title": "Fin.ai in GTM",
+      "day": "Day 4 — Session Day 3",
+      "time": "3:20pm-3:40pm",
+      "room": "Track 6",
+      "type": "session",
+      "track": "AI in GTM",
+      "status": "confirmed",
+      "speakers": [
+        "Bil Erdenekhuyag"
+      ]
+    },
+    {
+      "title": "Don't be data poor",
+      "day": "Day 4 — Session Day 3",
+      "time": "3:20pm-3:40pm",
+      "room": "Track 7",
+      "type": "session",
+      "track": "AI in Healthcare",
+      "status": "confirmed",
+      "speakers": [
+        "Anuj Iravane"
+      ]
+    },
+    {
+      "title": "Velocity Sickness: What Happens When Your Whole Team Gets 10x Faster",
+      "day": "Day 4 — Session Day 3",
+      "time": "3:20pm-3:40pm",
+      "room": "Track 8",
+      "type": "session",
+      "track": "Agentic Engineering",
+      "status": "confirmed",
+      "speakers": [
+        "Matt Dailey"
+      ]
+    },
+    {
+      "title": "Two Bugs That Hid in Plain Sight: A vLLM Debugging Detective Story",
+      "day": "Day 4 — Session Day 3",
+      "time": "3:20pm-3:40pm",
+      "room": "Track 9",
+      "type": "session",
+      "track": "Inference",
+      "status": "confirmed",
+      "speakers": [
+        "Asaf Gardin",
+        "Yuval Belfer"
+      ]
+    },
+    {
+      "title": "The Signal Layer: What to Build When Anything Can Be Built",
+      "day": "Day 4 — Session Day 3",
+      "time": "3:20pm-3:40pm",
+      "room": "Leadership 1",
+      "type": "session",
+      "track": "AI-Native Enterprises",
+      "status": "confirmed",
+      "speakers": [
+        "Lena Hall"
+      ]
+    },
+    {
+      "title": "Give the Agent a Budget, Not a Token",
+      "day": "Day 4 — Session Day 3",
+      "time": "3:20pm-3:40pm",
+      "room": "Leadership 2",
+      "type": "session",
+      "track": "AI Architects: AI Factories",
+      "status": "confirmed",
+      "speakers": [
+        "Sachin Malhotra"
+      ]
+    },
+    {
+      "title": "Agent Memory Is a Solved Problem. Agent Learning Is Not.",
+      "day": "Day 4 — Session Day 3",
+      "time": "3:20pm-3:40pm",
+      "room": "Expo Stage 1 NE",
+      "type": "session",
+      "status": "confirmed",
+      "speakers": [
+        "Karthik Ranganathan",
+        "Heather Downing"
+      ]
+    },
+    {
+      "title": "Deepmind Expo Session 2",
+      "day": "Day 4 — Session Day 3",
+      "time": "3:20pm-3:40pm",
+      "room": "Expo Stage 2 NW",
+      "type": "session",
+      "status": "tentative",
+      "speakers": []
+    },
+    {
+      "title": "Replicated Expo Session",
+      "day": "Day 4 — Session Day 3",
+      "time": "3:20pm-3:40pm",
+      "room": "Expo Stage 3 SW",
+      "type": "session",
+      "status": "tentative",
+      "speakers": []
+    },
+    {
+      "title": "An AI Future Without the Lock-In",
+      "day": "Day 4 — Session Day 3",
+      "time": "3:20pm-3:40pm",
+      "room": "Expo Stage 4 SE",
+      "type": "session",
+      "status": "confirmed",
+      "speakers": [
+        "Remy Guercio"
+      ]
+    },
+    {
+      "title": "Agents Without Code: How Skills, YAML, and Filesystems Replaced Python",
+      "day": "Day 4 — Session Day 3",
+      "time": "3:45pm-4:05pm",
+      "room": "Main Stage",
+      "type": "session",
+      "track": "Harness Engineering",
+      "status": "confirmed",
+      "speakers": [
+        "Philipp Schmid"
+      ]
+    },
+    {
+      "title": "Beyond the Lethal Trifecta: Agentic Commerce on the Open Internet at Machine Speed",
+      "day": "Day 4 — Session Day 3",
+      "time": "3:45pm-4:05pm",
+      "room": "Track 2",
+      "type": "sponsor",
+      "track": "Agentic Commerce",
+      "status": "confirmed",
+      "speakers": [
+        "David Levine"
+      ]
+    },
+    {
+      "title": "Wearing the Agent: Engineering a Family-and-Friends Personal Agent, from Group Chats to Glasses",
+      "day": "Day 4 — Session Day 3",
+      "time": "3:45pm-4:05pm",
+      "room": "Track 3",
+      "type": "session",
+      "track": "AI in Finance",
+      "status": "confirmed",
+      "speakers": [
+        "Sai Krishna Rallabandi"
+      ]
+    },
+    {
+      "title": "Model Routing",
+      "day": "Day 4 — Session Day 3",
+      "time": "3:45pm-4:05pm",
+      "room": "Track 4",
+      "type": "session",
+      "track": "Local AI",
+      "status": "confirmed",
+      "speakers": [
+        "Nader Khalil",
+        "Walden Yan",
+        "Tanay Varshney",
+        "Alex Atallah"
+      ]
+    },
+    {
+      "title": "Why We Killed Our Multi-Agent Pipeline: Lessons From Pharma Commercial Intelligence",
+      "day": "Day 4 — Session Day 3",
+      "time": "3:45pm-4:05pm",
+      "room": "Track 5",
+      "type": "sponsor",
+      "track": "Graphs",
+      "status": "confirmed",
+      "speakers": [
+        "Subbiah Sethuraman",
+        "Abhilash Asokan"
+      ]
+    },
+    {
+      "title": "The Death of Developer Advocates",
+      "day": "Day 4 — Session Day 3",
+      "time": "3:45pm-4:05pm",
+      "room": "Track 6",
+      "type": "session",
+      "track": "AI in GTM",
+      "status": "confirmed",
+      "speakers": [
+        "Stephanie Jarmak"
+      ]
+    },
+    {
+      "title": "Why Your Enterprise Tech Stack Isn't Ready for AI Agents - And What to Build Instead",
+      "day": "Day 4 — Session Day 3",
+      "time": "3:45pm-4:05pm",
+      "room": "Track 7",
+      "type": "session",
+      "track": "AI in Healthcare",
+      "status": "confirmed",
+      "speakers": [
+        "Christopher Lovejoy",
+        "Saul Howard"
+      ]
+    },
+    {
+      "title": "Open Source Is Dead. Long Live Open Source.",
+      "day": "Day 4 — Session Day 3",
+      "time": "3:45pm-4:05pm",
+      "room": "Track 8",
+      "type": "session",
+      "track": "Agentic Engineering",
+      "status": "tentative",
+      "speakers": [
+        "Saoud Rizwan"
+      ]
+    },
+    {
+      "title": "Weight Folding, CUDA Streams, and the Bug That Made My Model Speak Backwards",
+      "day": "Day 4 — Session Day 3",
+      "time": "3:45pm-4:05pm",
+      "room": "Track 9",
+      "type": "session",
+      "track": "Inference",
+      "status": "confirmed",
+      "speakers": [
+        "Filip Makraduli"
+      ]
+    },
+    {
+      "title": "Taking Reinforcement Learning Cross Datacenter",
+      "day": "Day 4 — Session Day 3",
+      "time": "3:45pm-4:05pm",
+      "room": "Expo Stage 1 NE",
+      "type": "session",
+      "status": "tentative",
+      "speakers": [
+        "Adam Azzam"
+      ]
+    },
+    {
+      "title": "Composio Expo Session",
+      "day": "Day 4 — Session Day 3",
+      "time": "3:45pm-4:05pm",
+      "room": "Expo Stage 2 NW",
+      "type": "session",
+      "status": "confirmed",
+      "speakers": []
+    },
+    {
+      "title": "Closing Keynote — Theo Browne",
+      "day": "Day 4 — Session Day 3",
+      "time": "4:30pm-4:50pm",
+      "room": "Main Stage",
+      "type": "keynote",
+      "track": "Main Stage",
+      "status": "confirmed",
+      "speakers": [
+        "Theo Browne"
+      ]
+    },
+    {
+      "title": "Closing Keynote: Garry Tan",
+      "day": "Day 4 — Session Day 3",
+      "time": "4:50pm-5:10pm",
+      "room": "Main Stage",
+      "type": "keynote",
+      "track": "Main Stage",
+      "status": "confirmed",
+      "speakers": [
+        "Garry Tan"
+      ]
+    },
+    {
+      "title": "Startup Battlefield",
+      "day": "Day 4 — Session Day 3",
+      "time": "5:10pm-5:30pm",
+      "room": "Main Stage",
+      "type": "keynote",
+      "track": "Main Stage",
+      "status": "confirmed",
+      "speakers": [
+        "Howie Liu"
+      ]
+    }
+  ]
+}

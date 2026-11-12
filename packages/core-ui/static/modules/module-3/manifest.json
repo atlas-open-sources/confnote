@@ -1,0 +1,7 @@
+{
+  "id": "module-3",
+  "label": "Module 3",
+  "entry": "module-3.js",
+  "description": "Third generic placeholder drawer module.",
+  "primitive": "drawer"
+}

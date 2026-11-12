@@ -1,0 +1,20 @@
+confnote
+Copyright 2026 confnote contributors
+
+Application code: GNU Affero General Public License version 3 only (AGPL-3.0-only),
+unless a file or subtree identifies a different license. See LICENSE.
+packages/events-model: MIT; see packages/events-model/LICENSE.
+Published event facts and bundled catalogue snapshots: CC-BY-4.0; source-specific
+licenses and per-field provenance remain applicable. See licenses/CC-BY-4.0.txt
+and the snapshot ATTRIBUTION.md/confs-tech-LICENSE when supplied by the data build.
+GeoNames-derived location facts retain GeoNames attribution (https://www.geonames.org/)
+under CC-BY-4.0. The enrichment gazetteer uses geonamescache 3.0.2 plus attributed
+admin1 data; the event-data publication records its source hashes and notices.
+Do not remove event source URLs, evidence, or source notices when redistributing.
+
+Third-party code retains its own licenses; it is not relicensed by this NOTICE.
+See licenses/VENDOR-NOTICES.md. tldraw, Bryntum and AG Grid are excluded from the
+default OSS builds and the clean OSS export. Their presence in internal git
+history does not grant a right to redistribute them under the application license.
+
+The SPDX standard license text was obtained from spdx-license-list 6.10.0.

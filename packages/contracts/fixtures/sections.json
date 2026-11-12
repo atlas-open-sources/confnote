@@ -1,0 +1,42 @@
+{
+  "version": "confnote.sections.v1",
+  "cases": [
+    {
+      "name": "canonical-note-preserves-user-heading-inside-section",
+      "markdown": "---\nsession: Opening Keynote\nspeakers: Jane Doe\ntime: 2026-05-19 09:40-10:10 (Europe/London)\nroom: Auditorium\ntrack: main\ntype: keynote\ntags: [keynote]\nrecording:\ntranscript:\n---\n\n# Opening Keynote\n\n## Human notes\n\nImportant point.\n\n## Not canonical\n\nThis must stay in Human notes.\n\n## Summary\n\nAI-driven - seeded from the agenda, an agent refines this.\n\n> Seeded abstract.\n\n## Research\n\nSpeaker & company dossier - run tools/research.py before the conference.\n\n## AI notes\n\nAgent-owned. Live notes and follow-up research land here.\n\n## Transcript\n\n## Actions\n\n- [ ] Follow up with Jane\n- [x] Send slides\n\n## Links\n\n- https://example.com\n\n## Scratchpad\n\nraw\n\n## Private\n\nconfnote-enc:v1:abc\n",
+      "frontmatter": {
+        "session": "Opening Keynote",
+        "speakers": "Jane Doe",
+        "time": "2026-05-19 09:40-10:10 (Europe/London)",
+        "room": "Auditorium",
+        "track": "main",
+        "type": "keynote",
+        "tags": "[keynote]",
+        "recording": "",
+        "transcript": ""
+      },
+      "title": "Opening Keynote",
+      "sections": {
+        "Human notes": "Important point.\n\n## Not canonical\n\nThis must stay in Human notes.",
+        "Summary": "AI-driven - seeded from the agenda, an agent refines this.\n\n> Seeded abstract.",
+        "Research": "Speaker & company dossier - run tools/research.py before the conference.",
+        "AI notes": "Agent-owned. Live notes and follow-up research land here.",
+        "Transcript": "",
+        "Actions": "- [ ] Follow up with Jane\n- [x] Send slides",
+        "Links": "- https://example.com",
+        "Scratchpad": "raw",
+        "Private": "confnote-enc:v1:abc"
+      },
+      "actions": [
+        { "text": "Follow up with Jane", "done": false },
+        { "text": "Send slides", "done": true }
+      ]
+    },
+    {
+      "name": "human-note-links-merge",
+      "human_notes": "Read https://stately.ai and [tldraw](https://tldraw.com). Also ably.com, not app.js.",
+      "links_before": "- https://stately.ai",
+      "links_after": "- https://stately.ai\n- https://tldraw.com\n- ably.com"
+    }
+  ]
+}

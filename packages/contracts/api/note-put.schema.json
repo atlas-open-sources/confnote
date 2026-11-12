@@ -1,0 +1,14 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://confnote.local/contracts/api/note-put.schema.json",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["sections"],
+  "properties": {
+    "mtime": { "type": "number" },
+    "sections": {
+      "type": "object",
+      "additionalProperties": { "type": "string" }
+    }
+  }
+}

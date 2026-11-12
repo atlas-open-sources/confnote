@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>confnote</title>
+  <link rel="icon" type="image/svg+xml" href="/icon.svg">
+  <script>
+    /* set theme before paint (no flash); auto follows the OS */
+    (function () {
+      var GLYPH = { auto: "◐", light: "☀", dark: "☾" };
+      var t = localStorage.getItem("confnote-theme");
+      if (t === "light" || t === "dark") document.documentElement.dataset.theme = t;
+      window.__cycleTheme = function () {
+        var cur = document.documentElement.dataset.theme || "auto";
+        var next = cur === "auto" ? "light" : cur === "light" ? "dark" : "auto";
+        if (next === "auto") {
+          delete document.documentElement.dataset.theme;
+          localStorage.removeItem("confnote-theme");
+        } else {
+          document.documentElement.dataset.theme = next;
+          localStorage.setItem("confnote-theme", next);
+        }
+        var b = document.getElementById("theme");
+        if (b) b.textContent = GLYPH[next];
+      };
+      document.addEventListener("DOMContentLoaded", function () {
+        var b = document.getElementById("theme");
+        if (b) {
+          b.textContent = GLYPH[document.documentElement.dataset.theme || "auto"];
+          b.onclick = window.__cycleTheme;
+        }
+      });
+    })();
+  </script>
+  <link rel="stylesheet" href="/vendor/easymde.min.css">
+  <link rel="stylesheet" href="/style.css">
+  <link rel="stylesheet" href="/drawer.css">
+  <link rel="stylesheet" href="/agent-settings.css">
+  <link rel="stylesheet" href="/day-setup.css">
+  <link rel="stylesheet" href="/find-events.css">
+  <script>
+    /* desktop only: reveal + wire the custom window controls when the
+       pywebview bridge is ready (never appears in a browser tab) */
+    (function () {
+      function wire() {
+        var c = document.getElementById("winctl");
+        if (!c || !window.pywebview || !window.pywebview.api) return;
+        c.hidden = false;
+        var x = document.getElementById("winClose");
+        var f = document.getElementById("winFull");
+        if (x) x.onclick = function () { window.pywebview.api.win_minimize(); };
+        if (f) f.onclick = function () { window.pywebview.api.win_fullscreen(); };
+        // Double-click anywhere on the top bar → zoom the window to fill the
+        // screen (macOS green-button behaviour, NOT fullscreen mode).
+        var bar = document.getElementById("topbar");
+        if (bar) {
+          bar.addEventListener("dblclick", function (e) {
+            // ignore dbl-clicks that land on a control/link in the bar
+            if (e.target.closest("button, a, input, select")) return;
+            window.pywebview.api.win_zoom();
+          });
+          // Drag the window by the top bar (off its controls). Captures the
+          // window pos once at mousedown, then moves relative to the mouse's
+          // screen-space delta. rAF-throttled.
+          var drag = null, raf = null;
+          bar.addEventListener("mousedown", function (e) {
+            if (e.button !== 0 || e.target.closest("button, a, input, select, label")) return;
+            e.preventDefault();
+            window.pywebview.api.win_pos().then(function (p) {
+              drag = { wx: p[0], wy: p[1], mx: e.screenX, my: e.screenY, nx: p[0], ny: p[1] };
+            });
+          });
+          window.addEventListener("mousemove", function (e) {
+            if (!drag) return;
+            drag.nx = drag.wx + (e.screenX - drag.mx);
+            drag.ny = drag.wy + (e.screenY - drag.my);
+            if (raf) return;
+            raf = requestAnimationFrame(function () {
+              raf = null;
+              if (drag) window.pywebview.api.win_move(drag.nx, drag.ny);
+            });
+          });
+          window.addEventListener("mouseup", function () { drag = null; });
+        }
+      }
+      if (window.pywebview && window.pywebview.api) wire();
+      else window.addEventListener("pywebviewready", wire);
+    })();
+  </script>
+  <link rel="stylesheet" href="/mobile-shell.css">
+  <link rel="stylesheet" href="/product-shell.css">
+  <script src="/product-shell.js"></script>
+</head>
+<body>
+  <header id="topbar">
+    <div id="winctl" hidden>
+      <button id="winClose" class="themebtn" title="Minimise (⌘Q to quit)" aria-label="Minimise">✕</button>
+      <button id="winFull" class="themebtn" title="Toggle fullscreen" aria-label="Fullscreen">⤢</button>
+    </div>
+    <a href="#/" class="brand" aria-label="confnote"><img class="brandmark" src="/icon.svg" alt="">confnote</a>
+    <nav id="crumbs"></nav>
+    <span id="status" class="status"></span>
+    <div id="rightctl">
+      <!-- Web: product-shell.js puts Profile (or Sign in) here, before Settings. -->
+      <button id="settingsBtn" class="themebtn" title="Settings" aria-label="Settings">⚙</button>
+      <button id="theme" class="themebtn" title="Theme — auto / light / dark" aria-label="Toggle theme">◐</button>
+    </div>
+  </header>
+  <aside id="sidebar" aria-label="Conference agenda"></aside>
+  <main id="app">Loading…</main>
+  <script src="/vendor/easymde.min.js"></script>
+  <script type="module" src="/vendor/deep-chat.bundle.js"></script>
+  <script src="/agent-settings.js"></script>
+  <script src="/browser-notes.js"></script>
+  <!-- browser-transcribe.js: hosted transcription, page → OpenAI with the tab's own key (never via our server). -->
+  <script src="/browser-transcribe.js"></script>
+  <!-- find-events.js: the open catalogue view behind home → Find events (app.js mounts it). -->
+  <script src="/find-events.js"></script>
+  <script src="/app.js"></script>
+  <script src="/mobile-shell.js"></script>
+  <script src="/day-setup.js"></script>
+  <!-- toast.js: tiny top-right notification primitive used by the chat
+       stream (slash-command completion) + anything else that wants it. -->
+  <script src="/toast.js"></script>
+  <!-- settings.js: ⚙ modal (transcription provider + API key, open-in-browser).
+       Always available (browser + desktop); reads/writes /api/settings. -->
+  <script src="/settings.js"></script>
+  <!-- drawer.js loads after app.js so the chat module can reach
+       window.confnote.mountConciergeInto / window.confnote.fab.disable -->
+  <script src="/drawer.js" defer></script>
+</body>
+</html>

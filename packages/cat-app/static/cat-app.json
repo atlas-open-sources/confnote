@@ -1,0 +1,31 @@
+{
+  "schema_version": 0,
+  "id": "confnote",
+  "name": "ConfNote",
+  "version": "0.1.0",
+  "kind": "html",
+  "entry": "index.html",
+  "capabilities": [
+    "project.read",
+    "project.write",
+    "style.inline"
+  ],
+  "project_folder": {
+    "access": "read-write"
+  },
+  "events": [],
+  "theme": {
+    "tokens": true,
+    "original": "style.css",
+    "cat": "cat-theme.css",
+    "chrome": { "light": "#ffffff", "dark": "#000000" }
+  },
+  "data": {
+    "san": "app",
+    "default": "confnote"
+  },
+  "settings": [],
+  "about": {
+    "source": "atlascodesai/conferences packages/cat-app"
+  }
+}

@@ -1,0 +1,25 @@
+name: Propose a change
+description: Discuss the problem before implementing or opening a PR.
+title: "[Proposal] "
+body:
+  - type: markdown
+    attributes:
+      value: Wait for a maintainer to apply the accepted label before implementing. Do not include secrets or private notes.
+  - type: textarea
+    id: problem
+    attributes:
+      label: Problem and intended outcome
+    validations:
+      required: true
+  - type: textarea
+    id: scope
+    attributes:
+      label: Proposed scope and alternatives
+    validations:
+      required: true
+  - type: textarea
+    id: validation
+    attributes:
+      label: How the change could be tested and presented
+    validations:
+      required: true

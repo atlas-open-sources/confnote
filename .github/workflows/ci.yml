@@ -1,0 +1,123 @@
+name: Target invariance
+on:
+  push:
+    branches: [main]
+  pull_request:
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  contracts:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '24'
+      - run: |
+          python3 -m venv packages/local-app/.venv
+          packages/local-app/.venv/bin/python -m pip install -r packages/local-app/requirements-ci.txt
+          npm ci --prefix packages/events-model
+          npm ci --prefix packages/web-app
+          npm ci --prefix packages/cat-app
+          make contracts
+  web:
+    runs-on: ubuntu-latest
+    services:
+      postgres:
+        image: postgres:16
+        env:
+          POSTGRES_DB: confnote_test
+          POSTGRES_USER: postgres
+          POSTGRES_PASSWORD: fixture-only-password # pragma: allowlist secret
+        ports:
+          - 5432:5432
+        options: >-
+          --health-cmd "pg_isready -U postgres -d confnote_test"
+          --health-interval 5s --health-timeout 5s --health-retries 10
+    env:
+      CONFNOTE_TEST_DATABASE_URL: postgresql://postgres:fixture-only-password@127.0.0.1:5432/confnote_test # pragma: allowlist secret
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '24'
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - run: |
+          python3 -m venv packages/local-app/.venv
+          packages/local-app/.venv/bin/python -m pip install -r packages/local-app/requirements-ci.txt
+          npm ci --prefix packages/events-model
+          npm ci --prefix packages/web-app
+          npm --prefix packages/web-app run check
+  mac:
+    runs-on: macos-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '24'
+      - run: |
+          python3 -m venv packages/local-app/.venv
+          packages/local-app/.venv/bin/python -m pip install -r packages/local-app/requirements.lock
+          packages/local-app/.venv/bin/python -m playwright install chromium
+          npm ci --prefix packages/events-model
+          npm ci --prefix packages/web-app
+          npm ci --prefix packages/cat-app
+          make bryntum
+          npm --prefix packages/web-app run build
+          make lint
+          make e2e
+      - name: Headless fresh-bundle smoke, both channels
+        env:
+          CONFNOTE_HEADLESS_BUILD: '1'
+        run: |
+          df -h ~
+          packages/local-app/build-macos.sh
+          packages/local-app/build-macos.sh dev ci
+          make app-smoke
+  cat-app:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '24'
+      - run: |
+          npm ci --prefix packages/web-app
+          npm ci --prefix packages/cat-app
+          npm --prefix packages/cat-app run check
+  events-model-enrichment:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '24'
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - run: |
+          python3 -m venv packages/local-app/.venv
+          packages/local-app/.venv/bin/python -m pip install -r packages/local-app/requirements-ci.txt
+          packages/local-app/.venv/bin/python -m pip install --no-deps -r packages/enrichment/requirements.txt
+          npm ci --prefix packages/events-model
+          npm --prefix packages/events-model test
+          (cd packages/events-model && npx tsc --noEmit)
+          CONFNOTE_REQUIRE_TS_PARITY=1 packages/local-app/.venv/bin/python -m pytest tests/test_events_model.py packages/enrichment/tests
+  workflow-lint:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-go@v5
+        with:
+          go-version: '1.24'
+      - run: go install github.com/rhysd/actionlint/cmd/actionlint@v1.7.7
+      - run: actionlint

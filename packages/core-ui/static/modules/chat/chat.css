@@ -1,0 +1,196 @@
+/* Concierge drawer chrome: the context line, the pickers, the chat host and the thread history.
+   Loaded by chat.js. Bubbles, chips and the composer live inside deep-chat's shadow DOM and are themed
+   from app.js (themeDeepChat); only CSS custom properties cross that boundary. */
+
+/* The drawer body pads 16px; the Concierge runs edge to edge under the header instead, so the context
+   line and the composer line up with the header's own 16px inset. */
+.drawer-body:has(> .chat-inner) {
+  padding: 0;
+}
+
+/* Context line: what the Concierge sees right now, as one quiet line under the header. */
+.chat-ctx-strip {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  min-height: 36px;
+  padding: 0 16px;
+  border-bottom: 1px solid var(--line);
+  color: var(--muted);
+  font: 400 12px / 1.4 var(--sans);
+  flex: none;
+}
+.chat-ctx-dot {
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background: var(--live);
+  flex: none;
+  font-size: 0;
+}
+.chat-ctx-text {
+  flex: 1;
+  min-width: 0;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+.chat-ctx-text b {
+  color: var(--ink);
+  font-weight: 600;
+}
+
+/* Thinking + model pickers (Mac app only): borderless until hovered, mono like the app's other labels. */
+.chat-think,
+.chat-model {
+  display: inline-flex;
+  align-items: center;
+  gap: 2px;
+  flex: none;
+  font: 500 11px var(--mono);
+  color: var(--faint);
+}
+.chat-think[hidden],
+.chat-model[hidden] {
+  display: none;
+}
+.chat-think-lbl,
+.chat-model-lbl {
+  color: var(--faint);
+}
+.chat-think-sel,
+.chat-model-sel {
+  appearance: none;
+  background: transparent;
+  color: var(--ink);
+  border: 1px solid transparent;
+  border-radius: var(--r1);
+  padding: 2px 6px;
+  font: 600 11px var(--mono);
+  cursor: pointer;
+}
+.chat-think-sel:hover,
+.chat-model-sel:hover,
+.chat-think-sel:focus-visible,
+.chat-model-sel:focus-visible {
+  border-color: var(--line);
+  background: var(--accent-soft);
+  outline: none;
+}
+
+/* The chat host: deep-chat fills it; the buy-more card and the sign-up form sit at its foot. */
+.chat-inner {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  min-height: 0;
+  background: var(--panel);
+}
+/* deep-chat writes its own grey frame and font inline on every render; the drawer is the frame here. */
+.chat-inner deep-chat {
+  flex: 1;
+  min-height: 0;
+  border: none !important;
+  font-family: var(--sans) !important;
+}
+
+/* Out of credits: the card sits above the composer's line, inside the chat, not as a second panel. */
+.chat-inner .wallet-card {
+  margin: 0 16px 12px;
+  flex: none;
+}
+
+/* Public demo sign-up, between the context line and the chat. */
+.drawer-body > .chat-waitlist {
+  margin: 12px 16px 0;
+}
+
+/* Thread history. */
+.chat-history {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  padding: 16px;
+}
+.chat-history-h {
+  margin: 0;
+  color: var(--faint);
+  font: 600 11px var(--mono);
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+}
+.chat-history-back {
+  align-self: flex-start;
+  background: none;
+  border: none;
+  border-radius: var(--r1);
+  padding: 2px 6px;
+  color: var(--muted);
+  font: 500 12px var(--sans);
+  cursor: pointer;
+}
+.chat-history-back:hover {
+  color: var(--ink);
+  background: var(--accent-soft);
+}
+.chat-history .empty {
+  color: var(--muted);
+  font-size: 13px;
+}
+.chat-thread-list {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+.chat-thread-item {
+  display: grid;
+  grid-template-columns: 12px 1fr auto;
+  gap: 10px;
+  align-items: center;
+  padding: 10px 12px;
+  border: 1px solid var(--line);
+  border-radius: var(--r2);
+  background: var(--panel);
+}
+.chat-thread-item.active {
+  border-color: var(--ink);
+}
+.chat-thread-dot {
+  color: var(--faint);
+  font-size: 10px;
+  line-height: 1;
+}
+.chat-thread-item.active .chat-thread-dot {
+  color: var(--live);
+}
+.chat-thread-title {
+  color: var(--ink);
+  font-size: 13px;
+  font-weight: 600;
+}
+.chat-thread-sub {
+  color: var(--faint);
+  font: 500 10px var(--mono);
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+}
+.chat-thread-resume {
+  padding: 4px 9px;
+  border: 1px solid var(--line);
+  border-radius: var(--r1);
+  background: var(--bg);
+  color: var(--muted);
+  font: 500 12px var(--sans);
+  cursor: pointer;
+}
+.chat-thread-resume:hover {
+  border-color: var(--ink);
+  color: var(--ink);
+}
+.chat-thread-resume[disabled] {
+  opacity: 0.5;
+  cursor: progress;
+}

@@ -1,0 +1,7 @@
+{
+  "id": "bryntum",
+  "label": "Planner",
+  "entry": "bryntum.js",
+  "description": "Planner on Bryntum Scheduler + Calendar: the conference day as rooms × time (Scheduler; the default for a multi-track day, picks are the agenda's stars, clashes banded), the day by room as a printed programme (Calendar), a trip view, and a calendar of tracked events. Bundle is lazy-loaded on first open. Disable by swapping 'bryntum' for 'module-2' in modules.config.json; delete this directory to remove it entirely.",
+  "primitive": "drawer"
+}

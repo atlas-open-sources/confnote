@@ -1,0 +1,48 @@
+{
+  "categories": [
+    "tech",
+    "music",
+    "science",
+    "other"
+  ],
+  "formats": [
+    "conference",
+    "meetup",
+    "hackathon",
+    "demo-night",
+    "workshop",
+    "dinner",
+    "party",
+    "mega-week",
+    "festival",
+    "webinar",
+    "meeting",
+    "lecture",
+    "course",
+    "other"
+  ],
+  "programs": [
+    "claude-community",
+    "claude-campus",
+    "codex-community",
+    "ai-tinkerers",
+    "gdg",
+    "hf-builders",
+    "tech-week"
+  ],
+  "topics": [
+    "ai",
+    "javascript",
+    "python",
+    "rust",
+    "devops",
+    "data",
+    "security",
+    "ux",
+    "web",
+    "mobile",
+    "cloud",
+    "opensource"
+  ],
+  "extensible": true
+}

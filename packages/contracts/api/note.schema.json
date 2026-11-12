@@ -1,0 +1,30 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://confnote.local/contracts/api/note.schema.json",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["frontmatter", "title", "sections", "mtime"],
+  "properties": {
+    "frontmatter": {
+      "type": "object",
+      "additionalProperties": { "type": "string" }
+    },
+    "title": { "type": "string" },
+    "sections": {
+      "type": "object",
+      "additionalProperties": { "type": "string" },
+      "required": [
+        "Human notes",
+        "Summary",
+        "Research",
+        "AI notes",
+        "Transcript",
+        "Actions",
+        "Links",
+        "Scratchpad",
+        "Private"
+      ]
+    },
+    "mtime": { "type": "number" }
+  }
+}

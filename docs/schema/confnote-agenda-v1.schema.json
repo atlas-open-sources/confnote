@@ -1,0 +1,135 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://confnote.local/schema/confnote-agenda-v1.schema.json",
+  "title": "confnote agenda manifest v1",
+  "type": "object",
+  "required": ["schema_version", "conference", "events"],
+  "additionalProperties": true,
+  "properties": {
+    "schema_version": { "const": "confnote.agenda.v1" },
+    "conference": {
+      "type": "object",
+      "required": ["name", "date"],
+      "additionalProperties": true,
+      "properties": {
+        "id": { "type": "string", "pattern": "^[a-z0-9][a-z0-9_-]*$" },
+        "name": { "type": "string", "minLength": 1 },
+        "date": { "type": "string", "pattern": "^\\d{4}-\\d{2}-\\d{2}$" },
+        "timezone": { "type": "string" },
+        "url": { "type": "string" },
+        "description": { "type": "string" },
+        "organiser": { "type": "string" },
+        "venue": {
+          "type": "object",
+          "additionalProperties": true,
+          "properties": {
+            "name": { "type": "string" },
+            "address": { "type": "string" },
+            "city": { "type": "string" },
+            "country": { "type": "string" }
+          }
+        }
+      }
+    },
+    "rooms": {
+      "type": "array",
+      "items": { "$ref": "#/$defs/named_ref" }
+    },
+    "tracks": {
+      "type": "array",
+      "items": { "$ref": "#/$defs/named_ref" }
+    },
+    "speakers": {
+      "type": "object",
+      "additionalProperties": {
+        "type": "object",
+        "required": ["name"],
+        "additionalProperties": true,
+        "properties": {
+          "name": { "type": "string", "minLength": 1 },
+          "role": { "type": "string" },
+          "company": { "type": "string" },
+          "bio": { "type": "string" },
+          "url": { "type": "string" },
+          "social": { "type": "object" }
+        }
+      }
+    },
+    "events": {
+      "type": "array",
+      "minItems": 1,
+      "items": {
+        "type": "object",
+        "required": ["id", "title", "start", "end"],
+        "additionalProperties": true,
+        "properties": {
+          "id": { "type": "string", "pattern": "^[a-z0-9][a-z0-9_-]*$" },
+          "type": {
+            "type": "string",
+            "enum": [
+              "talk",
+              "keynote",
+              "panel",
+              "workshop",
+              "break",
+              "networking",
+              "logistics",
+              "lunch",
+              "social",
+              "other"
+            ]
+          },
+          "title": { "type": "string", "minLength": 1 },
+          "description": { "type": "string" },
+          "start": { "type": "string", "minLength": 1 },
+          "end": { "type": "string", "minLength": 1 },
+          "room": { "type": "string" },
+          "track": { "type": "string" },
+          "speakers": {
+            "type": "array",
+            "items": { "type": "string" }
+          },
+          "tags": {
+            "type": "array",
+            "items": { "type": "string" }
+          },
+          "links": {
+            "type": "array",
+            "items": {
+              "type": "object",
+              "required": ["url"],
+              "additionalProperties": true,
+              "properties": {
+                "url": { "type": "string", "minLength": 1 },
+                "label": { "type": "string" }
+              }
+            }
+          }
+        }
+      }
+    },
+    "sources": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "additionalProperties": true,
+        "properties": {
+          "url": { "type": "string" },
+          "label": { "type": "string" },
+          "retrieved_at": { "type": "string" }
+        }
+      }
+    }
+  },
+  "$defs": {
+    "named_ref": {
+      "type": "object",
+      "required": ["id", "name"],
+      "additionalProperties": true,
+      "properties": {
+        "id": { "type": "string", "pattern": "^[a-z0-9][a-z0-9_-]*$" },
+        "name": { "type": "string", "minLength": 1 }
+      }
+    }
+  }
+}

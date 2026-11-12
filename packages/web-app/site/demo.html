@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="robots" content="noindex, nofollow">
+  <title>confnote · demo</title>
+  <link rel="icon" type="image/svg+xml" href="/icon.svg">
+  <script src="/site.js"></script>
+  <!-- The app's own design system: tokens, top bar, brand, buttons. site.css lays out the page. -->
+  <link rel="stylesheet" href="/style.css">
+  <link rel="stylesheet" href="/site.css">
+  <style>
+    #topbar .demo-tag { font: 12px var(--mono); color: var(--muted); }
+    .stage { display: grid; grid-template-columns: minmax(0, 1fr) 300px; gap: 16px; align-items: start; }
+    .frame { border: 1px solid var(--line); border-radius: var(--r2); overflow: hidden; background: #000; }
+    .frame video { display: block; width: 100%; aspect-ratio: 16 / 9; background: #000; }
+    ol.chapters { list-style: none; margin: 0; padding: 4px; border: 1px solid var(--line); border-radius: var(--r2);
+      background: var(--panel); max-height: 560px; overflow: auto; }
+    ol.chapters button { all: unset; display: grid; grid-template-columns: 40px 1fr; gap: 8px; width: 100%;
+      box-sizing: border-box; padding: 7px 10px; border-radius: var(--r1); cursor: pointer; font-size: 13px;
+      line-height: 1.4; color: var(--muted); }
+    ol.chapters button:hover { background: var(--accent-soft); color: var(--ink); }
+    ol.chapters button[aria-current="true"] { background: var(--accent-soft); color: var(--ink);
+      box-shadow: inset 2px 0 0 var(--ink); }
+    ol.chapters time { font: 12px var(--mono); color: var(--faint); padding-top: 1px; }
+    .flow { margin-top: 32px; display: flex; flex-wrap: wrap; align-items: center; gap: 8px; font: 12px var(--mono);
+      color: var(--muted); }
+    .flow b { color: var(--ink); font-weight: 500; border: 1px solid var(--line); border-radius: var(--r1);
+      padding: 4px 8px; background: var(--panel); }
+    .cards { display: grid; grid-template-columns: repeat(3, 1fr); gap: 16px; margin-top: 32px; }
+    .card { border: 1px solid var(--line); border-radius: var(--r2); padding: 16px; background: var(--panel); }
+    .card h2 { font: 600 13px var(--mono); letter-spacing: -0.02em; margin: 0 0 6px; }
+    .card p { margin: 0; color: var(--muted); font-size: 14px; }
+    .try { margin-top: 32px; display: flex; gap: 12px; flex-wrap: wrap; align-items: center; }
+    .try .primary { display: inline-block; }
+    .note { color: var(--muted); font-size: 13px; }
+    .demo .archived { margin: 0 0 16px; padding: 10px 14px; border: 1px solid var(--line); border-radius: var(--r2);
+      background: var(--accent-soft); color: var(--muted); font-size: 14px; }
+    .archived a { color: var(--link); }
+    .history { margin-top: 48px; }
+    .history h2 { font: 600 13px var(--mono); margin: 0 0 12px; }
+    .history ol { list-style: none; margin: 0; padding: 0; display: grid; gap: 8px; }
+    .history a { display: grid; grid-template-columns: 160px 1fr; gap: 16px; align-items: center; padding: 10px;
+      border: 1px solid var(--line); border-radius: var(--r2); background: var(--panel); }
+    .history a:hover { border-color: var(--ink); }
+    .history a[aria-current="page"] { box-shadow: inset 2px 0 0 var(--ink); }
+    .history img { width: 160px; aspect-ratio: 16 / 9; object-fit: cover; border-radius: var(--r1); background: #000; }
+    .history .label { font: 12px var(--mono); color: var(--muted); }
+    .history .title { font-weight: 600; }
+    .history .meta { color: var(--muted); font-size: 13px; }
+    @media (max-width: 860px) {
+      .stage { grid-template-columns: 1fr; }
+      ol.chapters { max-height: none; }
+      .cards { grid-template-columns: 1fr; }
+      .history a { grid-template-columns: 1fr; }
+      .history img { width: 100%; }
+    }
+  </style>
+</head>
+<body>
+  <header id="topbar">
+    <a href="/" class="brand" aria-label="confnote"><img class="brandmark" src="/icon.svg" alt="">confnote</a>
+    <div id="rightctl">
+      <span class="demo-tag">PayPal AI Hackathon · demo</span>
+      <button id="theme" class="themebtn" title="Theme — auto / light / dark" aria-label="Toggle theme">◐</button>
+    </div>
+  </header>
+  <main class="site-main demo">
+    <p class="eyebrow">Demo</p>
+    <h1>Metered AI you pay for with PayPal</h1>
+    <p class="lede">confnote plans your conference days with an AI Concierge. Every AI step is metered by the Mochi
+      Router wallet and paid for with PayPal: a free trial, credit packs, a card saved with Card Fields, and automatic
+      top-ups. Recorded live on staging.confnote.si against the PayPal sandbox.</p>
+
+    <p class="archived" id="archived" hidden></p>
+    <div class="stage">
+      <div class="frame">
+        <video id="demo" controls playsinline preload="metadata"></video>
+      </div>
+      <ol class="chapters" id="chapters" aria-label="Chapters"></ol>
+    </div>
+
+    <div class="flow" aria-label="How a paid AI step flows">
+      <b>confnote</b> → <b>Mochi Router gateway</b> → <b>wallet: meter the step</b> → <b>the model</b>
+      <span>· out of credit:</span> <b>402</b> → <b>PayPal order / saved card</b> → <b>credits</b>
+    </div>
+
+    <section class="cards">
+      <div class="card">
+        <h2>PayPal</h2>
+        <p>Orders v2 checkout for credit packs, Card Fields to save a card without a PayPal login, and server-side
+          auto top-up against the vaulted card under a monthly cap.</p>
+      </div>
+      <div class="card">
+        <h2>Bryntum</h2>
+        <p>The conference day, room by room: parallel talks side by side in the Planner. A pick there is a pick in
+          confnote's own agenda and the other way round, with clashes shown in both.</p>
+      </div>
+      <div class="card">
+        <h2>AG Grid</h2>
+        <p>Every event from our sources in one filterable grid, and the AI-usage grid that lists each metered step
+          with its cost and the balance after it.</p>
+      </div>
+    </section>
+
+    <div class="try">
+      <a class="primary" href="https://confnote.si/">Try it</a>
+      <a href="https://staging.confnote.si/">or on staging ↗</a>
+      <span class="note">Sign in with an email code; new accounts get a USD 2 trial. Payments are PayPal sandbox.</span>
+    </div>
+    <p class="note licence-note">Bryntum and tldraw run on confnote.si for the PayPal AI Hackathon judging period. If you
+      represent Bryntum or tldraw, tell us whether to remove them or to align licences, and we will:
+      <a href="mailto:support@atlascodes.ai">support@atlascodes.ai</a>.</p>
+
+    <section class="history" aria-labelledby="historyTitle">
+      <h2 id="historyTitle">Video history</h2>
+      <ol id="history"></ol>
+    </section>
+  </main>
+  <script>
+    // The videos and their history live in /media/versions.json, which ships with the videos at deploy time.
+    // /demo plays the latest version; /demo/archive?v=<id> plays an earlier one.
+    const video = document.getElementById("demo");
+    const list = document.getElementById("chapters");
+    const history = document.getElementById("history");
+    const archived = document.getElementById("archived");
+
+    function clock(seconds) {
+      const whole = Math.floor(seconds);
+      return `${Math.floor(whole / 60)}:${String(whole % 60).padStart(2, "0")}`;
+    }
+
+    function showChapters(chapters) {
+      const buttons = chapters.map(([start, title]) => {
+        const item = document.createElement("li");
+        const button = document.createElement("button");
+        const time = document.createElement("time");
+        const text = document.createElement("span");
+        time.textContent = clock(start);
+        text.textContent = title;
+        button.append(time, text);
+        button.addEventListener("click", () => {
+          video.currentTime = start;
+          video.play();
+        });
+        item.append(button);
+        list.append(item);
+        return button;
+      });
+      video.addEventListener("timeupdate", () => {
+        let current = 0;
+        chapters.forEach(([start], index) => {
+          if (video.currentTime >= start) current = index;
+        });
+        buttons.forEach((button, index) => button.setAttribute("aria-current", String(index === current)));
+      });
+    }
+
+    function versionLink(version, latestId) {
+      if (version.id === latestId) return "/demo";
+      return `/demo/archive?v=${encodeURIComponent(version.id)}`;
+    }
+
+    function showHistory(versions, latestId, shownId) {
+      for (const version of versions) {
+        const item = document.createElement("li");
+        const link = document.createElement("a");
+        link.href = versionLink(version, latestId);
+        if (version.id === shownId) link.setAttribute("aria-current", "page");
+        const poster = document.createElement("img");
+        poster.src = version.poster;
+        poster.alt = "";
+        poster.loading = "lazy";
+        const text = document.createElement("div");
+        const label = document.createElement("div");
+        label.className = "label";
+        label.textContent = version.id === latestId ? `${version.label} · latest` : version.label;
+        const title = document.createElement("div");
+        title.className = "title";
+        title.textContent = version.title;
+        const meta = document.createElement("div");
+        meta.className = "meta";
+        meta.textContent = `${version.date} · ${version.duration} · ${version.notes}`;
+        text.append(label, title, meta);
+        link.append(poster, text);
+        item.append(link);
+        history.append(item);
+      }
+    }
+
+    async function load() {
+      const manifest = await (await fetch("/media/versions.json", { cache: "no-store" })).json();
+      const asked = new URLSearchParams(location.search).get("v");
+      const shown = manifest.versions.find((version) => version.id === asked)
+        ?? manifest.versions.find((version) => version.id === manifest.latest);
+      video.poster = shown.poster;
+      video.src = shown.video;
+      if (shown.id !== manifest.latest) {
+        archived.hidden = false;
+        archived.textContent = `Archived: ${shown.label}, ${shown.title} (${shown.date}). `;
+        const latest = document.createElement("a");
+        latest.href = "/demo";
+        latest.textContent = "Watch the latest version";
+        archived.append(latest);
+      }
+      showChapters(shown.chapters);
+      showHistory(manifest.versions, manifest.latest, shown.id);
+    }
+
+    load();
+  </script>
+</body>
+</html>

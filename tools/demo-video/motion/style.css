@@ -1,0 +1,369 @@
+/* Demo videos wear confnote's own look. Tokens are the app's dark theme, copied from
+   packages/core-ui/static/style.css (:root[data-theme="dark"]): a monochrome system of ink, line and accent, with
+   --live green as the only colour, kept for functional status. Sizes are scaled up for 1080p video.
+   When the app's tokens change, change them here too. */
+:root {
+  --bg: #000000;
+  --panel: #0a0a0a;
+  --ink: #ffffff;
+  --muted: #8f8f8f;
+  --faint: #666666;
+  --line: #2e2e2e;
+  --accent: #ffffff;
+  --accent-soft: #161616;
+  --live: #4ad17e;
+  --r1: 4px;
+  --r2: 6px;
+  --shadow-lg: 0 0 0 1px var(--line), 0 8px 24px rgba(0, 0, 0, 0.5);
+  --mono: ui-monospace, SFMono-Regular, "SF Mono", Menlo, Consolas, monospace;
+  --sans: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Inter, sans-serif;
+}
+
+* { box-sizing: border-box; margin: 0; padding: 0; }
+
+html, body {
+  width: 1920px;
+  height: 1080px;
+  overflow: hidden;
+  background: var(--bg);
+  color: var(--ink);
+  font-family: var(--sans);
+  -webkit-font-smoothing: antialiased;
+}
+
+#stage { position: absolute; inset: 0; overflow: hidden; }
+#bg { position: absolute; inset: 0; background: var(--bg); }
+
+.scene { position: absolute; inset: 0; display: none; }
+
+/* The app's mono section label (.sb-head / .card .date), at video size. */
+.label, .ex-kicker {
+  font: 600 18px / 1 var(--mono);
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: var(--faint);
+}
+.ex-kicker { position: absolute; left: 122px; top: 62px; }
+
+/* The app's .tag: mono, uppercase, thin border. */
+.tag {
+  display: inline-block;
+  font: 600 16px / 1 var(--mono);
+  color: var(--muted);
+  background: var(--bg);
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  border: 1px solid var(--line);
+  border-radius: var(--r1);
+  padding: 7px 14px;
+}
+
+/* The app's .primary button: inverted ink. */
+.primary {
+  display: inline-block;
+  border: 1px solid var(--accent);
+  border-radius: var(--r1);
+  background: var(--accent);
+  color: var(--bg);
+  padding: 14px 26px;
+  font: 600 30px / 1 var(--mono);
+  letter-spacing: -0.02em;
+}
+
+/* ---------- Captions ---------- */
+#caption {
+  position: absolute; left: 0; right: 0; top: 924px;
+  display: flex; flex-direction: column; align-items: center; gap: 12px;
+}
+#caption .chip { font: 600 16px / 1 var(--mono); letter-spacing: 0.06em; text-transform: uppercase; color: var(--faint);
+  padding: 6px 12px; border: 1px solid var(--line); border-radius: var(--r1); background: var(--bg); }
+#caption .text { font: 500 32px / 1.25 var(--sans); max-width: 1640px; text-align: center; letter-spacing: -0.01em; }
+
+/* ---------- Brand ---------- */
+.brand { display: inline-flex; align-items: center; gap: 28px; font: 600 112px / 1 var(--mono); letter-spacing: -0.02em; }
+.brand img { width: 108px; height: 108px; border-radius: var(--r2); }
+.rule { height: 1px; background: var(--line); transform-origin: 50% 50%; }
+
+/* ---------- Chapter cards ---------- */
+.chapter-num { font: 600 220px / 1 var(--mono); letter-spacing: -0.04em; color: var(--ink); }
+.chapter-title { font: 600 88px / 1 var(--sans); letter-spacing: -0.02em; }
+.chapter-sub { font: 400 30px / 1.3 var(--sans); color: var(--muted); }
+.progress { display: flex; gap: 10px; }
+.progress div { width: 92px; height: 4px; border-radius: 2px; background: var(--line); overflow: hidden; }
+.progress div i { display: block; height: 100%; width: 0; }
+
+/* ---------- Footage window: the app's panel, line and radius ---------- */
+#window {
+  position: absolute; left: 100px; top: 30px; width: 1720px; height: 872px;
+  border-radius: var(--r2); overflow: hidden; background: var(--bg);
+  border: 1px solid var(--line);
+  box-shadow: var(--shadow-lg);
+  transform-origin: 50% 50%;
+}
+#window .bar {
+  height: 34px; display: flex; align-items: center; gap: 8px; padding: 0 14px;
+  background: var(--panel); border-bottom: 1px solid var(--line);
+}
+#window .bar .dot { width: 10px; height: 10px; border-radius: 50%; background: var(--line); }
+#window .bar .url {
+  margin: 0 auto; padding: 5px 18px; border-radius: var(--r1); background: var(--accent-soft);
+  font: 500 14px / 1 var(--mono); color: var(--muted); min-width: 420px; text-align: center;
+}
+#window .view { position: absolute; left: 0; top: 34px; width: 1720px; height: 838px; overflow: hidden; }
+#window .view img { position: absolute; left: 0; top: 0; width: 1920px; height: 1080px; transform-origin: 0 0; }
+
+.callout {
+  position: absolute; right: 140px; top: 98px; width: 560px; padding: 22px 26px 22px 30px;
+  border-radius: var(--r2); background: var(--panel); border: 1px solid var(--line);
+  box-shadow: var(--shadow-lg);
+}
+.callout::before { content: ""; position: absolute; left: 0; top: 18px; bottom: 18px; width: 3px; border-radius: 2px; background: var(--accent); }
+.callout b { display: block; font: 600 30px / 1.15 var(--mono); letter-spacing: -0.02em; color: var(--accent); }
+.callout span { display: block; margin-top: 10px; font: 400 21px / 1.35 var(--sans); color: var(--muted); }
+
+/* ---------- Origin ---------- */
+.o-cards { position: absolute; left: 0; right: 0; top: 0; bottom: 60px; display: flex; align-items: center; justify-content: center; }
+.o-card {
+  width: 660px; padding: 36px 40px; border-radius: var(--r2); background: var(--panel);
+  border: 1px solid var(--line); box-shadow: var(--shadow-lg); display: flex; flex-direction: column; gap: 16px;
+}
+.o-card .k { font: 600 20px / 1 var(--mono); letter-spacing: 0.05em; text-transform: uppercase; color: var(--faint); }
+.o-card h2 { font: 600 62px / 1.05 var(--sans); letter-spacing: -0.02em; }
+.o-card p { font: 400 28px / 1.35 var(--sans); color: var(--muted); }
+.o-card p b { color: var(--ink); font-weight: 600; }
+.o-card p.m { font: 400 22px / 1.4 var(--mono); color: var(--faint); }
+.o-card code { font: 600 22px var(--mono); color: var(--ink); }
+.o-arrow { width: 220px; display: flex; flex-direction: column; align-items: center; gap: 12px; }
+.o-arrow span { font: 600 16px / 1 var(--mono); color: var(--faint); letter-spacing: 0.06em; text-transform: uppercase; }
+.o-arrow i { display: block; height: 1px; width: 0; align-self: flex-start; margin-left: 20px; max-width: 180px; background: var(--ink); }
+.o-json {
+  position: absolute; left: 330px; top: 200px; width: 1260px; border-radius: var(--r2); overflow: hidden;
+  background: var(--panel); border: 1px solid var(--line); box-shadow: var(--shadow-lg);
+}
+.o-json .bar { height: 46px; display: flex; align-items: center; gap: 8px; padding: 0 16px; border-bottom: 1px solid var(--line); }
+.o-json .bar .dot { width: 10px; height: 10px; border-radius: 50%; background: var(--line); }
+.o-json .bar .url { margin-left: 14px; padding: 7px 14px; border-radius: var(--r1); background: var(--accent-soft); font: 500 17px / 1 var(--mono); color: var(--muted); }
+.o-json .bar .live { margin-left: auto; font: 600 14px / 1 var(--mono); letter-spacing: 0.06em; text-transform: uppercase; color: var(--live);
+  padding: 6px 10px; border: 1px solid var(--line); border-radius: var(--r1); }
+.o-json pre { padding: 26px 34px 30px; font: 400 27px / 1.5 var(--mono); color: var(--muted); }
+.o-json .ln em { font-style: normal; color: var(--ink); }
+.o-json .ln.c { color: var(--faint); }
+
+/* ---------- Closing ---------- */
+.card3 {
+  width: 520px; padding: 30px 32px; border-radius: var(--r2); background: var(--panel);
+  border: 1px solid var(--line); box-shadow: var(--shadow-lg); display: flex; flex-direction: column; gap: 14px;
+}
+.card3 .k { font: 600 16px / 1 var(--mono); letter-spacing: 0.06em; text-transform: uppercase; color: var(--faint); }
+.card3 h3 { font: 600 42px / 1 var(--sans); letter-spacing: -0.02em; }
+.card3 li { list-style: none; font: 400 22px / 1.4 var(--sans); color: var(--muted); }
+.card3 li::before { content: "→ "; color: var(--faint); }
+.proof { font: 400 20px / 1.5 var(--mono); color: var(--faint); text-align: center; }
+.proof code { font: 600 20px var(--mono); color: var(--ink); }
+.footnote { font: 500 18px / 1 var(--mono); color: var(--faint); letter-spacing: 0.02em; }
+.music { font: 400 32px / 1.35 var(--sans); color: var(--muted); text-align: center; max-width: 1400px; }
+.music b { color: var(--ink); font-weight: 600; }
+
+/* ---------- Footage masks: a blur box over private text, moved with the zoom ---------- */
+#window .view .mask { position: absolute; background: rgba(10, 10, 10, 0.25); border-radius: var(--r1); }
+/* Footage spot: the framed panel stays lit, the page around it falls back to the bg. */
+#window .view #spot { position: absolute; opacity: 0; border-radius: var(--r2); pointer-events: none;
+  box-shadow: 0 0 0 1px var(--line), 0 0 0 4000px rgba(0, 0, 0, 0.72); }
+
+/* ---------- Paper: handwritten notes, a memory. Monochrome: the page is ink, the writing is bg. ---------- */
+.paper-wrap { position: absolute; inset: 0; display: flex; align-items: center; justify-content: center; }
+.paper-wrap::after {
+  content: ""; position: absolute; inset: 0; pointer-events: none;
+  background: radial-gradient(ellipse at center, transparent 45%, rgba(0, 0, 0, 0.75) 100%);
+}
+.paper {
+  width: 1180px; height: 820px; padding: 64px 80px 0 150px; position: relative;
+  background:
+    linear-gradient(90deg, transparent 118px, #c9c9c9 118px, #c9c9c9 120px, transparent 120px),
+    repeating-linear-gradient(180deg, transparent 0 57px, rgba(0, 0, 0, 0.09) 57px 58px),
+    #ececec;
+  background-position: 0 0, 0 55px, 0 0; /* rules sit just under each line's baseline */
+  border-radius: 3px;
+  box-shadow: 0 30px 80px rgba(0, 0, 0, 0.6);
+  font: 400 40px / 58px "Noteworthy", "Bradley Hand", "Marker Felt", cursive;
+  color: #1c1c1c;
+  transform-origin: 50% 50%;
+}
+.paper-date { text-align: right; color: #3a3a3a; font-size: 34px; }
+.paper .w { position: relative; display: inline-block; }
+.paper .ink { display: inline-block; white-space: pre; }
+.paper .mark { position: absolute; left: -6px; right: -6px; height: 3px; background: #1c1c1c; border-radius: 2px;
+  transform: scaleX(0); transform-origin: 0 50%; }
+.paper .mark.strike { top: 52%; }
+.paper .mark.under { bottom: 6px; }
+
+/* ---------- Layout: the app as a diagram, the same frame as the footage window ---------- */
+.layout-wrap { position: absolute; inset: 0; }
+.lay-window {
+  position: absolute; left: 100px; top: 30px; width: 1720px; height: 872px;
+  border-radius: var(--r2); overflow: hidden; background: var(--bg); border: 1px solid var(--line); box-shadow: var(--shadow-lg);
+}
+.lay-window .bar {
+  height: 34px; display: flex; align-items: center; gap: 8px; padding: 0 14px;
+  background: var(--panel); border-bottom: 1px solid var(--line);
+}
+.lay-window .bar .dot { width: 10px; height: 10px; border-radius: 50%; background: var(--line); }
+.lay-window .bar .url {
+  margin: 0 auto; padding: 5px 18px; border-radius: var(--r1); background: var(--accent-soft);
+  font: 500 14px / 1 var(--mono); color: var(--muted); min-width: 420px; text-align: center;
+}
+.lay-app { position: absolute; left: 0; right: 0; top: 34px; bottom: 0; overflow: hidden; }
+.lay-side { position: absolute; left: 0; top: 0; bottom: 0; width: 360px; padding: 26px 22px; background: var(--panel);
+  border-right: 1px solid var(--line); display: flex; flex-direction: column; gap: 6px; }
+.lay-head { font: 600 22px / 1.2 var(--sans); margin-bottom: 18px; }
+.lay-row { display: flex; gap: 14px; padding: 10px 6px; border-top: 1px solid var(--line); }
+.lay-row .time { font: 500 15px / 1.4 var(--mono); color: var(--faint); width: 56px; flex: none; }
+.lay-row .title { font: 500 18px / 1.35 var(--sans); color: var(--muted); }
+.lay-main { position: absolute; left: 360px; right: 0; top: 0; bottom: 0; padding: 40px 320px 0 64px; }
+.lay-kicker { font: 600 15px / 1 var(--mono); letter-spacing: 0.06em; text-transform: uppercase; color: var(--faint); }
+.lay-main h2 { font: 600 46px / 1.15 var(--sans); letter-spacing: -0.02em; margin: 16px 0 34px; }
+.lay-note { border: 1px solid var(--line); border-radius: var(--r2); padding: 26px 30px; background: var(--panel);
+  display: flex; flex-direction: column; gap: 14px; transition: none; }
+.lay-note p { font: 400 25px / 1.45 var(--sans); color: var(--ink); }
+.lay-drawer { position: absolute; right: 0; top: 0; bottom: 0; width: 520px; padding: 28px 26px; background: var(--panel);
+  border-left: 1px solid var(--line); display: flex; flex-direction: column; gap: 18px; }
+.lay-drawer .bubble { font: 400 21px / 1.4 var(--sans); padding: 14px 18px; border-radius: var(--r2); border: 1px solid var(--line); }
+.lay-drawer .bubble.me { align-self: flex-end; max-width: 80%; background: var(--accent-soft); color: var(--ink); }
+.lay-drawer .bubble.ai { max-width: 92%; color: var(--muted); }
+.lay-strip { position: absolute; top: 50%; transform: translateY(-50%); right: 0; display: flex; flex-direction: column; gap: 3px; }
+.lay-tab {
+  position: relative; width: 44px; height: 150px; background: var(--panel); color: var(--muted);
+  border: 1px solid var(--line); border-right: none; border-radius: var(--r2) 0 0 var(--r2);
+  display: flex; align-items: center; justify-content: center;
+}
+.lay-tab span { writing-mode: vertical-rl; transform: rotate(180deg); font: 600 15px / 1 var(--mono); letter-spacing: 0.06em; text-transform: uppercase; }
+.lay-tab.lit { background: var(--accent); color: var(--bg); border-color: var(--accent); }
+.lay-name {
+  position: absolute; right: 64px; top: 50%; margin-top: -24px; white-space: nowrap;
+  font: 600 30px / 48px var(--sans); letter-spacing: -0.01em; color: var(--ink);
+  padding: 0 18px; border: 1px solid var(--line); border-radius: var(--r1); background: var(--bg);
+}
+.lay-callout { position: absolute; font: 600 18px / 1 var(--mono); letter-spacing: 0.06em; text-transform: uppercase;
+  color: var(--bg); background: var(--ink); padding: 10px 14px; border-radius: var(--r1); opacity: 0; }
+
+/* ---------- Statement: one centred card (ending segments) ---------- */
+.statement {
+  width: 1120px; padding: 44px 52px; border-radius: var(--r2); background: var(--panel);
+  border: 1px solid var(--line); box-shadow: var(--shadow-lg); display: flex; flex-direction: column; gap: 18px;
+}
+.statement h3 { font: 600 64px / 1.05 var(--sans); letter-spacing: -0.02em; }
+.statement p { font: 400 30px / 1.4 var(--sans); color: var(--muted); }
+
+/* ---------- Layout helpers for the data-driven scenes ---------- */
+.center-col { position: absolute; inset: 0; display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 34px; }
+.row3 { display: flex; gap: 30px; }
+.chapter-wrap { position: absolute; left: 250px; top: 0; bottom: 120px; display: flex; flex-direction: column; justify-content: center; gap: 40px; }
+.chapter-head { display: flex; align-items: center; gap: 56px; }
+.chapter-words { display: flex; flex-direction: column; gap: 22px; }
+.ph-lines { display: flex; flex-direction: column; gap: 14px; font: 500 40px / 1.2 var(--mono); color: var(--muted); }
+.rule { width: 640px; }
+
+/* ---------- Depth (depth.js): the same window, panel and label, moved in 3D. No new colours or surfaces. ---------- */
+.m3d-wrap { position: absolute; inset: 0; perspective: 2200px; perspective-origin: 50% 45%; transform-style: preserve-3d; }
+.m3d-panel {
+  position: absolute; left: 100px; top: 30px; width: 1720px; height: 872px;
+  border-radius: var(--r2); overflow: visible; background: var(--bg); border: 1px solid var(--line);
+  box-shadow: var(--shadow-lg); transform-origin: 50% 50%;
+}
+.m3d-panel .bar {
+  height: 34px; display: flex; align-items: center; gap: 8px; padding: 0 14px; border-radius: var(--r2) var(--r2) 0 0;
+  background: var(--panel); border-bottom: 1px solid var(--line);
+}
+.m3d-panel .bar .dot { width: 10px; height: 10px; border-radius: 50%; background: var(--line); }
+.m3d-panel .bar .url {
+  margin: 0 auto; padding: 5px 18px; border-radius: var(--r1); background: var(--accent-soft);
+  font: 500 14px / 1 var(--mono); color: var(--muted); min-width: 420px; text-align: center;
+}
+.m3d-panel .view { position: absolute; left: 0; top: 34px; width: 1718px; height: 836px; overflow: hidden; }
+.m3d-panel .view img { position: absolute; left: 0; top: 0; width: 1920px; height: 1080px; transform-origin: 0 0; }
+.m3d-name {
+  position: absolute; left: 50%; top: -150px; transform: translateX(-50%); white-space: nowrap;
+  font: 600 76px / 104px var(--mono); letter-spacing: -0.02em; text-transform: none; color: var(--ink);
+  padding: 0 26px; border: 1px solid var(--line); border-radius: var(--r1); background: var(--bg);
+}
+
+/* ---------- Hook (kinetic.js): kinetic type in ink on black, the line grey for the shock ring ---------- */
+.hook-wrap { position: absolute; inset: 0; overflow: hidden; }
+.hook-cam { position: absolute; inset: 0; perspective: 1400px; transform-origin: 50% 50%; }
+.hook-word {
+  position: absolute; left: 0; right: 0; top: 50%; transform: translateY(-50%); visibility: hidden;
+  text-align: center; white-space: nowrap; transform-style: preserve-3d;
+  font: 700 196px / 1 var(--sans); letter-spacing: -0.045em; color: var(--ink);
+}
+.hook-word.brand-word { font: 600 230px / 1 var(--mono); letter-spacing: -0.04em; }
+/* No will-change: a promoted layer keeps the raster scale it was first drawn at, so a frame would depend on the
+   frames drawn before it. */
+.hook-char { display: inline-block; }
+.hook-ring {
+  position: absolute; left: 50%; top: 50%; width: 900px; height: 900px; border-radius: 50%;
+  border: 2px solid var(--line); opacity: 0;
+}
+.hook-sparks { position: absolute; left: 50%; top: 50%; }
+.hook-sparks i { position: absolute; left: 0; top: 0; height: 2px; background: var(--ink); transform-origin: 0 50%; opacity: 0; }
+.hook-flash { position: absolute; inset: 0; background: var(--ink); opacity: 0; pointer-events: none; }
+
+/* ---------- Map (map.js): MapLibre canvas, our own HUD, venue label and the map credit ---------- */
+.map-scene .map-frame { position: absolute; inset: 0; transform-origin: 50% 55%; }
+.map-scene #map { position: absolute; inset: 0; width: 1920px; height: 1080px; }
+.map-hud { position: absolute; left: 72px; top: 60px; display: flex; align-items: center; gap: 18px; }
+.map-hud .coords { font: 500 20px / 1 var(--mono); color: var(--muted); letter-spacing: 0.04em; white-space: pre; }
+.map-venue { position: absolute; width: 0; height: 0; opacity: 0; }
+.map-venue .leader { position: absolute; left: 0; top: 0; width: 2px; margin-left: -1px; background: var(--ink); }
+.map-venue .card {
+  position: absolute; left: 0; bottom: 0; transform: translate(-50%, 0); white-space: nowrap;
+  padding: 18px 24px; border-radius: var(--r2); background: var(--panel); border: 1px solid var(--line);
+  box-shadow: var(--shadow-lg); display: flex; flex-direction: column; gap: 8px;
+}
+.map-venue .card b { font: 600 40px / 1.1 var(--sans); letter-spacing: -0.02em; color: var(--ink); }
+.map-venue .card span { font: 500 20px / 1 var(--mono); letter-spacing: 0.04em; color: var(--muted); text-transform: uppercase; }
+.map-credit, .photo-credit {
+  position: absolute; right: 28px; bottom: 24px; padding: 8px 12px; border-radius: var(--r1);
+  background: rgba(0, 0, 0, 0.72); border: 1px solid var(--line);
+  font: 500 17px / 1 var(--mono); color: var(--muted); letter-spacing: 0.02em;
+}
+
+/* ---------- Photo (depth.js): a still with a feathered foreground layer for parallax ---------- */
+.photo-wrap { position: absolute; inset: 0; overflow: hidden; background: var(--bg); }
+.photo-layer { position: absolute; inset: 0; background-size: cover; background-position: 50% 50%; transform-origin: 50% 62%; }
+.photo-wrap::after {
+  content: ""; position: absolute; inset: 0; pointer-events: none;
+  background: radial-gradient(ellipse at center, transparent 55%, rgba(0, 0, 0, 0.55) 100%),
+    linear-gradient(180deg, transparent 60%, rgba(0, 0, 0, 0.6) 100%);
+}
+.photo-label { position: absolute; left: 72px; bottom: 64px; z-index: 1; display: flex; flex-direction: column; gap: 12px; }
+.photo-label b { font: 600 64px / 1 var(--sans); letter-spacing: -0.02em; color: var(--ink); }
+.photo-label span { font: 500 22px / 1 var(--mono); letter-spacing: 0.05em; text-transform: uppercase; color: var(--muted); }
+.photo-credit { z-index: 1; }
+
+/* ---------- Pencil (pencil.js): graphite multiplied over a paper scan ---------- */
+.pencil-wrap { position: absolute; inset: 0; display: flex; align-items: center; justify-content: center; }
+.pencil-wrap::after {
+  content: ""; position: absolute; inset: 0; pointer-events: none;
+  background: radial-gradient(ellipse at center, transparent 58%, rgba(0, 0, 0, 0.7) 100%);
+}
+.pencil-page {
+  position: relative; width: 1240px; height: 820px; border-radius: 3px; transform-origin: 50% 50%;
+  background-size: 1024px 1024px; background-color: #ecebe8;
+  box-shadow: 0 40px 100px rgba(0, 0, 0, 0.65);
+}
+.pencil-page::before {
+  content: ""; position: absolute; inset: 0; pointer-events: none; mix-blend-mode: multiply;
+  background:
+    linear-gradient(90deg, transparent 128px, rgba(0, 0, 0, 0.16) 128px, rgba(0, 0, 0, 0.16) 130px, transparent 130px),
+    repeating-linear-gradient(180deg, transparent 0 calc(var(--rule) - 1px), rgba(0, 0, 0, 0.08) calc(var(--rule) - 1px) var(--rule));
+  background-position: 0 0, 0 var(--rule-y);
+}
+.pencil-ink { position: absolute; left: 0; top: 0; mix-blend-mode: multiply; opacity: 0.92; }
+.pencil-tool-layer { position: absolute; left: 0; top: 0; overflow: visible; }
+
+/* ---------- Three (three-scene.js): the WebGL canvas and an optional caption ---------- */
+.three-scene canvas { position: absolute; inset: 0; width: 1920px; height: 1080px; }
+.three-caption {
+  position: absolute; left: 120px; bottom: 120px; display: flex; flex-direction: column; gap: 14px;
+}
+.three-caption h2 { font: 600 120px / 1 var(--mono); letter-spacing: -0.03em; color: var(--ink); }

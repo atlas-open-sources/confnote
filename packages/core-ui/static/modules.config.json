@@ -1,0 +1,9 @@
+{
+  "_comment": "OSS export: excluded vendor modules are not enabled. The Planner (bryntum) builds Bryntum's bundle with `make bryntum`; see README.md.",
+  "slots": [
+    "aggrid",
+    "bryntum",
+    "chat"
+  ],
+  "primitive_override": {}
+}

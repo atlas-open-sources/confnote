@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Get the confnote Mac app</title>
+  <link rel="icon" type="image/svg+xml" href="/icon.svg">
+  <script src="/site.js"></script>
+  <!-- The app's own design system: tokens, top bar, brand, buttons. site.css only lays out the page. -->
+  <link rel="stylesheet" href="/style.css">
+  <link rel="stylesheet" href="/site.css">
+  <style>
+    ul.adds { padding-left: 18px; margin: 0 0 28px; }
+    ul.adds li { margin: 4px 0; }
+    #get { margin-bottom: 20px; padding: 20px; }
+    .req, .meta { color: var(--muted); font-size: 13px; margin: 12px 0 0; }
+    .sha { font-family: var(--mono); font-size: 12px; word-break: break-all; color: var(--ink); }
+    #catPromo { margin-top: 32px; }
+    #catPromo p { margin: 0; }
+  </style>
+</head>
+<body>
+  <header id="topbar">
+    <a href="/" class="brand" aria-label="confnote"><img class="brandmark" src="/icon.svg" alt="">confnote</a>
+    <div id="rightctl">
+      <button id="theme" class="themebtn" title="Theme — auto / light / dark" aria-label="Toggle theme">◐</button>
+    </div>
+  </header>
+  <main class="site-main narrow">
+    <h1>Get the Mac app</h1>
+    <p class="lede">The same confnote, on your Mac, with the parts a browser can't do.</p>
+    <ul class="adds">
+      <li>Record talks right in the app.</li>
+      <li>Transcription on your Mac, so audio doesn't have to leave it.</li>
+      <li>Your notes are plain <code>.md</code> files in a folder you own.</li>
+    </ul>
+
+    <section class="site-box" id="get">
+      <a class="primary" id="downloadBtn" href="/download/confnote-mac.dmg" aria-disabled="true">Coming soon</a>
+      <p class="req" id="requirements">Mac app for Apple Silicon. The first notarized build is on its way.</p>
+      <p class="meta" id="checksum" hidden>sha256 <span class="sha" id="sha"></span></p>
+    </section>
+
+    <h2>Already have notes on this site?</h2>
+    <p>Download them from the conference page as a <code>.confnote</code> file, then open that file in the app.</p>
+
+    <aside class="site-box soft" id="catPromo">
+      <p><strong>confnote also runs inside the <a href="https://localaicat.com">Local AI Cat</a></strong>, your local AI on your Mac.
+      This standalone app stays for people who want it separate or want to hack on it.</p>
+    </aside>
+  </main>
+  <script>
+    (function () {
+      var LATEST = "https://confnote-downloads.vercel.app/latest.json";
+      var ARCH = { arm64: "Apple Silicon", x86_64: "Intel" };
+      function mb(bytes) { return Math.round(bytes / 1e6) + " MB"; }
+      fetch(LATEST, { cache: "no-cache" })
+        .then(function (r) { return r.ok ? r.json() : null; })
+        .then(function (latest) {
+          if (!latest || !latest.sha256) return;
+          var btn = document.getElementById("downloadBtn");
+          btn.removeAttribute("aria-disabled");
+          btn.textContent = "Download confnote " + latest.version + " (" + mb(latest.size) + ")";
+          var chips = (latest.architectures || []).map(function (a) { return ARCH[a] || a; }).join(" and ");
+          document.getElementById("requirements").textContent =
+            "macOS " + latest.minimum_macos + " or later, " + chips + ". Notarized by Apple.";
+          document.getElementById("sha").textContent = latest.sha256;
+          document.getElementById("checksum").hidden = false;
+        })
+        .catch(function () {});
+    })();
+  </script>
+</body>
+</html>

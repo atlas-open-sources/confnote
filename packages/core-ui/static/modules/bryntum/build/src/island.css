@@ -1,0 +1,5 @@
+@import "@bryntum/calendar/fontawesome/css/fontawesome.css";
+@import "@bryntum/calendar/fontawesome/css/solid.css";
+@import "@bryntum/calendar/calendar.css";
+/* Light by default; esbuild.mjs appends svalbard-dark scoped to confnote's dark theme. */
+@import "@bryntum/calendar/svalbard-light.css";

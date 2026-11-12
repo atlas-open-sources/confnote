@@ -1,0 +1,923 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://confnote.app/schema/events-v2.schema.json",
+  "type": "object",
+  "properties": {
+    "schema_version": {
+      "const": "events.catalogue.v2"
+    },
+    "events": {
+      "type": "array",
+      "items": {
+        "$ref": "#/$defs/Event"
+      }
+    },
+    "series": {
+      "type": "array",
+      "items": {
+        "$ref": "#/$defs/Series"
+      }
+    },
+    "sessions": {
+      "type": "array",
+      "items": {
+        "$ref": "#/$defs/Session"
+      }
+    },
+    "people": {
+      "type": "array",
+      "items": {
+        "$ref": "#/$defs/Person"
+      }
+    },
+    "orgs": {
+      "type": "array",
+      "items": {
+        "$ref": "#/$defs/Organisation"
+      }
+    },
+    "venues": {
+      "type": "array",
+      "items": {
+        "$ref": "#/$defs/Venue"
+      }
+    },
+    "extensions": {
+      "type": "object",
+      "additionalProperties": true
+    }
+  },
+  "required": [
+    "schema_version",
+    "events"
+  ],
+  "additionalProperties": false,
+  "$defs": {
+    "Evidence": {
+      "type": "object",
+      "properties": {
+        "source_url": {
+          "type": "string",
+          "format": "uri",
+          "pattern": "^https?://"
+        },
+        "source_type": {
+          "enum": [
+            "page",
+            "ical",
+            "api",
+            "json-feed",
+            "user-submission",
+            "email",
+            "migration"
+          ]
+        },
+        "fetched_at": {
+          "type": "string",
+          "format": "date-time"
+        },
+        "content_hash": {
+          "type": "string",
+          "pattern": "^sha256:[a-f0-9]{64}$"
+        },
+        "quote": {
+          "type": "string",
+          "maxLength": 200
+        },
+        "locator": {
+          "type": "string"
+        },
+        "extractor": {
+          "type": "object",
+          "properties": {
+            "agent": {
+              "type": "string"
+            },
+            "prompt_rev": {
+              "type": "string"
+            },
+            "run": {
+              "type": "string"
+            }
+          },
+          "required": [
+            "agent",
+            "prompt_rev",
+            "run"
+          ],
+          "additionalProperties": false
+        },
+        "check": {
+          "type": "object",
+          "properties": {
+            "rule": {
+              "type": "string"
+            },
+            "passed": {
+              "type": "boolean"
+            }
+          },
+          "required": [
+            "rule",
+            "passed"
+          ],
+          "additionalProperties": false
+        },
+        "review": {
+          "type": "object",
+          "properties": {
+            "agent": {
+              "type": "string"
+            },
+            "verdict": {
+              "enum": [
+                "agree",
+                "disagree",
+                "pending"
+              ]
+            },
+            "at": {
+              "type": "string",
+              "format": "date-time"
+            }
+          },
+          "required": [
+            "agent",
+            "verdict",
+            "at"
+          ],
+          "additionalProperties": false
+        },
+        "license": {
+          "type": "string"
+        },
+        "extensions": {
+          "type": "object",
+          "additionalProperties": true
+        }
+      },
+      "required": [
+        "source_url",
+        "source_type",
+        "fetched_at",
+        "content_hash",
+        "quote",
+        "locator",
+        "extractor",
+        "check",
+        "review",
+        "license"
+      ],
+      "additionalProperties": false
+    },
+    "Application": {
+      "type": "object",
+      "properties": {
+        "type": {
+          "enum": [
+            "register",
+            "apply",
+            "cfp",
+            "waitlist",
+            "sponsor",
+            "volunteer",
+            "scholarship",
+            "speaker-nomination"
+          ]
+        },
+        "url": {
+          "type": "string",
+          "format": "uri",
+          "pattern": "^https?://"
+        },
+        "platform": {
+          "type": "string"
+        },
+        "approval": {
+          "enum": [
+            "none",
+            "manual",
+            "lottery",
+            "invite-only",
+            "unknown"
+          ]
+        },
+        "opens_at": {
+          "anyOf": [
+            {
+              "anyOf": [
+                {
+                  "type": "string",
+                  "format": "date"
+                },
+                {
+                  "type": "string",
+                  "format": "date-time"
+                }
+              ]
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "deadline": {
+          "anyOf": [
+            {
+              "anyOf": [
+                {
+                  "type": "string",
+                  "format": "date"
+                },
+                {
+                  "type": "string",
+                  "format": "date-time"
+                }
+              ]
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "price": {
+          "type": "object",
+          "properties": {
+            "min": {
+              "type": "number",
+              "minimum": 0
+            },
+            "max": {
+              "type": "number",
+              "minimum": 0
+            },
+            "currency": {
+              "type": "string",
+              "pattern": "^[A-Z]{3}$"
+            },
+            "is_free": {
+              "type": "boolean"
+            }
+          },
+          "required": [],
+          "additionalProperties": false
+        },
+        "eligibility": {
+          "type": "string"
+        },
+        "capacity": {
+          "anyOf": [
+            {
+              "type": "integer",
+              "minimum": 0
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "status": {
+          "enum": [
+            "open",
+            "closed",
+            "waitlist",
+            "sold-out",
+            "unknown"
+          ]
+        },
+        "extensions": {
+          "type": "object",
+          "additionalProperties": true
+        }
+      },
+      "required": [
+        "type",
+        "url"
+      ],
+      "additionalProperties": false
+    },
+    "Event": {
+      "type": "object",
+      "properties": {
+        "id": {
+          "type": "string",
+          "pattern": "^[a-z0-9][a-z0-9_-]*$",
+          "maxLength": 160
+        },
+        "kind": {
+          "const": "event"
+        },
+        "name": {
+          "type": "string",
+          "minLength": 1
+        },
+        "same_as": {
+          "type": "object",
+          "additionalProperties": {
+            "anyOf": [
+              {
+                "type": "string"
+              },
+              {
+                "type": "null"
+              }
+            ]
+          }
+        },
+        "provenance": {
+          "type": "object",
+          "additionalProperties": {
+            "type": "array",
+            "items": {
+              "$ref": "#/$defs/Evidence"
+            }
+          }
+        },
+        "category": {
+          "type": "string"
+        },
+        "format": {
+          "type": "string",
+          "minLength": 1
+        },
+        "series": {
+          "anyOf": [
+            {
+              "type": "string",
+              "pattern": "^[a-z0-9][a-z0-9_-]*$",
+              "maxLength": 160
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "super_event": {
+          "anyOf": [
+            {
+              "type": "string",
+              "pattern": "^[a-z0-9][a-z0-9_-]*$",
+              "maxLength": 160
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "sub_events": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "pattern": "^[a-z0-9][a-z0-9_-]*$",
+            "maxLength": 160
+          }
+        },
+        "sessions": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "pattern": "^[a-z0-9][a-z0-9_-]*$",
+            "maxLength": 160
+          }
+        },
+        "start": {
+          "anyOf": [
+            {
+              "type": "string",
+              "format": "date"
+            },
+            {
+              "type": "string",
+              "format": "date-time"
+            }
+          ]
+        },
+        "end": {
+          "anyOf": [
+            {
+              "type": "string",
+              "format": "date"
+            },
+            {
+              "type": "string",
+              "format": "date-time"
+            }
+          ]
+        },
+        "timezone": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "status": {
+          "enum": [
+            "scheduled",
+            "cancelled",
+            "postponed",
+            "rescheduled",
+            "completed"
+          ]
+        },
+        "attendance_mode": {
+          "enum": [
+            "offline",
+            "online",
+            "mixed"
+          ]
+        },
+        "venue": {
+          "anyOf": [
+            {
+              "type": "string",
+              "pattern": "^[a-z0-9][a-z0-9_-]*$",
+              "maxLength": 160
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "virtual_location": {
+          "anyOf": [
+            {
+              "type": "string",
+              "format": "uri",
+              "pattern": "^https?://"
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "city": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "country": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "url": {
+          "type": "string",
+          "format": "uri",
+          "pattern": "^https?://"
+        },
+        "topics": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        "audience": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        "languages": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        "program": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "host_type": {
+          "type": "string"
+        },
+        "organizers": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "pattern": "^[a-z0-9][a-z0-9_-]*$",
+            "maxLength": 160
+          }
+        },
+        "hosts": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "pattern": "^[a-z0-9][a-z0-9_-]*$",
+            "maxLength": 160
+          }
+        },
+        "sponsors": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "pattern": "^[a-z0-9][a-z0-9_-]*$",
+            "maxLength": 160
+          }
+        },
+        "applications": {
+          "type": "array",
+          "items": {
+            "$ref": "#/$defs/Application"
+          }
+        },
+        "extensions": {
+          "type": "object",
+          "additionalProperties": true
+        },
+        "level": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "region": {
+          "type": [
+            "string",
+            "null"
+          ]
+        }
+      },
+      "required": [
+        "id",
+        "kind",
+        "name",
+        "category",
+        "format",
+        "start",
+        "end",
+        "timezone",
+        "topics",
+        "applications",
+        "provenance"
+      ],
+      "additionalProperties": false
+    },
+    "Session": {
+      "type": "object",
+      "properties": {
+        "id": {
+          "type": "string",
+          "pattern": "^[a-z0-9][a-z0-9_-]*$",
+          "maxLength": 160
+        },
+        "kind": {
+          "const": "session"
+        },
+        "event": {
+          "type": "string",
+          "pattern": "^[a-z0-9][a-z0-9_-]*$",
+          "maxLength": 160
+        },
+        "title": {
+          "type": "string"
+        },
+        "start": {
+          "anyOf": [
+            {
+              "type": "string",
+              "format": "date"
+            },
+            {
+              "type": "string",
+              "format": "date-time"
+            }
+          ]
+        },
+        "end": {
+          "anyOf": [
+            {
+              "type": "string",
+              "format": "date"
+            },
+            {
+              "type": "string",
+              "format": "date-time"
+            }
+          ]
+        },
+        "day": {
+          "type": "string",
+          "format": "date"
+        },
+        "room": {
+          "type": "string"
+        },
+        "track": {
+          "type": "string"
+        },
+        "type": {
+          "type": "string"
+        },
+        "language": {
+          "type": "string"
+        },
+        "speakers": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "pattern": "^[a-z0-9][a-z0-9_-]*$",
+            "maxLength": 160
+          }
+        },
+        "recording_url": {
+          "type": "string",
+          "format": "uri",
+          "pattern": "^https?://"
+        },
+        "slides_url": {
+          "type": "string",
+          "format": "uri",
+          "pattern": "^https?://"
+        },
+        "abstract_ref": {
+          "type": "string"
+        },
+        "status": {
+          "type": "string"
+        },
+        "provenance": {
+          "type": "object",
+          "additionalProperties": {
+            "type": "array",
+            "items": {
+              "$ref": "#/$defs/Evidence"
+            }
+          }
+        },
+        "extensions": {
+          "type": "object",
+          "additionalProperties": true
+        }
+      },
+      "required": [
+        "id",
+        "kind",
+        "event",
+        "title",
+        "start",
+        "end",
+        "day"
+      ],
+      "additionalProperties": false
+    },
+    "Series": {
+      "type": "object",
+      "properties": {
+        "id": {
+          "type": "string",
+          "pattern": "^[a-z0-9][a-z0-9_-]*$",
+          "maxLength": 160
+        },
+        "kind": {
+          "const": "series"
+        },
+        "name": {
+          "type": "string",
+          "minLength": 1
+        },
+        "same_as": {
+          "type": "object",
+          "additionalProperties": {
+            "anyOf": [
+              {
+                "type": "string"
+              },
+              {
+                "type": "null"
+              }
+            ]
+          }
+        },
+        "provenance": {
+          "type": "object",
+          "additionalProperties": {
+            "type": "array",
+            "items": {
+              "$ref": "#/$defs/Evidence"
+            }
+          }
+        },
+        "category": {
+          "type": "string"
+        },
+        "url": {
+          "type": "string",
+          "format": "uri",
+          "pattern": "^https?://"
+        },
+        "extensions": {
+          "type": "object",
+          "additionalProperties": true
+        }
+      },
+      "required": [
+        "id",
+        "kind",
+        "name"
+      ],
+      "additionalProperties": false
+    },
+    "Person": {
+      "type": "object",
+      "properties": {
+        "id": {
+          "type": "string",
+          "pattern": "^[a-z0-9][a-z0-9_-]*$",
+          "maxLength": 160
+        },
+        "kind": {
+          "const": "person"
+        },
+        "name": {
+          "type": "string",
+          "minLength": 1
+        },
+        "same_as": {
+          "type": "object",
+          "additionalProperties": {
+            "anyOf": [
+              {
+                "type": "string"
+              },
+              {
+                "type": "null"
+              }
+            ]
+          }
+        },
+        "provenance": {
+          "type": "object",
+          "additionalProperties": {
+            "type": "array",
+            "items": {
+              "$ref": "#/$defs/Evidence"
+            }
+          }
+        },
+        "affiliation": {
+          "type": "string"
+        },
+        "links": {
+          "type": "object",
+          "additionalProperties": {
+            "type": "string",
+            "format": "uri",
+            "pattern": "^https?://"
+          }
+        },
+        "extensions": {
+          "type": "object",
+          "additionalProperties": true
+        }
+      },
+      "required": [
+        "id",
+        "kind",
+        "name"
+      ],
+      "additionalProperties": false
+    },
+    "Organisation": {
+      "type": "object",
+      "properties": {
+        "id": {
+          "type": "string",
+          "pattern": "^[a-z0-9][a-z0-9_-]*$",
+          "maxLength": 160
+        },
+        "kind": {
+          "const": "organisation"
+        },
+        "name": {
+          "type": "string",
+          "minLength": 1
+        },
+        "same_as": {
+          "type": "object",
+          "additionalProperties": {
+            "anyOf": [
+              {
+                "type": "string"
+              },
+              {
+                "type": "null"
+              }
+            ]
+          }
+        },
+        "provenance": {
+          "type": "object",
+          "additionalProperties": {
+            "type": "array",
+            "items": {
+              "$ref": "#/$defs/Evidence"
+            }
+          }
+        },
+        "url": {
+          "type": "string",
+          "format": "uri",
+          "pattern": "^https?://"
+        },
+        "extensions": {
+          "type": "object",
+          "additionalProperties": true
+        }
+      },
+      "required": [
+        "id",
+        "kind",
+        "name"
+      ],
+      "additionalProperties": false
+    },
+    "Venue": {
+      "type": "object",
+      "properties": {
+        "id": {
+          "type": "string",
+          "pattern": "^[a-z0-9][a-z0-9_-]*$",
+          "maxLength": 160
+        },
+        "kind": {
+          "const": "venue"
+        },
+        "name": {
+          "type": "string",
+          "minLength": 1
+        },
+        "same_as": {
+          "type": "object",
+          "additionalProperties": {
+            "anyOf": [
+              {
+                "type": "string"
+              },
+              {
+                "type": "null"
+              }
+            ]
+          }
+        },
+        "provenance": {
+          "type": "object",
+          "additionalProperties": {
+            "type": "array",
+            "items": {
+              "$ref": "#/$defs/Evidence"
+            }
+          }
+        },
+        "address": {
+          "type": "string"
+        },
+        "city": {
+          "type": "string"
+        },
+        "country": {
+          "type": "string"
+        },
+        "latitude": {
+          "type": "number",
+          "minimum": -90,
+          "maximum": 90
+        },
+        "longitude": {
+          "type": "number",
+          "minimum": -180,
+          "maximum": 180
+        },
+        "extensions": {
+          "type": "object",
+          "additionalProperties": true
+        }
+      },
+      "required": [
+        "id",
+        "kind",
+        "name"
+      ],
+      "additionalProperties": false
+    }
+  }
+}

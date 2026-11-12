@@ -1,0 +1,7 @@
+{
+  "id": "aggrid",
+  "label": "Grids",
+  "entry": "aggrid.js",
+  "description": "AG Grid Community (MIT, no key) drawer: open actions across conferences, the event catalogue with tracking, and AI usage. The vendored bundle is lazy-loaded on first open. Remove 'aggrid' from modules.config.json to disable; delete this directory to remove.",
+  "primitive": "drawer"
+}

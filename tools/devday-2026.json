@@ -1,0 +1,462 @@
+{
+  "schema_version": "confnote.agenda.v1",
+  "conference": {
+    "name": "OpenAI DevDay 2026",
+    "date": "2026-09-29",
+    "timezone": "America/Los_Angeles",
+    "city": "San Francisco",
+    "organiser": "OpenAI"
+  },
+  "speakers": {
+    "Sam Altman": {
+      "name": "Sam Altman"
+    },
+    "Romain Huet": {
+      "name": "Romain Huet"
+    },
+    "Holly Li": {
+      "name": "Holly Li"
+    },
+    "Tejal Patwardhan": {
+      "name": "Tejal Patwardhan"
+    },
+    "Aaron Friel": {
+      "name": "Aaron Friel"
+    },
+    "Vaibhav Srivastav": {
+      "name": "Vaibhav Srivastav"
+    },
+    "Raj Pathak": {
+      "name": "Raj Pathak"
+    },
+    "Eric Provencher": {
+      "name": "Eric Provencher"
+    },
+    "Aarti Bagul": {
+      "name": "Aarti Bagul"
+    },
+    "Alex Lato": {
+      "name": "Alex Lato"
+    },
+    "Kevin Lin": {
+      "name": "Kevin Lin"
+    },
+    "Peter Steinberger": {
+      "name": "Peter Steinberger"
+    },
+    "Steve Coffey": {
+      "name": "Steve Coffey"
+    },
+    "Charlie Guo": {
+      "name": "Charlie Guo"
+    },
+    "Nick Baumann": {
+      "name": "Nick Baumann"
+    },
+    "Danielle Zaghian": {
+      "name": "Danielle Zaghian"
+    },
+    "Jon Abrams": {
+      "name": "Jon Abrams"
+    },
+    "Katia Gil Guzman": {
+      "name": "Katia Gil Guzman"
+    },
+    "Saptarshi Banerjee": {
+      "name": "Saptarshi Banerjee"
+    },
+    "Mandeep Singh": {
+      "name": "Mandeep Singh"
+    },
+    "Ilan Bigio": {
+      "name": "Ilan Bigio"
+    },
+    "Kyle Brown": {
+      "name": "Kyle Brown"
+    },
+    "Ian Webster": {
+      "name": "Ian Webster"
+    },
+    "Craig Dennis": {
+      "name": "Craig Dennis"
+    },
+    "Alex Mashrabov": {
+      "name": "Alex Mashrabov"
+    },
+    "Corey Ching": {
+      "name": "Corey Ching"
+    },
+    "Max Stoiber": {
+      "name": "Max Stoiber"
+    },
+    "Dominik Kundel": {
+      "name": "Dominik Kundel"
+    },
+    "Jason Liu": {
+      "name": "Jason Liu"
+    },
+    "Alex Gamble": {
+      "name": "Alex Gamble"
+    },
+    "Erika Kettleson": {
+      "name": "Erika Kettleson"
+    },
+    "Itamar Friedman": {
+      "name": "Itamar Friedman"
+    },
+    "Thibault Sottiaux": {
+      "name": "Thibault Sottiaux"
+    },
+    "Pauline Narvas": {
+      "name": "Pauline Narvas"
+    }
+  },
+  "events": [
+    {
+      "id": "breakfast",
+      "title": "Breakfast",
+      "description": "",
+      "start": "2026-09-29T08:00:00-07:00",
+      "end": "2026-09-29T10:00:00-07:00",
+      "room": "",
+      "track": "",
+      "speakers": [],
+      "tags": [],
+      "links": [],
+      "type": "break"
+    },
+    {
+      "id": "opening-keynote",
+      "title": "Opening Keynote",
+      "description": "OpenAI unveils what's next — announcements about new AI capabilities.",
+      "start": "2026-09-29T10:00:00-07:00",
+      "end": "2026-09-29T11:00:00-07:00",
+      "room": "",
+      "track": "",
+      "speakers": [
+        "Sam Altman",
+        "Romain Huet",
+        "Holly Li",
+        "Tejal Patwardhan"
+      ],
+      "tags": [],
+      "links": [],
+      "type": "keynote"
+    },
+    {
+      "id": "what-will-you-build-with-coding-agents-that-don-t-quit",
+      "title": "What Will You Build With Coding Agents That Don't Quit?",
+      "description": "Engineering task selection, persistent agent planning, and token budget management through an internal OpenAI case study.",
+      "start": "2026-09-29T11:15:00-07:00",
+      "end": "2026-09-29T11:55:00-07:00",
+      "room": "",
+      "track": "",
+      "speakers": [
+        "Aaron Friel",
+        "Vaibhav Srivastav"
+      ],
+      "tags": [],
+      "links": [],
+      "type": "talk"
+    },
+    {
+      "id": "what-comes-after-loops-deep-dive-into-agentic-architecture",
+      "title": "What Comes After Loops?: Deep Dive Into Agentic Architecture",
+      "description": "Traces agent architecture evolution and the shift toward collaborative systems.",
+      "start": "2026-09-29T11:15:00-07:00",
+      "end": "2026-09-29T11:55:00-07:00",
+      "room": "",
+      "track": "",
+      "speakers": [
+        "Raj Pathak",
+        "Eric Provencher"
+      ],
+      "tags": [],
+      "links": [],
+      "type": "talk"
+    },
+    {
+      "id": "stack-overflow-from-idea-to-product",
+      "title": "Stack Overflow - From Idea to Product",
+      "description": "Using AI to accelerate product development and organizational knowledge.",
+      "start": "2026-09-29T11:15:00-07:00",
+      "end": "2026-09-29T11:55:00-07:00",
+      "room": "",
+      "track": "",
+      "speakers": [
+        "Aarti Bagul",
+        "Alex Lato"
+      ],
+      "tags": [],
+      "links": [],
+      "type": "talk"
+    },
+    {
+      "id": "lunch",
+      "title": "Lunch",
+      "description": "",
+      "start": "2026-09-29T11:30:00-07:00",
+      "end": "2026-09-29T13:00:00-07:00",
+      "room": "",
+      "track": "",
+      "speakers": [],
+      "tags": [],
+      "links": [],
+      "type": "lunch"
+    },
+    {
+      "id": "claw-labs-building-open-source-together",
+      "title": "Claw Labs: Building Open Source Together",
+      "description": "Agent workflows on shared servers with computer use capabilities.",
+      "start": "2026-09-29T12:00:00-07:00",
+      "end": "2026-09-29T12:40:00-07:00",
+      "room": "",
+      "track": "",
+      "speakers": [
+        "Kevin Lin",
+        "Peter Steinberger"
+      ],
+      "tags": [],
+      "links": [],
+      "type": "talk"
+    },
+    {
+      "id": "harness-as-a-service-building-with-the-agents-api",
+      "title": "Harness-as-a-Service: Building with the Agents API",
+      "description": "Infrastructure for running agents, activity monitoring, and long-running task management.",
+      "start": "2026-09-29T12:00:00-07:00",
+      "end": "2026-09-29T12:40:00-07:00",
+      "room": "",
+      "track": "",
+      "speakers": [
+        "Steve Coffey",
+        "Charlie Guo"
+      ],
+      "tags": [],
+      "links": [],
+      "type": "talk"
+    },
+    {
+      "id": "how-openai-puts-chatgpt-to-work",
+      "title": "How OpenAI Puts ChatGPT to Work",
+      "description": "Internal power user workflows: launch coordination and competitive research.",
+      "start": "2026-09-29T12:00:00-07:00",
+      "end": "2026-09-29T12:40:00-07:00",
+      "room": "",
+      "track": "",
+      "speakers": [
+        "Nick Baumann",
+        "Danielle Zaghian"
+      ],
+      "tags": [],
+      "links": [],
+      "type": "talk"
+    },
+    {
+      "id": "sites-and-the-next-generation-of-web-apps",
+      "title": "Sites and the Next Generation of Web Apps",
+      "description": "Building interactive experiences with Astra, ChatGPT Sites, and WebMCP.",
+      "start": "2026-09-29T12:45:00-07:00",
+      "end": "2026-09-29T13:25:00-07:00",
+      "room": "",
+      "track": "",
+      "speakers": [
+        "Jon Abrams",
+        "Katia Gil Guzman"
+      ],
+      "tags": [],
+      "links": [],
+      "type": "talk"
+    },
+    {
+      "id": "stop-overpaying-for-intelligence",
+      "title": "Stop Overpaying for Intelligence",
+      "description": "Panel on cost per task, model selection, and spend optimization with caching and batch APIs.",
+      "start": "2026-09-29T12:45:00-07:00",
+      "end": "2026-09-29T13:25:00-07:00",
+      "room": "",
+      "track": "",
+      "speakers": [
+        "Aarti Bagul",
+        "Saptarshi Banerjee",
+        "Mandeep Singh"
+      ],
+      "tags": [],
+      "links": [],
+      "type": "talk"
+    },
+    {
+      "id": "codex-game-studio",
+      "title": "Codex Game Studio",
+      "description": "Game design as a way to put Codex to the test and evaluate AI capabilities.",
+      "start": "2026-09-29T13:00:00-07:00",
+      "end": "2026-09-29T13:40:00-07:00",
+      "room": "",
+      "track": "",
+      "speakers": [
+        "Ilan Bigio",
+        "Eric Provencher"
+      ],
+      "tags": [],
+      "links": [],
+      "type": "talk"
+    },
+    {
+      "id": "codex-security-from-vulnerability-to-verified-fix",
+      "title": "Codex Security: From Vulnerability to Verified Fix",
+      "description": "Using cyber models and tools to scan codebases and verify security fixes.",
+      "start": "2026-09-29T13:30:00-07:00",
+      "end": "2026-09-29T14:10:00-07:00",
+      "room": "",
+      "track": "",
+      "speakers": [
+        "Kyle Brown",
+        "Ian Webster"
+      ],
+      "tags": [],
+      "links": [],
+      "type": "talk"
+    },
+    {
+      "id": "higgsfield-building-agents-that-provision-their-own-compute",
+      "title": "Higgsfield - Building Agents That Provision Their Own Compute",
+      "description": "Agent decision-making on model selection and compute allocation for enterprise workloads.",
+      "start": "2026-09-29T13:30:00-07:00",
+      "end": "2026-09-29T14:10:00-07:00",
+      "room": "",
+      "track": "",
+      "speakers": [
+        "Craig Dennis",
+        "Alex Mashrabov"
+      ],
+      "tags": [],
+      "links": [],
+      "type": "talk"
+    },
+    {
+      "id": "build-what-s-next-on-the-chatgpt-platform-with-plugins",
+      "title": "Build What's Next on the ChatGPT Platform with Plugins",
+      "description": "Making ChatGPT a platform through plugin extensions for tools and workflows.",
+      "start": "2026-09-29T14:15:00-07:00",
+      "end": "2026-09-29T14:55:00-07:00",
+      "room": "",
+      "track": "",
+      "speakers": [
+        "Corey Ching",
+        "Max Stoiber"
+      ],
+      "tags": [],
+      "links": [],
+      "type": "talk"
+    },
+    {
+      "id": "codex-has-left-the-laptop",
+      "title": "Codex Has Left The Laptop",
+      "description": "New Codex capabilities across CLI, app, and web for delegating tasks and goals.",
+      "start": "2026-09-29T14:15:00-07:00",
+      "end": "2026-09-29T14:55:00-07:00",
+      "room": "",
+      "track": "",
+      "speakers": [
+        "Dominik Kundel"
+      ],
+      "tags": [],
+      "links": [],
+      "type": "talk"
+    },
+    {
+      "id": "how-we-make-our-models-useful",
+      "title": "How We Make Our Models Useful",
+      "description": "Post-training approach to alignment across computer use, coding, and knowledge work.",
+      "start": "2026-09-29T14:15:00-07:00",
+      "end": "2026-09-29T14:55:00-07:00",
+      "room": "",
+      "track": "",
+      "speakers": [
+        "Aarti Bagul",
+        "Tejal Patwardhan"
+      ],
+      "tags": [],
+      "links": [],
+      "type": "talk"
+    },
+    {
+      "id": "from-single-player-to-multiplayer-with-codex",
+      "title": "From Single Player to Multiplayer with Codex",
+      "description": "Incident response workflow with agent collaboration tools; includes a DevDay launch preview.",
+      "start": "2026-09-29T15:00:00-07:00",
+      "end": "2026-09-29T15:40:00-07:00",
+      "room": "",
+      "track": "",
+      "speakers": [
+        "Jason Liu"
+      ],
+      "tags": [],
+      "links": [],
+      "type": "talk"
+    },
+    {
+      "id": "building-with-gpt-live-and-image-generation",
+      "title": "Building with GPT-Live and Image Generation",
+      "description": "Designing agents with voice, delegation, and latency management.",
+      "start": "2026-09-29T15:00:00-07:00",
+      "end": "2026-09-29T15:40:00-07:00",
+      "room": "",
+      "track": "",
+      "speakers": [
+        "Alex Gamble",
+        "Erika Kettleson"
+      ],
+      "tags": [],
+      "links": [],
+      "type": "talk"
+    },
+    {
+      "id": "qodo-the-last-human-code-review",
+      "title": "Qodo - The Last Human Code Review",
+      "description": "Architecture for adversarial code review combining AI agents with human judgment.",
+      "start": "2026-09-29T15:00:00-07:00",
+      "end": "2026-09-29T15:40:00-07:00",
+      "room": "",
+      "track": "",
+      "speakers": [
+        "Itamar Friedman",
+        "Danielle Zaghian"
+      ],
+      "tags": [],
+      "links": [],
+      "type": "talk"
+    },
+    {
+      "id": "closing-q-a",
+      "title": "Closing Q&A",
+      "description": "Leadership perspectives on the day's announcements and AI's future. Moderated by Pauline Narvas.",
+      "start": "2026-09-29T16:00:00-07:00",
+      "end": "2026-09-29T16:45:00-07:00",
+      "room": "",
+      "track": "",
+      "speakers": [
+        "Sam Altman",
+        "Tejal Patwardhan",
+        "Thibault Sottiaux",
+        "Pauline Narvas"
+      ],
+      "tags": [],
+      "links": [],
+      "type": "talk"
+    },
+    {
+      "id": "reception",
+      "title": "Reception",
+      "description": "",
+      "start": "2026-09-29T16:45:00-07:00",
+      "end": "2026-09-29T18:00:00-07:00",
+      "room": "",
+      "track": "",
+      "speakers": [],
+      "tags": [],
+      "links": [],
+      "type": "talk"
+    }
+  ]
+}

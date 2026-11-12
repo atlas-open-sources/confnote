@@ -1,0 +1,89 @@
+{
+  "$schema": "https://openapi.vercel.sh/vercel.json",
+  "buildCommand": "npm run build",
+  "outputDirectory": "public",
+  "functions": {
+    "api/*.ts": {
+      "maxDuration": 120,
+      "includeFiles": "demo-data/public-demo/**"
+    }
+  },
+  "redirects": [
+    {
+      "source": "/download/confnote-mac.dmg",
+      "destination": "https://confnote-downloads.vercel.app/confnote-mac.dmg",
+      "permanent": false
+    }
+  ],
+  "rewrites": [
+    {
+      "source": "/download",
+      "destination": "/download.html"
+    },
+    {
+      "source": "/demo/archive",
+      "destination": "/demo.html"
+    },
+    {
+      "source": "/demo",
+      "destination": "/demo.html"
+    },
+    {
+      "source": "/terms",
+      "destination": "/terms.html"
+    },
+    {
+      "source": "/.well-known/confnote-auth",
+      "destination": "/api?route=auth/discovery"
+    },
+    {
+      "source": "/.well-known/mcp",
+      "destination": "/api?route=catalogue/mcp"
+    },
+    {
+      "source": "/llms.txt",
+      "destination": "/api?route=catalogue/llms.txt"
+    },
+    {
+      "source": "/api/(.*)",
+      "destination": "/api?route=$1"
+    }
+  ],
+  "headers": [
+    {
+      "source": "/(.*)",
+      "headers": [
+        {
+          "key": "Cache-Control",
+          "value": "no-store"
+        },
+        {
+          "key": "X-Content-Type-Options",
+          "value": "nosniff"
+        },
+        {
+          "key": "X-Frame-Options",
+          "value": "DENY"
+        }
+      ]
+    },
+    {
+      "source": "/demo(.*)",
+      "headers": [
+        {
+          "key": "X-Robots-Tag",
+          "value": "noindex, nofollow"
+        }
+      ]
+    },
+    {
+      "source": "/media/(.*)",
+      "headers": [
+        {
+          "key": "X-Robots-Tag",
+          "value": "noindex, nofollow"
+        }
+      ]
+    }
+  ]
+}

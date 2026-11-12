@@ -1,0 +1,14 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://confnote.local/contracts/api/conf-doc.schema.json",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["status", "brief", "debrief", "brief_mtime", "debrief_mtime"],
+  "properties": {
+    "status": { "type": "string" },
+    "brief": { "type": "string" },
+    "debrief": { "type": "string" },
+    "brief_mtime": { "type": "number" },
+    "debrief_mtime": { "type": "number" }
+  }
+}

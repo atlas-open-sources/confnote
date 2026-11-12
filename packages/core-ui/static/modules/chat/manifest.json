@@ -1,0 +1,7 @@
+{
+  "id": "chat",
+  "label": "Concierge",
+  "entry": "chat.js",
+  "description": "Concierge chat surfaced as a drawer module (replaces the bottom-right ✦ FAB by default). Conventionally placed in the LAST drawer slot so it sits at the bottom of the right-edge strip. The FAB primitive code remains in app.js and is re-enabled by removing 'chat' from modules.config.json slots.",
+  "primitive": "drawer"
+}

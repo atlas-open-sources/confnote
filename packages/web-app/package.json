@@ -1,0 +1,41 @@
+{
+  "name": "confnote-web-app",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "build": "node scripts/build-static.mjs",
+    "check": "npm run build && npm run typecheck && npm run test",
+    "dev:vercel": "npm run build && vercel dev --listen 127.0.0.1:8790",
+    "migrate": "tsx scripts/migrate-to-blob.ts",
+    "prepare-demo": "node scripts/prepare-public-demo.mjs",
+    "sync-static": "node scripts/sync-static-source.mjs",
+    "test": "vitest run",
+    "typecheck": "tsc --noEmit",
+    "dev:local": "tsx scripts/dev-local.ts"
+  },
+  "dependencies": {
+    "@ai-sdk/anthropic": "^3.0.137",
+    "@ai-sdk/openai": "^3.0.135",
+    "@ai-sdk/openai-compatible": "^2.0.48",
+    "@clerk/backend": "^3.26.5",
+    "@vercel/blob": "^2.1.0",
+    "@vercel/functions": "^3.10.5",
+    "@workos-inc/node": "^12.1.0",
+    "ai": "^6.0.198",
+    "jose": "^6.2.14",
+    "postgres": "^4.0.0",
+    "resend": "^6.12.4",
+    "zod": "^3.25.76"
+  },
+  "devDependencies": {
+    "@types/node": "^24.10.1",
+    "@vercel/node": "^5.5.10",
+    "tsx": "^4.21.0",
+    "typescript": "^5.9.3",
+    "vitest": "^4.0.15"
+  },
+  "engines": {
+    "node": ">=20 <27"
+  }
+}

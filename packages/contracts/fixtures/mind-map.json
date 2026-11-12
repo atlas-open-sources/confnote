@@ -1,0 +1,521 @@
+{
+  "version": "confnote.mind-map.v1",
+  "note": "draw_mind_map's spec builder: concierge_tools.build_mind_map_spec (tests/test_mind_map.py) and web-app/lib/mind-map.ts buildMindMapSpec (packages/web-app/test/mind-map.test.ts) must both turn each case's input into its expected spec (the id, a timestamp, is not compared).",
+  "conference": {
+    "name": "Beyond The Prompt",
+    "date": "2026-05-19"
+  },
+  "slug": "2026-05-19-beyond-the-prompt",
+  "events": [
+    {
+      "id": "registration",
+      "type": "logistics",
+      "title": "Registration and Coffee",
+      "start": "2026-05-19T08:30:00+01:00",
+      "end": "2026-05-19T09:30:00+01:00",
+      "room": "Auditorium",
+      "track": "",
+      "tags": [],
+      "speakers": []
+    },
+    {
+      "id": "welcome",
+      "type": "talk",
+      "title": "Welcome",
+      "start": "2026-05-19T09:30:00+01:00",
+      "end": "2026-05-19T09:40:00+01:00",
+      "room": "Auditorium",
+      "track": "",
+      "tags": [
+        "opening",
+        "welcome"
+      ],
+      "speakers": [
+        "Phil Hawksworth (Host)"
+      ],
+      "note": "0930-welcome.md"
+    },
+    {
+      "id": "keynote",
+      "type": "talk",
+      "title": "Opening Keynote",
+      "start": "2026-05-19T09:40:00+01:00",
+      "end": "2026-05-19T10:10:00+01:00",
+      "room": "Auditorium",
+      "track": "",
+      "tags": [
+        "keynote",
+        "AG Grid",
+        "production engineering"
+      ],
+      "speakers": [
+        "John Masterson (CEO, AG Grid)",
+        "Mats Bryntse (CEO, Bryntum)"
+      ],
+      "note": "0940-keynote.md"
+    },
+    {
+      "id": "goodbye-slop",
+      "type": "talk",
+      "title": "Goodbye Slop: determinism in agentic apps",
+      "start": "2026-05-19T10:10:00+01:00",
+      "end": "2026-05-19T10:40:00+01:00",
+      "room": "Auditorium",
+      "track": "",
+      "tags": [
+        "determinism",
+        "agentic AI",
+        "state machines"
+      ],
+      "speakers": [
+        "David Khourshid (Founder, Stately)"
+      ],
+      "note": "1010-goodbye-slop.md"
+    },
+    {
+      "id": "coffee",
+      "type": "break",
+      "title": "Coffee",
+      "start": "2026-05-19T10:40:00+01:00",
+      "end": "2026-05-19T11:00:00+01:00",
+      "room": "Auditorium",
+      "track": "",
+      "tags": [],
+      "speakers": []
+    },
+    {
+      "id": "canvas",
+      "type": "talk",
+      "title": "Bringing AI to the canvas",
+      "start": "2026-05-19T11:00:00+01:00",
+      "end": "2026-05-19T11:30:00+01:00",
+      "room": "Auditorium",
+      "track": "",
+      "tags": [
+        "canvas",
+        "agentic AI",
+        "tldraw"
+      ],
+      "speakers": [
+        "Steve Ruiz (Founder, tldraw)"
+      ],
+      "note": "1100-canvas.md"
+    },
+    {
+      "id": "css",
+      "type": "talk",
+      "title": "Debugging CSS performance with AI",
+      "start": "2026-05-19T11:30:00+01:00",
+      "end": "2026-05-19T12:00:00+01:00",
+      "room": "Auditorium",
+      "track": "",
+      "tags": [
+        "CSS",
+        "performance"
+      ],
+      "speakers": [
+        "Bernie Sumption"
+      ],
+      "note": "1130-css.md"
+    },
+    {
+      "id": "fleets",
+      "type": "talk",
+      "title": "Software that moves fleets",
+      "start": "2026-05-19T12:00:00+01:00",
+      "end": "2026-05-19T12:30:00+01:00",
+      "room": "Auditorium",
+      "track": "",
+      "tags": [
+        "production engineering",
+        "AG Grid"
+      ],
+      "speakers": [
+        "Patrick Rau"
+      ],
+      "note": "1200-fleets.md"
+    },
+    {
+      "id": "panel",
+      "type": "panel",
+      "title": "Agentic AI panel",
+      "start": "2026-05-19T14:00:00+01:00",
+      "end": "2026-05-19T15:00:00+01:00",
+      "room": "Auditorium",
+      "track": "",
+      "tags": [
+        "agentic AI",
+        "panel"
+      ],
+      "speakers": [
+        "Maggie Appleton",
+        "Matt Pocock",
+        "Sophie Koonin",
+        "Phil Hawksworth (Host)"
+      ],
+      "note": "1400-panel.md"
+    },
+    {
+      "id": "day2",
+      "type": "talk",
+      "title": "Day two opener",
+      "start": "2026-05-20T09:00:00+01:00",
+      "end": "2026-05-20T09:30:00+01:00",
+      "room": "Auditorium",
+      "track": "",
+      "tags": [
+        "community"
+      ],
+      "speakers": [
+        "Ada Lovelace (Engines)"
+      ],
+      "note": "0900-day2.md"
+    }
+  ],
+  "notes": {
+    "1010-goodbye-slop.md": {
+      "Human notes": "- **State machines** keep agents [predictable](https://stately.ai). They also test well.\n- Vibes need guardrails\n- Model the happy path first\n",
+      "Summary": "",
+      "Research": ""
+    },
+    "1100-canvas.md": {
+      "Human notes": "",
+      "Summary": "",
+      "Research": "Steve built tldraw as an infinite canvas SDK used by thousands of teams who embed it in their products today.\n### Sources\n- https://tldraw.dev\n"
+    }
+  },
+  "cases": [
+    {
+      "name": "day-from-tags-with-notes",
+      "options": {},
+      "now": "2026-11-12T12:00:00",
+      "expected": {
+        "kind": "mindmap",
+        "slug": "2026-05-19-beyond-the-prompt",
+        "day": "2026-05-19",
+        "center": {
+          "title": "Beyond The Prompt",
+          "subtitle": "Tue 19 May"
+        },
+        "branches": [
+          {
+            "topic": "Agentic AI",
+            "leaves": [
+              {
+                "text": "State machines keep agents predictable",
+                "kind": "point"
+              },
+              {
+                "text": "Steve built tldraw as an infinite canvas SDK used by thousands of teams who embed it in…",
+                "kind": "point"
+              },
+              {
+                "text": "Agentic AI panel",
+                "kind": "session"
+              },
+              {
+                "text": "David Khourshid",
+                "kind": "speaker"
+              },
+              {
+                "text": "Steve Ruiz",
+                "kind": "speaker"
+              },
+              {
+                "text": "Maggie Appleton",
+                "kind": "speaker"
+              },
+              {
+                "text": "+3 more",
+                "kind": "speaker"
+              }
+            ],
+            "color": "blue"
+          },
+          {
+            "topic": "AG Grid",
+            "leaves": [
+              {
+                "text": "Opening Keynote",
+                "kind": "session"
+              },
+              {
+                "text": "Software that moves fleets",
+                "kind": "session"
+              },
+              {
+                "text": "John Masterson",
+                "kind": "speaker"
+              },
+              {
+                "text": "Mats Bryntse",
+                "kind": "speaker"
+              },
+              {
+                "text": "Patrick Rau",
+                "kind": "speaker"
+              }
+            ],
+            "color": "orange"
+          },
+          {
+            "topic": "CSS",
+            "leaves": [
+              {
+                "text": "Debugging CSS performance with AI",
+                "kind": "session"
+              },
+              {
+                "text": "Bernie Sumption",
+                "kind": "speaker"
+              }
+            ],
+            "color": "green"
+          }
+        ]
+      }
+    },
+    {
+      "name": "today-is-the-second-day",
+      "options": {},
+      "now": "2026-05-20T10:00:00",
+      "expected": {
+        "kind": "mindmap",
+        "slug": "2026-05-19-beyond-the-prompt",
+        "day": "2026-05-20",
+        "center": {
+          "title": "Beyond The Prompt",
+          "subtitle": "Wed 20 May"
+        },
+        "branches": [
+          {
+            "topic": "Community",
+            "leaves": [
+              {
+                "text": "Day two opener",
+                "kind": "session"
+              },
+              {
+                "text": "Ada Lovelace",
+                "kind": "speaker"
+              }
+            ],
+            "color": "blue"
+          }
+        ]
+      }
+    },
+    {
+      "name": "concierge-branches",
+      "options": {
+        "branches": [
+          {
+            "topic": "Agents you can trust",
+            "sessions": [
+              "goodbye-slop",
+              "panel",
+              "unknown-id"
+            ],
+            "points": [
+              "State machines make agents predictable and testable, which is the whole point of the talk on determinism",
+              "  "
+            ]
+          },
+          {
+            "topic": "Grids and production",
+            "sessions": [
+              "keynote",
+              "fleets"
+            ]
+          },
+          {
+            "topic": "",
+            "sessions": [
+              "css"
+            ]
+          },
+          {
+            "topic": "Empty",
+            "sessions": [
+              "coffee"
+            ]
+          }
+        ]
+      },
+      "now": "2026-05-19T12:00:00",
+      "expected": {
+        "kind": "mindmap",
+        "slug": "2026-05-19-beyond-the-prompt",
+        "day": "2026-05-19",
+        "center": {
+          "title": "Beyond The Prompt",
+          "subtitle": "Tue 19 May"
+        },
+        "branches": [
+          {
+            "topic": "Agents you can trust",
+            "leaves": [
+              {
+                "text": "State machines make agents predictable and testable, which is the whole point of the…",
+                "kind": "point"
+              },
+              {
+                "text": "David Khourshid",
+                "kind": "speaker"
+              },
+              {
+                "text": "Maggie Appleton",
+                "kind": "speaker"
+              },
+              {
+                "text": "Matt Pocock",
+                "kind": "speaker"
+              },
+              {
+                "text": "+2 more",
+                "kind": "speaker"
+              }
+            ],
+            "color": "blue"
+          },
+          {
+            "topic": "Grids and production",
+            "leaves": [
+              {
+                "text": "Opening Keynote",
+                "kind": "session"
+              },
+              {
+                "text": "Software that moves fleets",
+                "kind": "session"
+              },
+              {
+                "text": "John Masterson",
+                "kind": "speaker"
+              },
+              {
+                "text": "Mats Bryntse",
+                "kind": "speaker"
+              },
+              {
+                "text": "Patrick Rau",
+                "kind": "speaker"
+              }
+            ],
+            "color": "orange"
+          }
+        ]
+      }
+    },
+    {
+      "name": "session-centred",
+      "options": {
+        "file": "1010-goodbye-slop.md"
+      },
+      "now": "2026-05-19T12:00:00",
+      "expected": {
+        "kind": "mindmap",
+        "slug": "2026-05-19-beyond-the-prompt",
+        "day": "2026-05-19",
+        "center": {
+          "title": "Goodbye Slop: determinism in agentic apps",
+          "subtitle": "10:10–10:40"
+        },
+        "branches": [
+          {
+            "topic": "My notes",
+            "leaves": [
+              {
+                "text": "State machines keep agents predictable",
+                "kind": "point"
+              },
+              {
+                "text": "Vibes need guardrails",
+                "kind": "point"
+              },
+              {
+                "text": "Model the happy path first",
+                "kind": "point"
+              }
+            ],
+            "color": "blue"
+          },
+          {
+            "topic": "Topics",
+            "leaves": [
+              {
+                "text": "determinism",
+                "kind": "tag"
+              },
+              {
+                "text": "agentic AI",
+                "kind": "tag"
+              },
+              {
+                "text": "state machines",
+                "kind": "tag"
+              }
+            ],
+            "color": "orange"
+          },
+          {
+            "topic": "Speakers",
+            "leaves": [
+              {
+                "text": "David Khourshid",
+                "kind": "speaker"
+              }
+            ],
+            "color": "green"
+          }
+        ]
+      }
+    },
+    {
+      "name": "session-centred-with-topics",
+      "options": {
+        "file": "canvas",
+        "branches": [
+          {
+            "topic": "Canvas as UI",
+            "points": [
+              "Agents draw beside you"
+            ]
+          }
+        ]
+      },
+      "now": "2026-05-19T12:00:00",
+      "expected": {
+        "kind": "mindmap",
+        "slug": "2026-05-19-beyond-the-prompt",
+        "day": "2026-05-19",
+        "center": {
+          "title": "Bringing AI to the canvas",
+          "subtitle": "11:00–11:30"
+        },
+        "branches": [
+          {
+            "topic": "Canvas as UI",
+            "leaves": [
+              {
+                "text": "Agents draw beside you",
+                "kind": "point"
+              }
+            ],
+            "color": "blue"
+          },
+          {
+            "topic": "Speakers",
+            "leaves": [
+              {
+                "text": "Steve Ruiz",
+                "kind": "speaker"
+              }
+            ],
+            "color": "orange"
+          }
+        ]
+      }
+    }
+  ]
+}

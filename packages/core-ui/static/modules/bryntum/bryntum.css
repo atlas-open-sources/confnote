@@ -1,0 +1,439 @@
+/* Bryntum drawer module chrome. The vendor theme is svalbard-light, or svalbard-dark
+   when confnote is dark; these rules seat it on confnote's own tokens
+   (--panel, --line, --ink, --muted). */
+
+.cn-bry {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  min-height: 420px;
+  gap: 8px;
+}
+
+.cn-licence-note {
+  margin: 0;
+  color: var(--faint);
+  font-size: 11px;
+  line-height: 1.4;
+}
+
+/* One line at the drawer's default width: the city select gives way first, and
+   only an extra action (Spend) drops below; the date range never splits. */
+.cn-bry-bar,
+.cn-bry-trip {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 12px;
+  min-width: 0;
+}
+
+.cn-bry-bar {
+  flex-wrap: wrap;
+}
+
+.cn-bry-trip {
+  flex: 1;
+  flex-wrap: nowrap;
+}
+
+.cn-bry-trip select {
+  flex: 1 1 auto;
+  min-width: 64px;
+}
+
+.cn-bry-trip input[type="date"] {
+  flex: none;
+}
+
+.cn-bry-bar .cn-bry-action {
+  flex: none;
+  white-space: nowrap;
+}
+
+.cn-bry-label {
+  color: var(--muted);
+  white-space: nowrap;
+}
+
+.cn-bry-bar select,
+.cn-bry-bar input {
+  background: var(--panel);
+  color: var(--ink);
+  border: 1px solid var(--line);
+  border-radius: 6px;
+  padding: 3px 6px;
+  font: inherit;
+  /* Native date pickers follow the vendor theme, which follows confnote's. */
+  color-scheme: var(--b-widget-color-scheme, light);
+}
+
+.cn-bry-stage {
+  flex: 1;
+  min-height: 360px;
+  display: flex;
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.cn-bry-stage > .b-widget {
+  flex: 1;
+}
+
+.cn-bry-empty {
+  margin: auto;
+  padding: 24px;
+  color: var(--muted);
+  font-size: 13px;
+  text-align: center;
+}
+
+.cn-bry-msg {
+  margin: 0;
+  min-height: 1.4em;
+  font-size: 11px;
+  color: var(--faint);
+}
+
+.cn-bry-tabs {
+  display: inline-flex;
+  gap: 2px;
+  padding: 2px;
+  border: 1px solid var(--line);
+  border-radius: 7px;
+}
+
+.cn-bry-tab {
+  background: none;
+  border: 0;
+  border-radius: 5px;
+  padding: 2px 8px;
+  color: var(--muted);
+  font: inherit;
+  font-size: 11px;
+  cursor: pointer;
+}
+
+.cn-bry-tab[aria-selected="true"] {
+  background: var(--accent-soft);
+  color: var(--ink);
+}
+
+/* Seat the vendor theme on confnote's panel. */
+.cn-bry .b-scheduler,
+.cn-bry .b-calendar,
+.cn-bry .b-grid-body-container,
+.cn-bry .b-grid-header-container {
+  --b-panel-background: var(--panel);
+  --b-grid-row-background: var(--panel);
+  --b-grid-header-background: var(--bg);
+  --b-grid-cell-border-color: var(--line);
+}
+
+.cn-bry .b-sch-event.cn-clash {
+  outline: 2px solid #ff5f56;
+  outline-offset: -2px;
+}
+
+.cn-bry .b-sch-event.cn-status-going {
+  background: #1f7a3d;
+}
+
+/* ---- Day: the conference day as a printed programme, on confnote's tokens ----
+   A session is a quiet card; a pick is inverted like a primary button (the
+   agenda's ★); two picks at once are a clash (red outline, as in Trip); a
+   session that overlaps a pick is dimmed, like the sidebar's skipped rows;
+   breaks are flat and never picks. */
+
+.cn-bry[data-view="day"] .b-calendar {
+  --b-panel-background: var(--panel);
+  font-family: var(--sans);
+}
+
+.cn-bry[data-view="day"] .b-dayname-date {
+  display: none;
+}
+
+.cn-bry[data-view="day"] .b-day-resource-calendar-row-resource-header {
+  padding: 8px 6px;
+  font: 600 11px / 1.2 var(--mono);
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: var(--muted);
+}
+
+.cn-bry[data-view="day"] .b-day-view-time-axis-time {
+  font: 11px / 1 var(--mono);
+  color: var(--faint);
+}
+
+.cn-bry[data-view="day"] .b-cal-event-wrap .b-cal-event,
+.cn-bry[data-view="day"] .b-cal-event-wrap .b-cal-event-body {
+  color: var(--ink);
+  border-radius: var(--r1);
+}
+
+/* Bryntum paints the last clicked session as "selected" (blue): it keeps its
+   pick colours instead, so a click reads only as a pick. */
+.cn-bry[data-view="day"] .b-day-view-day-container
+  .b-cal-event-wrap.cn-pick.b-selected
+  .b-cal-event-body {
+  background: var(--panel);
+  color: var(--ink);
+}
+
+.cn-bry[data-view="day"]
+  .b-day-view-day-container
+  .b-cal-event-wrap.cn-picked.b-selected
+  .b-cal-event-body {
+  background: var(--accent);
+  color: var(--bg);
+}
+
+.cn-bry[data-view="day"]
+  .b-day-view-day-container
+  .b-cal-event-wrap.cn-rest.b-selected
+  .b-cal-event-body {
+  background: var(--accent-soft);
+}
+
+.cn-bry[data-view="day"] .b-cal-event-wrap .b-cal-event-body {
+  background: var(--panel);
+  border: 1px solid var(--line);
+  padding: 4px 6px;
+}
+
+.cn-bry[data-view="day"] .cn-pick {
+  cursor: pointer;
+}
+
+.cn-bry[data-view="day"] .cn-pick:hover .b-cal-event-body {
+  border-color: var(--muted);
+}
+
+.cn-bry[data-view="day"] .b-event-time {
+  font: 10px / 1.3 var(--mono);
+  color: var(--muted);
+}
+
+.cn-bry[data-view="day"] .cn-day-head {
+  display: flex;
+  gap: 4px;
+  align-items: baseline;
+}
+
+.cn-bry[data-view="day"] .cn-star {
+  flex: none;
+  color: var(--faint);
+}
+
+.cn-bry[data-view="day"] .cn-bar-name {
+  font-size: 12px;
+  font-weight: 600;
+  line-height: 1.25;
+  white-space: normal;
+}
+
+.cn-bry[data-view="day"] .cn-day-meta {
+  display: block;
+  margin-top: 2px;
+  font-size: 11px;
+  line-height: 1.25;
+  color: var(--muted);
+  white-space: normal;
+}
+
+.cn-bry[data-view="day"] .cn-picked .b-cal-event-body {
+  background: var(--accent);
+  border-color: var(--accent);
+}
+
+.cn-bry[data-view="day"] .cn-picked .b-cal-event-body,
+.cn-bry[data-view="day"] .cn-picked .b-event-time,
+.cn-bry[data-view="day"] .cn-picked .cn-star,
+.cn-bry[data-view="day"] .cn-picked .cn-day-meta {
+  color: var(--bg);
+}
+
+.cn-bry[data-view="day"] .cn-clash .b-cal-event-body {
+  outline: 2px solid #ff5f56;
+  outline-offset: -2px;
+}
+
+.cn-bry[data-view="day"] .cn-skipped {
+  opacity: 0.4;
+}
+
+.cn-bry[data-view="day"] .cn-skipped:hover {
+  opacity: 0.8;
+}
+
+.cn-bry[data-view="day"] .cn-rest .b-cal-event-body {
+  background: var(--accent-soft);
+  border-color: transparent;
+}
+
+.cn-bry[data-view="day"] .cn-rest .cn-bar-name {
+  font: 500 11px / 1.2 var(--mono);
+  color: var(--muted);
+}
+
+.cn-bry-action[aria-pressed="true"] {
+  background: var(--accent);
+  border-color: var(--accent);
+  color: var(--bg);
+}
+
+.cn-bry-conf {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  max-width: 40%;
+}
+
+.cn-bry-action {
+  background: var(--panel);
+  color: var(--ink);
+  border: 1px solid var(--line);
+  border-radius: 6px;
+  padding: 3px 8px;
+  font: inherit;
+  font-size: 12px;
+  cursor: pointer;
+}
+
+.cn-bry-action[data-action="plan"] {
+  background: var(--accent-soft);
+}
+
+.cn-bry-action:disabled {
+  opacity: 0.6;
+  cursor: progress;
+}
+
+/* My plan: the Concierge's picks, the only bars that drag and resize. */
+.cn-bry .b-sch-event.cn-plan {
+  background: #2d5bd1;
+}
+
+/* Credits: AI charges in amber, PayPal purchases, promos and top-ups in green. */
+.cn-bry .b-sch-event.cn-charge {
+  background: #a86412;
+  font-variant-numeric: tabular-nums;
+}
+
+.cn-bry .b-sch-event.cn-grant {
+  background: #1f7a3d;
+  font-variant-numeric: tabular-nums;
+}
+
+/* A trip bar is a day wide: its name wraps onto a second line instead of
+   being cut to a few letters. */
+.cn-bry[data-view="trip"] .cn-bar-name {
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2;
+  overflow: hidden;
+  white-space: normal;
+  line-height: 1.2;
+  font-size: 11px;
+}
+
+/* ---- Rooms: the day as rooms × time on Scheduler, on confnote's tokens ----
+   Talks are quiet cards along each room's row; a pick is inverted like Day's;
+   breaks are grey bands across every row; two picks at once mark their
+   overlap with a red band (Scheduler time ranges) and red outlines. */
+
+.cn-bry[data-view="rooms"] .b-sch-event {
+  background: var(--panel);
+  border: 1px solid var(--line);
+  border-radius: var(--r1);
+  color: var(--ink);
+  padding: 3px 6px;
+  align-items: flex-start;
+  cursor: pointer;
+}
+
+.cn-bry[data-view="rooms"] .b-sch-event-content {
+  display: block;
+  overflow: hidden;
+}
+
+.cn-bry[data-view="rooms"] .cn-day-head {
+  display: flex;
+  gap: 4px;
+  align-items: baseline;
+}
+
+.cn-bry[data-view="rooms"] .cn-star {
+  flex: none;
+  color: var(--faint);
+}
+
+.cn-bry[data-view="rooms"] .cn-bar-name {
+  font-size: 11px;
+  font-weight: 600;
+  line-height: 1.2;
+  white-space: normal;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
+.cn-bry[data-view="rooms"] .cn-day-meta {
+  display: block;
+  font-size: 10px;
+  color: var(--muted);
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.cn-bry[data-view="rooms"] .b-sch-event.cn-picked,
+.cn-bry[data-view="rooms"] .b-sch-event-wrap.b-active .b-sch-event.cn-picked {
+  background: var(--accent);
+  border-color: var(--accent);
+  color: var(--bg);
+}
+
+.cn-bry[data-view="rooms"] .cn-picked .cn-star,
+.cn-bry[data-view="rooms"] .cn-picked .cn-day-meta {
+  color: var(--bg);
+}
+
+.cn-bry[data-view="rooms"] .b-sch-event.cn-skipped {
+  opacity: 0.4;
+}
+
+.cn-bry[data-view="rooms"] .b-grid-cell {
+  font: 600 11px / 1.2 var(--mono);
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: var(--muted);
+}
+
+.cn-bry[data-view="rooms"] .b-sch-range.cn-rest-range {
+  background: var(--accent-soft);
+  opacity: 0.6;
+}
+
+.cn-bry[data-view="rooms"] .b-sch-range.cn-clash-range {
+  background: rgba(255, 95, 86, 0.18);
+  border-inline: 1px dashed #ff5f56;
+}
+
+/* Band labels sit under the rows, where the stage is empty, not under the header. */
+.cn-bry[data-view="rooms"] .b-time-ranges-body-canvas .b-sch-range label {
+  position: absolute;
+  bottom: 8px;
+  top: auto;
+  font: 600 10px / 1.2 var(--mono);
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: var(--muted);
+}
+
+.cn-bry[data-view="rooms"] .b-time-ranges-body-canvas .b-sch-range.cn-clash-range label {
+  color: #ff5f56;
+}

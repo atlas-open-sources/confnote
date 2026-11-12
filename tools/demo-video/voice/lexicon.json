@@ -1,0 +1,66 @@
+{
+  "voice": "en-GB-RyanNeural",
+  "verified": "2026-11-10 (v4, British voice): each entry synthesized with en-GB-RyanNeural in three carrier sentences and transcribed with mlx_whisper large-v3-turbo, unprompted and with a vocabulary prompt; nothing played aloud. v3's entries for en-US-AndrewMultilingualNeural are in git history",
+  "entries": [
+    {
+      "text": "confnote",
+      "alias": "conf note",
+      "heard": "ConfNote (3 of 3)",
+      "why": "the US IPA ˈkɑnfnoʊt is heard as CanfNote from British voices; British IPA ˈkɒnfnəʊt and the alias conf-note drop the t in 1 of 3 (Confno)"
+    },
+    {
+      "text": "Bryntum",
+      "alias": "Brin-tum",
+      "heard": "Brintum (3 of 3 carriers, en-GB Ryan)",
+      "why": "plain text is heard as Brenham. IPA ˈbrɪntəm was Brintum in a carrier sentence but Brentum in 2 of 3 script sentences; the control name Brinton (a real /ɪ/) was itself heard as Brenton in 2 of 3. The hyphenated alias beats both; 'Brintum' and 'Brin tum' (no hyphen) were heard as Brynham and Brintelm"
+    },
+    {
+      "text": "tldraw",
+      "ipa": "ˌtiːˈɛlˌdrɔː",
+      "heard": "TL Draw / TLDraw (3 of 3, en-GB Ryan)",
+      "why": "plain text is heard as 'to draw'; aliases 'T L draw', 'tee el draw' and say-as letters all came out as 'to yell draw'"
+    },
+    {
+      "text": "ACE-Step",
+      "alias": "Ace, Step",
+      "heard": "Ace step / ACE step (3 of 3)",
+      "why": "IPA ˈeɪs ˈstɛp and the aliases 'Ace Step' / 'Ace-Step' run together as 'a step' or 'ASTEP'; the comma keeps the two words apart"
+    },
+    {
+      "text": "Mochi",
+      "ipa": "ˈmoʊtʃi",
+      "heard": "Mochi router",
+      "why": "plain text is heard as Machi. Router is right without help"
+    },
+    {
+      "text": "DevDay",
+      "alias": "Dev Day",
+      "heard": "Dev Day",
+      "why": "plain text is right too; the alias keeps the two words apart"
+    },
+    {
+      "text": "BYOK",
+      "say_as": "characters",
+      "heard": "BYOK",
+      "why": "plain text is read as one word (0.5 s shorter than the letters); spell it out"
+    },
+    {
+      "text": "IET",
+      "say_as": "characters",
+      "why": "an initialism"
+    },
+    {
+      "text": "402",
+      "alias": "four oh two",
+      "why": "an HTTP status, not a number"
+    }
+  ],
+  "checked_without_entry": {
+    "PayPal": "heard as PayPal",
+    "Beyond The Prompt": "heard as Beyond the Prompt",
+    "Router": "heard as router",
+    "AG Grid": "plain text is AG Grid 3 of 3 with en-GB Ryan; the old IPA was heard as AGGREED and IG Grid",
+    "Local AI Cat": "heard as Local AI Cat",
+    "AI Engineer": "heard as AI Engineer"
+  }
+}

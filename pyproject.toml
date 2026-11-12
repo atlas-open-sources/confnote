@@ -1,0 +1,42 @@
+# Tooling configuration for confnote.
+# This file intentionally contains ONLY linter/test config (no build system).
+
+[tool.ruff]
+target-version = "py311"
+line-length = 100
+extend-exclude = [
+    ".venv",
+    "packages/local-app/.venv",
+    "packages/core-ui/static/vendor",
+    ".repos",
+    "dist",
+    "build",
+]
+
+[tool.ruff.lint]
+# A sensible, not-overzealous default set.
+#   E/W  pycodestyle    F  pyflakes      I  isort
+#   UP   pyupgrade      B  bugbear       C4 comprehensions
+#   SIM  simplify       PIE misc lints
+select = ["E", "W", "F", "I", "UP", "B", "C4", "SIM", "PIE"]
+ignore = [
+    "E501",  # line length handled by the formatter
+    "B008",  # function calls in argument defaults (common in handlers)
+    "SIM105", # contextlib.suppress not always clearer than try/except/pass
+]
+
+[tool.ruff.lint.per-file-ignores]
+# Tests may use assert freely and re-import fixtures.
+"tests/**" = ["B011"]
+
+[tool.ruff.format]
+quote-style = "double"
+indent-style = "space"
+skip-magic-trailing-comma = false
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+pythonpath = ["packages/local-app"]
+addopts = "-q --ignore=tests/e2e"
+# tests/e2e is the Playwright suite — gated behind `make e2e` since it needs
+# pytest-playwright + chromium installed. Default `make lint` stays fast.

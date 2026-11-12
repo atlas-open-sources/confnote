@@ -1,0 +1,3 @@
+# Install on top of the pinned portable CI environment. GeoNames is offline data.
+jsonschema==4.26.0
+geonamescache==3.0.2

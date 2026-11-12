@@ -1,0 +1,18 @@
+{
+  "plan": "private-preview",
+  "features": {
+    "notes": true,
+    "conferenceImport": true,
+    "assets": false,
+    "chat": false,
+    "transcription": false,
+    "modules": false
+  },
+  "limits": {
+    "workspaces": 1,
+    "conferences": 100,
+    "notesPerConference": 1000,
+    "blobBytes": 1073741824,
+    "chatCredits": 0
+  }
+}

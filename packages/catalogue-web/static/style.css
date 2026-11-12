@@ -1,0 +1,23 @@
+/* The public catalogue page's own frame: intro and footer. The events view itself is the app's Find events
+   (/find-events.css); tokens, top bar, brand and buttons come from the app's /style.css, /site.css undoes the
+   app shell. Nothing here sets a colour of its own. */
+[hidden] { display: none !important; }
+.catalogue .intro { margin-bottom: 20px; }
+.catalogue .intro .lede { margin-bottom: 0; }
+/* The view mounts after the parser (deferred script): hold the footer below the fold until it does. */
+#find-events:empty { min-height: 100vh; }
+
+.catalogue footer { margin-top: 56px; padding-top: 24px; border-top: 1px solid var(--line); }
+.catalogue footer strong { font-size: 15px; }
+.catalogue footer p { color: var(--muted); font-size: 13px; margin: 4px 0 0; }
+.catalogue footer > div { display: flex; flex-wrap: wrap; gap: 20px; margin-top: 18px; font: 12px var(--mono);
+  color: var(--muted); }
+.catalogue footer a { color: var(--link); }
+.catalogue footer span { margin-left: auto; }
+
+@media (max-width: 650px) {
+  .site-main.catalogue { padding: 20px 16px 48px; }
+  .catalogue .intro .lede { display: none; }
+  .catalogue h1 { font-size: 22px; }
+  .catalogue footer span { margin-left: 0; }
+}

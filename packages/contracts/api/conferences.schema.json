@@ -1,0 +1,19 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://confnote.local/contracts/api/conferences.schema.json",
+  "type": "array",
+  "items": {
+    "type": "object",
+    "additionalProperties": false,
+    "required": ["slug", "name", "date", "tagline", "venue", "sessions", "with_notes"],
+    "properties": {
+      "slug": { "type": "string" },
+      "name": { "type": "string" },
+      "date": { "type": "string" },
+      "tagline": { "type": "string" },
+      "venue": { "type": "string" },
+      "sessions": { "type": "number" },
+      "with_notes": { "type": "number" }
+    }
+  }
+}

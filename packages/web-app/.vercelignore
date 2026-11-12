@@ -1,0 +1,8 @@
+# CLI deploys upload demo-data/public-demo/ (gitignored): the redacted, read-only
+# public demo. Nothing else under demo-data/ is uploaded.
+node_modules
+.data
+public
+.env*.local
+demo-data/*
+!demo-data/public-demo

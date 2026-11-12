@@ -1,0 +1,121 @@
+{
+  "schema_version": "events.catalogue.v2",
+  "events": [
+    {
+      "id": "evt-demo-1",
+      "kind": "event",
+      "name": "Builders by the river",
+      "category": "tech",
+      "format": "meetup",
+      "start": "2099-06-10",
+      "end": "2099-06-11",
+      "timezone": null,
+      "city": "London",
+      "country": "GB",
+      "program": "claude-community",
+      "topics": [
+        "ai"
+      ],
+      "applications": [
+        {
+          "type": "cfp",
+          "url": "https://example.org/apply",
+          "status": "open",
+          "deadline": "2099-06-01T23:59:00Z"
+        }
+      ],
+      "url": "https://example.org",
+      "provenance": {},
+      "audience": [
+        "engineers"
+      ]
+    },
+    {
+      "id": "evt-demo-2",
+      "kind": "event",
+      "name": "An evening of useful code",
+      "category": "tech",
+      "format": "workshop",
+      "start": "2099-06-11",
+      "end": "2099-06-12",
+      "timezone": null,
+      "city": "Seoul",
+      "country": "KR",
+      "program": "codex-community",
+      "topics": [
+        "ai"
+      ],
+      "applications": [
+        {
+          "type": "cfp",
+          "url": "https://example.org/apply",
+          "status": "open",
+          "deadline": "2099-06-01T23:59:00Z"
+        }
+      ],
+      "url": "https://example.org",
+      "provenance": {},
+      "audience": [
+        "engineers"
+      ]
+    },
+    {
+      "id": "evt-demo-3",
+      "kind": "event",
+      "name": "Small systems, big ideas",
+      "category": "tech",
+      "format": "conference",
+      "start": "2099-06-12",
+      "end": "2099-06-13",
+      "timezone": null,
+      "city": "London",
+      "country": "GB",
+      "program": null,
+      "topics": [
+        "rust"
+      ],
+      "applications": [
+        {
+          "type": "cfp",
+          "url": "https://example.org/apply",
+          "status": "open",
+          "deadline": "2099-06-01T23:59:00Z"
+        }
+      ],
+      "url": "https://example.org",
+      "provenance": {},
+      "audience": [
+        "engineers"
+      ]
+    },
+    {
+      "id": "evt-demo-4",
+      "kind": "event",
+      "name": "The open web gathering",
+      "category": "tech",
+      "format": "conference",
+      "start": "2099-06-13",
+      "end": "2099-06-14",
+      "timezone": null,
+      "city": "Berlin",
+      "country": "DE",
+      "program": null,
+      "topics": [
+        "web"
+      ],
+      "applications": [
+        {
+          "type": "cfp",
+          "url": "https://example.org/apply",
+          "status": "open",
+          "deadline": "2099-06-01T23:59:00Z"
+        }
+      ],
+      "url": "https://example.org",
+      "provenance": {},
+      "audience": [
+        "engineers"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,25 @@
+{
+  "schema_version": "events.catalogue.v2",
+  "events": [
+    {
+      "id": "evt-example-2026",
+      "kind": "event",
+      "name": "Example gathering",
+      "category": "tech",
+      "format": "meetup",
+      "start": "2026-11-01",
+      "end": "2026-11-02",
+      "timezone": null,
+      "topics": [
+        "ai"
+      ],
+      "applications": [
+        {
+          "type": "register",
+          "url": "https://example.org/register"
+        }
+      ],
+      "provenance": {}
+    }
+  ]
+}

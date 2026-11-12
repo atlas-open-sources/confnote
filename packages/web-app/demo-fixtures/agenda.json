@@ -1,0 +1,6 @@
+{
+  "schema_version": "confnote.agenda.v1",
+  "conference": {"name": "Demo event", "date": "2099-06-01", "timezone": "UTC", "venue": {"name": "Demo hall"}},
+  "speakers": {},
+  "events": [{"id": "welcome", "title": "Welcome to your notes", "type": "talk", "start": "2099-06-01T09:00:00Z", "end": "2099-06-01T09:30:00Z"}]
+}

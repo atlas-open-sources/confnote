@@ -1,0 +1,89 @@
+/* Grids module — layout only; colours come from the grid theme params,
+   which read confnote's CSS variables. */
+.grids {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  height: 100%;
+  min-height: 0;
+}
+.grids-bar {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+.grids-tabs {
+  display: flex;
+  gap: 4px;
+}
+.grids-tab,
+.grids-csv {
+  border: 1px solid var(--line);
+  background: transparent;
+  color: var(--muted);
+  border-radius: var(--r1);
+  padding: 4px 10px;
+  font: inherit;
+  font-size: 12px;
+  cursor: pointer;
+}
+.grids-tab.on {
+  color: var(--ink);
+  background: var(--accent-soft);
+}
+.grids-quick {
+  flex: 1;
+  min-width: 0;
+  border: 1px solid var(--line);
+  background: var(--bg);
+  color: var(--ink);
+  border-radius: var(--r1);
+  padding: 4px 8px;
+  font: inherit;
+  font-size: 12px;
+}
+.grids-csv {
+  flex: none;
+}
+.grids-grid .grids-debit {
+  color: var(--muted);
+}
+.grids-grid .grids-credit {
+  color: var(--ok, var(--link));
+  font-weight: 600;
+}
+.grids-status {
+  color: var(--faint);
+  font-size: 11px;
+}
+.grids-grid {
+  flex: 1;
+  min-height: 320px;
+}
+.grids-status-action {
+  margin-left: 4px;
+  padding: 0;
+  border: none;
+  background: none;
+  color: var(--link);
+  font: inherit;
+  text-decoration: underline;
+  cursor: pointer;
+}
+/* The Ledger's balance chart (AG Charts Community) above the grid. */
+.grids-chart {
+  flex: 0 0 auto;
+  height: 200px;
+  border: 1px solid var(--line);
+  border-radius: 6px;
+  background: var(--panel);
+}
+.grids-chart[hidden] {
+  display: none;
+}
+.grids-chart.empty {
+  height: auto;
+  padding: 10px 12px;
+  color: var(--faint);
+  font-size: 11px;
+}

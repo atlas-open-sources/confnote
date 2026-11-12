@@ -1,0 +1,25 @@
+import assert from "node:assert/strict";
+import { readFileSync } from "node:fs";
+import { mkdtemp, mkdir, writeFile, readFile, symlink } from "node:fs/promises";
+import { tmpdir } from "node:os";
+import { join } from "node:path";
+import { test } from "node:test";
+import { migrateAgenda, migrateVault } from "../src/migration.js";
+const source = JSON.parse(readFileSync(new URL("../../../tests/e2e/seed-agenda.json",import.meta.url),"utf8"));
+test("migration preserves note and asset bytes, is repeatable and identity survives reschedule", async () => {
+  const dir = await mkdtemp(join(tmpdir(),"confnote-migration-"));
+  await mkdir(join(dir,"notes"));
+  await writeFile(join(dir,"agenda.json"),JSON.stringify(source));
+  const expected = migrateAgenda(source);
+  const file = expected.events[0].note_file!;
+  await writeFile(join(dir,"notes",file),"Private: encrypted\nHuman notes remain\n");
+  assert.deepEqual(await migrateVault(dir),expected);
+  assert.deepEqual(await migrateVault(dir),expected);
+  assert.equal(await readFile(join(dir,"notes",file),"utf8"),"Private: encrypted\nHuman notes remain\n");
+  expected.events[0].start = "2026-11-02T12:00:00Z";
+  assert.equal(migrateAgenda(expected).events[0].note_file,file);
+  assert.throws(() => migrateAgenda({...source,events:[{...source.events[0],id:"../escape"}]}));
+  const link = join(dir,"alias");
+  await symlink(dir,link);
+  await assert.rejects(migrateVault(link),/symlink/);
+});

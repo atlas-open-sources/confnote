@@ -1,0 +1,6 @@
+.vercel
+.data
+demo-data
+public
+.env*.local
+catalogue-data
