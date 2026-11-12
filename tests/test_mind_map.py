@@ -21,6 +21,9 @@ import server  # noqa: E402
 REPO = Path(__file__).resolve().parents[1]
 FIXTURE = json.loads((REPO / "packages/contracts/fixtures/mind-map.json").read_text())
 LAYOUT_JS = REPO / "packages/core-ui/static/modules/tldraw/mind-map.js"
+if not LAYOUT_JS.exists():
+    pytest.skip("the tldraw module is not part of the open-source export (tldraw SDK licence)", allow_module_level=True)
+
 SLUG = "2026-11-03-map-conf"
 
 
